@@ -44,6 +44,7 @@ html, body{
     box-shadow: 0px 10px 110px rgba(0, 0, 0, 0.7);
     text-shadow: 0px 0px 16px white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 a{
@@ -119,12 +120,13 @@ div.homeworks{
     width: 50%;
     border-radius: 15px;
     margin: auto;
-    max-width: 1000px;
-    min-width: 500px;
+    max-width: 700px;
+    min-width: 350px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
     padding-top: 5px;
     padding-bottom: 15px;
-    backdrop-filter: blur(200px) sepia(50%);
+    backdrop-filter: blur(20px) sepia(10%);
+
 }
 h3.homeworks{
     text-align: center;

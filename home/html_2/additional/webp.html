@@ -4,68 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="webp.css">
 </head>
 <body>
-    <h1 align="center">.WebP</h1>
-    <h2 align="center">Формат изображения</h2>
-    <hr>
-    <h3>Общая информация</h3>
-    <p>
-        Формат хранения изображений .webp был представлен Google в 2010. 
-        Может быть как с потерями так и без потерь. Основан на алгоритме сжатия неподвижных изображений.
-    </p>
-    <hr>
-    <h3>Сравнение webp с png</h3>
-    <p>
+    <div class="paralax"><img src="bg.jpg" alt=""></div>
+    <div class="top">
+        <h1>.WebP</h1>
+        <h2>Формат изображения</h2>
+        <div class="backbutton">
+            <a href="../../../index.html">&lArr;</a>
+        </div>
+   
+       
+    </div>
+    <div class="main">
+        <h3>Общая информация</h3>
+        <p>
+            Формат WebP, разработанный Google, призван стать достойной альтернативой JPEG, PNG и GIF,
+            предлагая лучшее сжатие и, как следствие, меньший размер файла при сохранении качества. Давайте разберемся, так ли это на самом деле.
+        </p>
+        <hr>
+        <h3>Достоинства WebP:</h3>
         <ul>
             <li>
-                <b>Сжатие</b> <br>
-                <b>WebP:</b> <br>
-                Использует методы сжатия как с потерями, так и без потерь, что приводит к значительному уменьшению размера файлов. <br>
-                <b>png:</b> <br>
-                Известен сжатием без потерь, что сохраняет качество изображения, но часто приводит к увеличению размера файла. <br><br>
+                Улучшенное сжатие: WebP использует более эффективные алгоритмы сжатия, чем JPEG и PNG, что позволяет уменьшить размер файлов на 25-34% при том же качестве изображения.
             </li>
-            <li>
-                <b>Прозрачность</b> <br>
-                <b>WebP:</b> <br>
-                Поддерживает альфа-прозрачность, обеспечивая точные и разнообразные уровни прозрачности. <br>
-                <b>png:</b> <br>
-                Известен своей прозрачностью альфа-канала, что позволяет создавать прозрачные фоны и четкую графику. <br><br>
-            </li>
-            <li>
-                <b>Анимация</b> <br>
-                <b>WebP:</b> <br>
-                Предлагает формат анимации (WebPAN) для легких анимированных изображений. <br>
-                <b>png:</b> <br>
-                Не поддерживает анимацию изначально, что ограничивает его использование для статических изображений. <br><br>
-            </li>
-            <li>
-                <b>Поддержка браузера</b> <br>
-                <b>WebP:</b> <br>
-                Широко поддерживается основными браузерами, такими как Chrome, Firefox, Edge и Opera. <br>
-                <b>png:</b> <br>
-                Универсальная поддержка во всех основных браузерах и платформах, гарантирующая единообразное отображение <br><br>
 
-            </li>
             <li>
-                <b>Варианты использования</b> <br>
-                <b>WebP:</b> <br>
-                Идеально подходит для фотографий, изображений с прозрачностью и анимации. <br>
-                <b>png:</b> <br>
-                Подходит для изображений, требующих высококачественной и точной прозрачности, логотипов, графики с резкими краями и т. д. <br><br>
+                Поддержка прозрачности: Как и PNG, WebP поддерживает прозрачность, что делает его отличным выбором для логотипов, иконок и других изображений с прозрачными областями.
             </li>
+
             <li>
-                <b>Размер файла и качество</b> <br>
-                <b>WebP:</b> <br>
-                Эффективно сочетает качество и размер файла, предлагая файлы меньшего размера без ущерба для качества <br>
-                <b>png:</b> <br>
-                Поддерживает более высокое качество, но имеет тенденцию создавать файлы большего размера, что влияет на время загрузки. <br>
+                Поддержка анимации: WebP также поддерживает анимированные изображения, подобно GIF, но с более высокой эффективностью сжатия.
+            </li>
+
+            <li>
+                Меньшая нагрузка на сервер: Меньший размер файлов WebP приводит к более быстрой загрузке страниц, что особенно важно для мобильных устройств и медленных подключений.
             </li>
         </ul>
         <hr>
-        
+        <h3>Недостатки WebP:</h3>
+        <ul>
+            <li>
+                Ограниченная поддержка браузерами: Несмотря на то, что WebP поддерживается большинством современных браузеров (Chrome, Firefox, Edge, Opera), Safari до сих пор не имеет полной поддержки.
+            </li>
+            <li>
+                Возможные потери качества: При использовании сжатия с потерями, WebP может приводить к некоторой потере качества изображения, особенно на высоких уровнях сжатия.
+            </li>
+        </ul>
+        <hr>
+        <h3>Сравнение с PNG и JPEG:</h3>
+        <ul>
+            <li>
+                WebP vs PNG: WebP обычно дает меньший размер файла, чем PNG, при том же уровне качества, особенно для фотографий и изображений с градиентами. PNG может быть предпочтительнее для изображений с резкими краями и текстом, где важна четкость.
+            </li>
+            <li>
+                WebP vs JPEG: WebP превосходит JPEG по размеру файла и качеству изображения, особенно при использовании сжатия без потерь. JPEG может быть предпочтительнее для фотографий, где допустима некоторая потеря качества ради меньшего размера файла.
+            </li>
+        </ul>
+        <hr>
+        <h3>Примеры:</h3>
+        <div id="s" class="imgCompare">
+            <div class="image woman">
+                <div class="imageTo"><img src="compare/woman.png" alt=""> <div class="imageText">png 1.87mb</div></div>
+                <div class="imageTo"><img src="compare/woman.webp" alt=""><div class="imageText">webp 123kb</div></div>
+                <div class="imageTo"><img src="compare/woman.jpg" alt=""> <div class="imageText">jpg 432kb</div></div>
+            </div>
+            <div class="image elephant">
+                <div class="imageTo"><img src="compare/elephant.png" alt=""> <div class="imageText">png 763kb</div></div>
+                <div class="imageTo"><img src="compare/elephant.webp" alt=""><div class="imageText">webp 51.6kb</div></div>
+                <div class="imageTo"><img src="compare/elephant.jpg" alt=""> <div class="imageText">jpg 179kb</div></div>
+            </div>
+            <div class="image man">
+                <div class="imageTo"><img src="compare/man.png" alt=""> <div class="imageText">png 1.66mb</div></div>
+                <div class="imageTo"><img src="compare/man.webp" alt=""><div class="imageText">webp 124kb</div></div>
+                <div class="imageTo"><img src="compare/man.jpg" alt=""> <div class="imageText">jpg 398kb</div></div>
+            </div>
+            <div class="image anime">
+                <div class="imageTo"><img src="compare/anime.png" alt=""> <div class="imageText">png 535kb</div></div>
+                <div class="imageTo"><img src="compare/anime.webp" alt=""><div class="imageText">webp 46.9kb</div></div>
+                <div class="imageTo"><img src="compare/anime.jpg" alt=""> <div class="imageText">jpg 173kb</div></div>
+            </div>
+            
+        </div>
+
+        <hr>
+        <h3>Поддержка браузерами:</h3>
+        <p>WebP поддерживается следующими браузерами:</p>
+        <ul>
+            <li>Google Chrome</li>
+            <li>Mozilla Firefox</li>
+            <li>Microsoft Edge</li>
+            <li>Opera</li>
+            <li>Safari</li>
+        </ul>
+        <hr>
+        <p>WebP - это перспективный формат изображения, предлагающий множество преимуществ, но важно знать о его ограничениях. При правильном использовании WebP может помочь вам ускорить загрузку сайта и улучшить пользовательский опыт.</p>
+
+            
 
 
-    </p>
+    </div>
+
 </body>
 </html>

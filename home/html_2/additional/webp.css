@@ -18,105 +18,7 @@ html,body{
 	transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d;
 }
-.paralax{
-    position: fixed;
-    height: 120%;
-    width:max-content;
-    
 
-    transform:translateZ(-100px) scale(10);
-
-    
-}
-.top{
-
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
-        radial-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.2));
-
-    position: sticky;
-    width: 100%;
-    height: 80px;
-    top: 0cm;
-    text-align: center;    
-    font-family: 'PT Sans Regular','Arial', sans-serif;
-    backdrop-filter: blur(3px);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    color: #f3f3f3;
-    z-index: 100;
-}
-
-.backbutton{
-    width: 50px;
-    height: 50px;
-
-    font-size: 50px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 15px;
-    left: 15px;
-
-    border-radius: 15px;
-    background: rgb(0, 0, 0);
-    transition: 0.2s;
-    
-}
-.backbutton:hover{
-    background: #222;
-    transform: scale(1.1);
-    transition: 0.2s;
-}
-
-.backbutton a{
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    text-decoration:none;
-    color: rgb(255, 255, 255);
-
-}
-h1 {
-    margin: 0;
-    padding: 5px;
-    font-size: 30px;
-    
-    
-}
-h2{
-    line-height: 0px;
-}
-
-.main{
-    margin: 15px;
-    padding: 30px;
-
-    border-radius: 15px;
-    background: #222;
-
-    box-shadow: -2px -2px 10px 2px rgba(255, 255, 255, 0.2),
-     2px 2px 10px 2px rgba(0, 0, 0, 0.6),
-      0px 0px 10px rgba(255, 0, 0, 0.2) inset;
-    color: #ccc;
-    font-family: 'PT Sans Regular','Arial', sans-serif;
-    font-weight: 700;
-    -webkit-text-stroke: 3px #000000;
-    paint-order: stroke fill;
-
-    max-width: 700px;
-    min-width: 350px;
-    align-items: center;
-    position: absolute;
-
-    backdrop-filter: blur(3px);
-    background-color:rgba(0, 0, 0, 0.5);
-
-    left: 50%;
-    transform: translate(-50%, 0);
-    text-align: justify;
-    
-}
 
 li{
 
@@ -138,7 +40,7 @@ li{
     
 }
 .imageTo{
-
+    user-select: none;
     margin: 2%;
     display: flex;
     justify-content: center;
@@ -177,17 +79,16 @@ li{
     
 }
 
-img{
-    
-    width: 100%;
-    height: 100%;
 
-}
 
 hr{
     border: 2px solid #ffffff0c;
     border-radius: 15px;
     filter: blur(-5px);
 
+    
+}
+
+.paralax{
     
 }

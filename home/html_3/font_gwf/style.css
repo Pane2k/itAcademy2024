@@ -1,0 +1,95 @@
+@keyframes example {
+    0% {
+        background-position: 0% 0%;
+	}
+	100% {
+        background-position: 0% 100%;
+
+    }
+}
+@keyframes opaciity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+html,body{
+    
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #111;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
+    
+    /* url("bg.jpg");
+
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: local ;
+    background-attachment:fixed; */
+   
+    perspective: 20px;
+	-webkit-perspective: 20px;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+    box-sizing: border-box;
+
+    
+}
+
+.bgs{
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+
+    margin-top: -80px;
+
+    animation: opaciity 1s ease-in-out;
+
+}
+.paralax{
+    width: 100vw;
+    height: 100vh;
+;
+
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center center;
+
+    background-repeat: no-repeat;
+
+    animation-name: example;
+    animation-timing-function: linear;
+    animation-timeline: scroll(y);
+}
+.noselect{
+    user-select: none;
+    font-size: 10000px;
+    color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'PT Sans Regular','Arial', sans-serif;
+}
+
+.text{
+    background-color: #111;
+    padding: 15px;
+    margin: 15px 0px;
+    z-index: 60;
+    border-radius: 16px;
+}

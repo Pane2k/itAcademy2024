@@ -1,0 +1,128 @@
+
+
+
+.top{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+        radial-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.2));
+
+    position: sticky;
+    width: 100%;
+    height: 80px;
+    top: 0cm;
+    text-align: center;    
+    font-family: 'PT Sans Regular','Arial', sans-serif;
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    color: #f3f3f3;
+    z-index: 100;
+}
+@keyframes example {
+    0% {
+        background-position: 0% 0%;
+	}
+	100% {
+		background-position: 0% 100%;
+    }
+}
+
+
+.backbutton{
+    width: 50px;
+    height: 50px;
+
+    font-size: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+
+    border-radius: 15px;
+    background: rgb(0, 0, 0);
+    transition: 0.2s;
+    
+}
+.backbutton:hover{
+    background: #222;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.backbutton a{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+
+}
+h1 {
+    margin: 0;
+    padding: 5px;
+    font-size: 30px;
+    font-variant: small-caps;
+    
+}
+h2{
+    line-height: 0px;
+    font-variant: small-caps;
+}
+
+.main{
+    margin: 15px;
+    padding: 30px;
+
+    border-radius: 15px;
+    background: #222;
+
+    box-shadow: -2px -2px 10px 2px rgba(255, 255, 255, 0.2),
+     2px 2px 10px 2px rgba(0, 0, 0, 0.6),
+      0px 0px 10px rgba(255, 0, 0, 0.2) inset;
+    color: #ccc;
+    font-family: 'PT Sans Regular','Arial', sans-serif;
+    font-weight: 700;
+    -webkit-text-stroke: 3px #000000;
+    paint-order: stroke fill;
+
+    max-width: 700px;
+    min-width: 350px;
+    align-items: center;
+    position: absolute;
+
+    backdrop-filter: blur(3px);
+    background-color:rgba(0, 0, 0, 0.5);
+
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: justify;
+    z-index: 50;
+}
+.noselect{
+    user-select: none;
+    font-size: 100vh;
+    color: rgba(0, 0, 0, 0);
+
+    width: 98vw;
+    height:auto;
+    z-index: 1;
+    top: 0px;
+    position:sticky;
+
+
+    font-family: 'PT Sans Regular','Arial', sans-serif;
+
+    overflow: hidden
+}
+img{
+    
+    width: 100%;
+    height: 100%;
+    
+}
+img.bg{
+    width: 100%;
+    
+}

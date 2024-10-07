@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            --card-width: 143.5px;
+            --card-height: 193.7px;
+
+            --x-pos: 0;
+            --y-pos: 0;
+            width: var(--card-width);
+            height: var(--card-height);
+
+
+            background-image: url(cards.png) ;
+            background-position: top calc(var(--card-height) * -1 * var(--y-pos)) left calc(var(--card-width) * -1 * var(--x-pos)) ;
+            background-repeat: no-repeat;
+            overflow: hidden;
+
+        }
+    </style>
+</head>
+<body>
+    <div style="
+    --x-pos: 3;
+    --y-pos: 3;
+    "></div>
+
+    <div style="
+    --x-pos: 1;
+    --y-pos: 12;
+    "></div>
+
+    <div style="
+    --x-pos: 0;
+    --y-pos: 5;
+    "></div>
+
+    <div style="
+    --x-pos: 2;
+    --y-pos: 7;
+    "></div>
+
+    
+</body>
+</html>

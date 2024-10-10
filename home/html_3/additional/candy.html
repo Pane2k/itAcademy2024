@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../top.css">
+    <style>
+        html,body{
+    
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background: #111;
+            position: relative;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
+            
+            /* url("bg.jpg");
+        
+        
+            background-size: cover;
+            background-position: center;
+            background-attachment: local ;
+            background-attachment:fixed; */
+           
+            perspective: 20px;
+            -webkit-perspective: 20px;
+            transform-style: preserve-3d;
+            -webkit-transform-style: preserve-3d;
+            box-sizing: border-box;
+        
+            
+        }
+
+        .bgs{
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+        
+            margin-top: -80px;
+        
+            animation: opaciity 1s ease-in-out;
+        
+        }
+        .paralax{
+            width: 100vw;
+            height: 100vh;
+        ;
+        
+            background-attachment: fixed;
+            background-size:cover;
+            background-position: center center;
+        
+            background-repeat: no-repeat;
+        
+            animation-name: example;
+            animation-timing-function: linear;
+            animation-timeline: scroll(y);
+        }
+        .noselect{
+            user-select: none;
+            font-size: 10000px;
+            color: rgba(0, 0, 0, 0);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'PT Sans Regular','Arial', sans-serif;
+        }
+        
+        .text{
+            background-color: #111;
+            padding: 15px;
+            margin: 15px 0px;
+            z-index: 60;
+            border-radius: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top">
+        <h1>Цвета Словами</h1>
+        <h2>#CANDY</h2>
+        <div class="backbutton">
+            <a href="../../../index.html">&lArr;</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <h3>Почему работают цвета <font color="#Candy">#CANDY</font></h3>
+        <p>В теге &#60;font&#62; можно использовать свойство color и покрасить текс в цвет словами.
+            Допустим мы хотим покрасить слово в цвет #Candy. Для этого мы пишем &#60;font color="#Candy"&#62;Candy&#60;/font&#62;
+            <br>
+            Вот как выглядить это в браузере: <font color="#Candy">Candy</font>
+            <br>
+            Как это происходит? Все очень просто. В теге &#60;font&#62; есть атрибут color, который принимает значение цвета. Цвет задается по HEX коду и отбрасывает лишние символы.
+            <br>
+            Тоесть &#60;font color="#Candy"&#62;Candy&#60;/font&#62; превращается в &#60;font color="#Ca0d00"&#62;Candy&#60;/font&#62; или же rgb(202, 13, 0);
+            <br>
+            Вот так: <font color="#Candy">Candy</font> - это тоже самое, что и &#60;font color="#CD000"&#62;Candy&#60;/font&#62;
+            <br>
+            А это превращается в цвет #CD0000: <font color="#ca0d">Candy</font>
+            <br>
+            Попробуем друго слово например: <font color="#badguy">badguy</font> - это тоже самое, что и &#60;font color="#badguy"&#62;badguy&#60;/font&#62; превращается в &#60;font color="#BAD000"&#62;badguy&#60;/font&#62; или же rgb(176, 0, 0);
+            <hr>
+            Тоесть любая строка в font может быть использованна как цвет. <font color="#minecraft">Например</font> <font color="#gameoflive">вот</font> <font color="#humancolour">так</font>
+        </p>
+    </div>
+</body>
+</html>

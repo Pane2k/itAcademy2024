@@ -76,9 +76,15 @@ a:hover{
 .Review{
     background-color: #00ff00;
 }
+.Review::before{
+    content: "✅";
+}
 .notReview{
     background-color: #ff0000;
   
+}
+.notReview::before{
+    content: "❌";
 }
 
 p{

@@ -9,29 +9,21 @@
     <style>
         div.main {
             margin-top: 100px;
-            min-height: 100px;
-            min-width: 100px; 
+
             
-
-
-            background-color: red;
-            background:
-
-                url("../CTL.jpg") no-repeat left top,
-                url("../CTR.jpg") no-repeat right top,
-                url("../CBR.jpg") no-repeat right bottom,
-                url("../CBL.jpg") no-repeat left bottom,
-                url("../h.jpg") repeat-x left 0px bottom 0px,
-                url("../h.jpg") repeat-x left 0px top -1px,
-                url("../v.jpg") repeat-y left 0px top 0px,
-                url("../v.jpg") repeat-y right -2px top 0px;
+            border: 50px solid;
+            border-image-source: url("../ramka.png");
+            border-image-slice: 100;    
+            border-image-repeat: stretch;  
+            border-image-width: 2;
+          
 
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 1.4em;
-            text-align: center;
-            padding: 50px;
-            
 
+
+            text-align: center;
+    
         }
 
         
@@ -42,7 +34,7 @@
 
 <body>
     <div class="backbutton">
-        <a href="../../../index.html#4">&lArr;</a>
+        <a href="../../../index.html#4" >&lArr;</a>
     </div>
 
     <div class="main">

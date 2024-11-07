@@ -112,3 +112,180 @@ h2{
     overflow: hidden;
 
 }
+
+.blockname{
+    text-transform: uppercase;
+}
+.blockname>h2{
+    font-weight: 500;
+    font-size: 44px;
+    color:black;
+    text-align: left;
+
+}
+.blockname>h3{
+    font-weight: 300;
+    font-size: 24px;
+    color:black;
+    text-align: left;
+}
+
+.blockname>p{
+    font-family: 'Millanova', sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    color: #D4d4d4;
+    text-transform: capitalize;
+    text-align: left;
+
+    
+}
+div.tures{
+    height: 813px;
+
+}
+.--helltours p{
+    margin-left: -140px;
+    margin-top: 70px;
+}
+.--helltours h2{
+    margin-top: 134px;
+}
+.--helltours h3{
+    margin-top: 4px;
+}
+
+.card{
+    float: left;
+    margin-right: 32px;
+    width: 256px;
+    height: 340px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.45) 100%), url("../assets/dana-andreea-gheorghe-tRAi7NuU4b0-unsplash.png");
+    border-radius: 30px;
+}
+.card{
+    color: white;
+    font-size: 14px;
+    padding: 20px;
+}
+.card p.upper{
+    float: left;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 5px;
+
+    margin-right: 10px;
+    text-transform: lowercase;
+    font-weight: 300;
+
+}
+.card p.upper:nth-child(2){
+    margin-left: 0px;
+}
+
+.card p.lowwer{
+    margin-top: 219px;
+    margin-bottom: 6px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.card p.lowwer:nth-child(5){
+    margin-top: 0px;
+    margin-bottom: 6px;
+    text-transform: lowercase;
+}
+a.moreinfo{
+    float: left;
+    color: white;
+    
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: lowercase;
+}
+svg.moreinfo{
+    float: left;
+    margin-top: -1px;
+    margin-left: 12px;
+}
+
+.hotels{
+    height: 898px;
+    background-color:#f8f8f8;
+}
+.--hotels{ 
+    p, h2, h3{
+        text-align: center;
+    }
+    p{
+        padding-top: 165px;
+    }
+    h2{
+        margin-top: -30px;
+    }
+}
+@font-face {
+    font-family: "Chandra";
+    src: url("../assets/Chandra.ttf");
+  }
+.hotelcards>.hotelcard{
+    width: 460px;
+    height: 340px;
+    border-radius: 30px;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.45) 100%), url(../assets/oswald-elsaboath-ym_EI-DTS1g-unsplash.png);
+    background-size:contain;
+    padding: 30px 30px 30px 35px;
+}
+.hotelcards>.hotelcard:nth-child(2){
+
+    width: 544px;
+    height: 400px;
+
+}
+.hotelcards{
+    width: 1528px;
+
+    margin: 0 auto;
+    margin-top: 82px;
+}
+.hotelcard{
+    float: left;
+    
+    color: #fff;
+    margin: 0px 0px 0px 16px;
+}
+.hotelcard.small{
+    margin-top: 30px;
+}
+.hotelcard .stars{
+    font-family: "Chandra";
+    font-weight: 400;
+    font-size: 65px;
+    text-transform: uppercase;
+    text-align: right;
+    float:right
+
+}
+.stars svg{
+    margin-bottom: 40px;
+}
+
+.hotelname{
+    font-weight: 500;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-top: 288px;
+    margin-bottom: 10px;
+}
+.small .hotelname{
+    margin-top: 228px;
+}
+.scrollbar{
+    width: 1120;
+    border-bottom: #000 solid;
+   
+    margin: 0 auto;
+    margin-top: 52px;
+}

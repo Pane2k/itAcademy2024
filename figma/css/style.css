@@ -698,6 +698,7 @@ svg.moreinfo{
     height: 454px;
     overflow: hidden;
     background-image: url("../assets/Group\ 9.png");
+    background-size: cover;
 }
 
 .canhelp .form{

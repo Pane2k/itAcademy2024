@@ -103,11 +103,12 @@ h2{
     margin-top: 38px;
 }
 .content{
-    height: 995px;
+    height: 908px;
     width: 100%;
     background-image: url("../assets/wallpapers2.png");
     background-position: 50% -85px;
     background-repeat: no-repeat;
+    background-size:cover;
 
     overflow: hidden;
 
@@ -142,6 +143,7 @@ h2{
 }
 div.tures{
     height: 813px;
+    overflow: hidden;
 
 }
 .--helltours p{
@@ -174,7 +176,7 @@ div.tures{
 
     border: 1px solid white;
     border-radius: 30px;
-    padding: 5px;
+    padding: 3px 10px 2px 10px;
 
     margin-right: 10px;
     text-transform: lowercase;
@@ -213,6 +215,7 @@ svg.moreinfo{
 .hotels{
     height: 898px;
     background-color:#f8f8f8;
+    overflow: hidden;
 }
 .--hotels{ 
     p, h2, h3{
@@ -228,6 +231,11 @@ svg.moreinfo{
 @font-face {
     font-family: "Chandra";
     src: url("../assets/Chandra.ttf");
+  }
+
+@font-face {
+    font-family: "RasfireRegularPersonalUse";
+    src: url("../assets/RasfireRegularPersonalUse-jE0Jl.otf");
   }
 .hotelcards>.hotelcard{
     width: 460px;
@@ -283,9 +291,553 @@ svg.moreinfo{
     margin-top: 228px;
 }
 .scrollbar{
-    width: 1120;
-    border-bottom: #000 solid;
-   
-    margin: 0 auto;
+    background-color: #D4D4D4;
+    height: 1px;
     margin-top: 52px;
+    margin-bottom: 140px; 
+}
+.scrollbar .scrollbar__track{
+    height: 1px;
+    background-color: #1C1C1C; 
+    width: 10%;
+    margin: 0 auto;
+
+}
+
+
+
+.fastget{
+    height: 605px;
+    background-image: url("../assets/valeria-andersson-0IGhARplNzY-unsplash.png");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.fastget .form{
+    border-radius: 30px;
+    width: 1120px;
+    height: 133px;
+    margin: 0 auto;
+    margin-top: 452px;
+
+    background: #fff;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 38px;
+    padding-bottom: 38px; 
+}
+
+.form__text.first{
+    float: left;
+    width: 236px;
+    height: 56px;
+
+    font: 400 24px "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #1c1c1c;
+    margin-right: 79px;
+}
+
+.form__text.first::first-line{
+    font-style:normal;
+}
+
+.form__text.second{
+    float: left;
+    width: 208px;
+    height: 57px;
+
+    text-transform:none;
+    font: 300 16px "Roboto", sans-serif;
+
+    color: #1c1c1c;
+}
+
+.form__input_container{
+    float: right;
+
+    width: 144px;
+    height: 50px;
+
+    font: 400 12px "Roboto", sans-serif;
+    color: #bdbdbd;
+    
+}
+.form__input{
+
+    border: none;
+    border-bottom: 1px solid #848484;
+    height: 25px;
+}
+.form__input:focus{
+    outline: none;
+    border-bottom: 1px solid #ec1c24;
+}
+
+.form .button{
+    float: right;
+    border: none;
+    border-radius: 30px;
+    width: 168px;
+    height: 40px;
+    color: #fff;
+    background: #ec1c24;
+    font-size: 16px;
+    padding: 10px;
+
+    margin-left: 79px;
+    margin-right: 0px;
+    margin-top: 8px; 
+}
+.reviews{
+    height: 940px;
+
+    overflow: hidden;
+}
+
+.blockname__reviews h2,.blockname__reviews h3,.blockname__reviews p{
+    text-align: center;
+
+}
+.blockname__reviews h2{
+    margin-top: 174px;
+    margin-bottom: 8px;
+}
+.blockname__reviews p{
+    margin-top: -76px;
+}
+.review__cards{
+    width: auto;
+
+    margin: 0 auto;
+    margin-top: 91px;
+
+}
+.review__card{
+    float: left;
+    border-radius: 30px;
+    width: 352px;
+    
+    padding: 0px 24px 32px 24px;
+    margin-right: 32px;
+
+    background: #f8f8f8;
+
+}
+.review_image{
+    height: 64px;
+    width: 64px;
+    margin: 0 auto; 
+    margin-top: 27px;
+}
+.review__card .rate{
+    margin-left: 89px;
+    margin-top: 18px;
+}
+.review__card .rate .star::before{
+    content: url(../assets/star.svg);
+    width: 22px;
+    height: 22px;
+    color: red;
+}
+
+.review__user__info{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    font: 300 12px "Roboto", sans-serif;
+    text-align: center;
+    color: #6b6b6b;
+    text-transform: none;
+}
+.review__user__name__city{
+    text-transform: uppercase;
+}
+
+.review__user__text{
+    font: 300 16px / 1.375 "Roboto", sans-serif;
+    color: #1c1c1c;
+    text-transform: none;
+    
+}
+.review__user__text p{
+    margin-top: 10px;
+}
+
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+.reviews .scrollbar__track{
+    margin: 0;
+}
+
+.news{
+    background-color: #f8f8f8;
+    height: 964px; 
+    overflow: hidden;
+}
+
+.blockname__news h2{
+    margin-top: 134px; 
+    margin-bottom: 8px;
+}
+.blockname__news p{
+    margin-top: 60px;
+    margin-left: -120px;
+}
+
+
+.blockname__table{
+    margin: 0 auto;
+
+}
+
+.table__row__item{
+    position: relative;
+    float: left;
+    width: 256px;
+    height: 256px;
+    border-radius: 30px;
+    margin-right: 32px;
+    margin-bottom: 32px;
+    background: red;
+    padding: 20px;
+
+}
+.table__row__item.wide{
+    width: 544px; 
+
+    
+}
+
+.table__text{
+    font: 500 24px "Roboto", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    width: 220px;
+    margin-top: 38px;
+
+}
+
+.table__text .moreinfo{
+
+    margin-top: 12px;
+}
+
+.wide .table__text{
+    margin-left: 8px;
+}
+.square .table__text{
+    position: absolute;
+    bottom: 20px;
+    font: 500 16px "Roboto", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    
+}
+
+.first__line>.table__row__item:nth-child(1){
+    background: linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(255,255,255,0) 100%),url("../assets/Ikos-Resorts_Kids-lying-on-the-bed_2880x1920-1-scaled 1.png");
+    
+} 
+.first__line>.table__row__item:nth-child(2){ 
+    background: linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(255,255,255,0) 100%), url("../assets/daniel-olah-2lMK4dgqwFM-unsplash\ 1.png");
+    
+} 
+.first__line>.table__row__item:nth-child(3){ 
+    background: linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(255,255,255,0) 100%), url("../assets/willian-justen-de-vasconcellos-2Ka0oKSMxVE-unsplash\ 2.png");
+    
+} 
+
+.second__line>.table__row__item:nth-child(1){ 
+    background: linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(255,255,255,0) 100%), url("../assets/ryan-miglinczy-fQtFfvedV-8-unsplash\ 1.png");
+
+} 
+.second__line>.table__row__item:nth-child(2){ 
+    background: linear-gradient(-90deg, rgba(0,0,0,0.4) 0%, rgba(255,255,255,0) 100%), url("../assets/willian-justen-de-vasconcellos-ySXJX43t9sw-unsplash\ 1.png");
+    
+} 
+.second__line>.table__row__item:nth-child(2) .table__text{
+    float: right;
+}
+.second__line>.table__row__item:nth-child(3){ 
+    background: linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(255,255,255,0) 100%), url("../assets/alexander-savonin-JT-ADySithU-unsplash\ 1.png");
+    
+
+} 
+
+
+.aboutus{
+    height: 1382px;
+    overflow: hidden;
+}
+
+.blockname__aboutus h2,.blockname__aboutus h3,.blockname__aboutus p{
+    text-align: center;
+    
+}
+.blockname__aboutus h2{
+    margin-top: 174px; 
+    margin-bottom: 8px;
+}
+.blockname__aboutus p{
+    
+    margin-top: -80px;
+}
+.aboutus__text{
+    margin-top: 72px;
+}
+
+.aboutus__mission{
+    float: left;
+    font: 300 16px / 1.625 "Roboto", sans-serif;
+    color: #1c1c1c;
+
+    width: 526px;
+    height: 322px;
+    text-transform: none;
+}
+.aboutus__mission span{
+    float: left;
+    font: 400 85px "RasfireRegularPersonalUse";
+    height: 75px;
+    margin-right: 8px; 
+    
+}
+.aboutus__img__first{
+    float: right;
+    margin-top: 10px;
+    margin-left: 10px;
+
+    
+}
+
+.aboutus__img__second, .aboutus__text__second p{
+    font: 300 16px / 1.625 "Roboto", sans-serif;
+    text-transform: none;
+    color: #1c1c1c;
+
+    float: left;
+    width: 352px;
+    margin-right: 32px;
+
+}
+.aboutus__img__second{
+    margin-top: 25px; 
+}
+.aboutus__text__second p{
+    margin-top: 72px; 
+}
+
+.aboutus__contact{
+    
+    border: 1px solid #d4d4d4;
+    height: 216px;
+    border-left: 0px;
+    border-right: 0px;
+
+    margin-top: 80px;
+}
+
+.contact__item{
+    float: left;
+    font: 500 24px "Roboto", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #1c1c1c;
+    width: 384px;
+}
+.socialmedia{
+    margin-top: 65px;
+}
+.socialmedia__icons{
+    margin-top: 27px;
+}
+.contact__item a, .contact__item p{
+    font: 300 16px / 1.625 "Roboto", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #1c1c1c;
+
+}
+.contact{
+    margin-top: 42px;
+
+}
+.contact h3{
+    margin-bottom: 21px;
+}
+
+.contact a[href*="mailto:"]{
+    text-decoration: underline;
+}
+
+.address p{
+    width: 274px;
+        text-align: center;
+        margin-left: 57px;
+        margin-top: 27px;
+}
+.address{
+    margin-top: 55px;
+}
+.verticalline{
+    float: left;
+    height: 63px;
+
+    border: 1px solid #d4d4d4;
+    border-left: 0px;
+    margin-top: 75px;
+}
+
+.canhelp{
+    height: 454px;
+    overflow: hidden;
+    background-image: url("../assets/Group\ 9.png");
+}
+
+.canhelp .form{
+    border-radius: 30px;
+    width: 1120px;
+    height: 133px;
+    margin: 0 auto;
+    margin-top: 140px;
+
+    background: #fff;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 38px;
+    padding-bottom: 38px; 
+}
+.canhelp .form__text.first{
+    float: left;
+    width: 305px;
+    height: 56px;
+    font-style: normal;
+}
+.canhelp .form__text.first span{
+    font-style: italic;
+}
+
+.canhelp .form__text.second{
+    float: left;
+    width: 171px;
+    height: 57px;
+    font-style: normal;
+}
+
+.footer{
+    
+    border-radius: 30px 30px 0 0;
+    height: 447px;
+    background: #222;
+    margin-top: -30px;
+    padding: 52px;
+}
+.footer__logolink{
+    float: left;
+}
+
+.emailcallback{
+    float: right;
+    margin-top: 10px;
+}
+.emailcallback p{
+    float: left;
+    width: 149px;
+    height: 28px;
+
+    font: 300 12px "Roboto", sans-serif;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-right: 21px;
+    margin-top: 7px;
+} 
+.input__email{
+    float: right;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+    border-radius: 30px;
+    width: 240px;
+    height: 40px;
+
+    font: 300 14px "Roboto", sans-serif;
+    color: #737373;
+}
+
+.input__email input{
+    float: left;
+    margin-left: 9px;
+    margin-top: 7px;
+    width: 150px; 
+    height: 24px;
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #737373;
+}
+.input__email input::placeholder{
+    color: #737373;
+}
+.input__email input:focus{
+    outline: none;
+}
+.input__svg__first{
+    float: left;
+    margin-top: 7px;
+    margin-left: 17px;
+}
+.input__svg__second{
+    float: right;
+    margin-top: 13px;
+    margin-right: 17px;
+}
+.footer .lines{
+    height: 111px;
+    border: 1px solid #494949;
+    border-left: none;
+    border-right: none;
+
+    margin-top: 58px;
+
+}
+.lines__options{
+    width: 925px;
+    height: 14px;
+
+    margin: 0 auto;
+    margin-top: 47px;
+}
+.footer__links{
+
+    font: 300 12px "Roboto", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+
+    float: left;
+    margin-right: 58px;
+}
+.footer__links:last-child{
+    margin-right: 0px;
+}
+
+.footer__social__options{
+    width: 407px;
+    height: 32px;
+    margin: 0 auto;
+}
+.footer__social__links{
+    float: left;
+    margin-top: 10px;
+    margin-right: 43px;
+    margin-top: 42px;
+
+
+}
+.footer__social__links:last-child{
+    margin-right: 0px;
 }

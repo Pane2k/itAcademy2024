@@ -1,0 +1,14 @@
+@media screen and (max-width: 900px)
+{
+    .menu{
+        float: none;
+        width: 100%;
+    }
+    .banner{
+        float: left;
+    }
+    .content{
+        margin-left: 200px;
+        margin-right: 0px;
+    }
+}

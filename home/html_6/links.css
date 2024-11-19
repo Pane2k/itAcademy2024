@@ -1,0 +1,80 @@
+a{
+    color: green;
+}
+.first a{
+
+    padding: 5px;
+    border-right: red 2px solid; 
+}
+.first a:last-child{
+    border-right: none;
+}
+
+
+.second::after{
+    content: "a";
+    color: rgba(0, 0, 0, 0);
+    clear: both;
+
+}
+.second a{
+    float: left;
+    margin-left: 2.5px;
+    
+}
+.second a:first-child{
+    margin-left: 5px;
+
+}
+.second div{
+    float: left;
+    width: 2px;
+    height: 20px;
+    margin: 0px 5px 0px 6px;
+    background-color: red;
+}
+
+.third a{
+    padding: 5px;
+    margin-right: -13px;
+}
+.third a::after{
+    content: "|";
+    display: inline-block;
+    color:red;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+}
+.third a:last-child::after{
+    content: "";
+}
+
+.fourth a{
+    padding: 5px;
+    margin-right: -13px;
+}
+.fourth a:first-child::before{
+    content: "";
+}
+.fourth a::before{
+    content: "|";
+    display: inline-block;
+    color:red;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.fiveth a{
+    padding: 5px;
+}
+.fiveth a::after{
+    content: url("line.webp");
+    position: relative;
+    top: 8px;
+    left: 7px;
+}
+.fiveth a:last-child::after{
+    content: "";
+}

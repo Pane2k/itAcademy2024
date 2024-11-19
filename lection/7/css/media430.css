@@ -1,0 +1,17 @@
+@media screen and (max-width: 430px) {
+    .menu{
+        height: 100px;
+    }
+    .banner{
+        float:none;
+        width: 100%;
+        height: 100px;
+        position: sticky;
+        top:0;
+    }
+    .content{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    
+}

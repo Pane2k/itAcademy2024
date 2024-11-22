@@ -47,7 +47,7 @@ div.homeworks>div{
     justify-content: space-between;
 
     align-items: stretch;
-    background-color: #ccc;
+    background: linear-gradient(135deg, #ccc 0%, #eee 100%);
 
 
 
@@ -59,10 +59,11 @@ div.homeworks>div{
     padding: 10px;
     width: 300px;
     margin: 5px;
-    transition: 0.1s;
+    transition: 0.3s;
 }
 .homeworks>div:hover{
-    background-color: #bbb;
+    filter: brightness(1.1);
+    transform: scale(1.01);
 }
 h3.homeworks{
     margin: 0;

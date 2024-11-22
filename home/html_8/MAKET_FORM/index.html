@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        fieldset {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        fieldset>div {
+            margin-left: 3px;
+            margin-top: 10px;
+        }
+
+
+        fieldset div p {
+            float: left;
+
+        }
+
+        .nameof label div, .whatis div ,.radiobuttons div, .comments div {
+            padding-left: 200px;
+        }
+
+        .nameof input, textarea {
+
+            width: 100%;
+
+        }
+
+
+        .whatis select {
+            width: 50%;
+        }
+
+
+        .radiobuttons label {
+            margin-right: 10px;
+        }
+
+        .radiobuttons input {
+            margin-right: 3px;
+        }
+        .text p{
+          float: none;
+                
+        }
+        fieldset>div>div {
+            margin-top: 3px;
+        }
+
+        @media screen and (max-width: 605px) {
+            body{
+                font-size: 1.2em;
+            }
+            fieldset{
+                max-width: 605px;
+            }
+            fieldset div p {
+                float: none;
+            }
+            .whatis select{
+                width: 100%;
+            }
+            .nameof label div, .whatis div ,.radiobuttons div, .comments div {
+                padding: 0px;
+            }
+            .radiobuttons label{
+                display: block;
+            }
+            .comments p{
+                float: left;
+            }
+            
+            textarea{
+                height: 300px;
+                max-width: 100%;
+            }
+            input[type="submit"]
+            {
+                width: 100%;
+                height: 50px; 
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form action="http://fe.it-academy.by/TestForm.php" method="get">
+        <fieldset>
+            <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
+            <div>
+                <div class="nameof">
+                    <label>
+                        <p>Название статьи:</p>
+                        <div>
+                            <input type="text" name="name" id="" value="Default">
+                        </div>
+                    </label>
+                </div>
+                <div class="whatis">
+                    <label>
+                        <p>Рубрика:</p>
+                        <div>
+                            <select name="whatisit">
+                                <option value="1">компьютерная техника</option>
+                                <option value="2">графика и дизайн</option>
+                                <option value="3">программирование</option>
+                            </select>
+                        </div>
+                    </label>
+
+                </div>
+                <div class="radiobuttons">
+                    <p>Публикация: </p>
+                    <div>
+                        <label><input type="radio" name="publish" value="onwebsite" checked>на сайте </label>
+                        <label><input type="radio" name="publish" value="onpapaer">в журнале</label>
+                        <label><input type="radio" name="publish" value="onboth">на сайте и в журнале</label>
+                    </div>
+                </div>
+                <div class="comments">
+                    <label>
+                        <p>Разрешить комментарии:</p>
+                        <div>
+                            <input type="checkbox" name="cancomment" checked>
+                        </div>
+                    </label>
+                </div>
+                <div class="text">
+                    <p>Текст статьи: </p>
+                    <textarea name="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum rerum fugit error blanditiis, nesciunt quibusdam nobis eum iure non ad perspiciatis. Dolorum tempora expedita officiis ex tempore provident aliquam eum!
+                    </textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Опубликовать">
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

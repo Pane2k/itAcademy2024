@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            position: absolute;
+            
+            top:50px;
+            left: 50px;
+        }
+        div:nth-child(1){
+            background-image: url("img/biohazard.png");
+          
+            width: 200px;
+            height: 200px;
+           
+            top: 50px;
+            left: 50px;
+        }
+        div:nth-child(2){
+            background-image: url("img/Man-and-woman.png");
+          
+            width: 200px;
+            height: 223px;
+            top: 50px;
+            left: 250px;
+        }
+        div:nth-child(3){
+            background-image: url("img/Yin_and_Yang.png");
+          
+            width: 200px;
+            height: 200px;
+            top: 250px;
+            left: 150px;
+        }
+        div:nth-child(4){
+            background-image: url("img/No_smoking.png");
+          
+            width: 256px;
+            height: 256px;
+            top: 110px;
+            left: 120px;
+        }
+        div:hover{
+            z-index: 1;
+        }
+        div:hover::before{
+            position: fixed;
+            display: block;
+            width: 100%;
+            top: 10px;
+            left: 10px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        div:nth-child(1):hover::before{
+            content: "РАДИАЦИЯ НЕВИДИМА";
+        }
+        div:nth-child(2):hover::before{
+            content: "ДЕРЖИТЕСЬ ВМЕСТЕ ПОКА ЕСТЬ ВРЕМЯ";
+        }
+        div:nth-child(3):hover::before{
+            content: "ЗЛО ДОПОЛНЯЕТ ДОБРО. БЕЗ ЗЛА НЕБЫЛО БЫ И ДОБРА";
+        }
+        div:nth-child(4):hover::before{
+            content: "КУРЕНИЕ УБИВАЕТ - РЕШИЛ КУПИТЬ СИГАРЕТ, ПЕРЕШЕЛ ДОРОГУ В НЕПОЛОЖЕННОМ МЕСТЕ И МАШИНА СБИЛА";
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

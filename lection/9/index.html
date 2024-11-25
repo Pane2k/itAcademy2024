@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            display: flex;
+            
+            justify-content:space-between;
+            background-color: brown;
+        
+            
+        }
+        header div{
+            flex-basis: 100px;
+            background-color: red;
+            margin: 3px;
+            text-align: center;
+        }
+
+        .mainframe{
+            display: flex;
+            justify-content:space-between;
+        }
+        .menu{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-basis: 150px;
+        }
+        .menu div{
+            display: flex;
+            height: 150px;
+            background-color: rebeccapurple;
+            border: 1px black solid;
+            color: white;
+            align-items: center;
+            justify-content: center;
+        }
+        .content{
+            display: flex;
+            background-color: aquamarine;
+            flex-grow: 1;
+            justify-content: space-between;
+            padding: 10px;
+            align-items: center;
+            
+        }
+        .content div{
+            display: flex;
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            color: white;
+            align-items: center;
+            justify-content: center;
+        }
+        .content div:first-child{
+            align-self: flex-start;
+        }
+        .content div:nth-child(2){
+            position: relative;
+            bottom: 55px;
+        }
+        .content div:nth-child(3){
+            position: relative;
+            top: 55px;
+        }
+
+        .content div:last-child{
+            align-self: flex-end;
+        }
+
+
+        .banner{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 150px;
+            background-color: deeppink;
+        }
+        .banner div{
+            background-color: yellow;
+            height: 100px;
+        }
+
+        footer{
+            display: flex;
+            justify-content: space-around;
+            background-color: darkslateblue;
+        }
+        footer div{
+            display: flex;
+            background-color: chocolate;
+            flex-basis: 100px;
+            text-align: center;
+            align-items: center;
+              justify-content: center;
+        }
+
+        @media screen and (max-width: 720px) {
+            header{
+                flex-direction: column;
+            }
+            header div{
+                flex-basis: 30px;
+            }
+
+            .mainframe{
+                flex-direction: column;
+            }
+            .menu{
+                height: 30px;
+            }
+            .content{
+                flex-wrap:wrap;
+                justify-content: space-between;
+                padding: 30px 10px;
+            }
+            .content div{
+                width: 300px;
+                height: 100px;
+                align-self: center;
+                margin: 5px;
+            }
+            .content div:nth-child(2){
+                position: static;
+            }
+            .content div:nth-child(3){
+                position: static;
+            }
+            .banner{
+                padding: 10px;
+                width: auto;
+                align-content: center;
+            }
+            .banner div{
+                margin-bottom: 10px;
+            }
+            .banner div:last-child{
+                margin: 0;
+            }
+
+            footer{
+                flex-direction: column;
+               
+            }
+            footer div{
+                border: 1px black solid;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </header>
+    <section>
+        <div class="mainframe">
+            <div class="menu">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+            <div class="content">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+            <div class="banner">
+                <div>NOT A AD</div>
+                <div>NOT A AD</div>
+                <div>NOT A AD</div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </footer>
+</body>
+</html>

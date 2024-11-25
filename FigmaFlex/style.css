@@ -1,0 +1,257 @@
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Inter", sans-serif;
+    --third-family: "Open Sans", sans-serif;
+    --font3: "Urbanist", sans-serif;
+    --font4: "Cuprum", sans-serif;
+    --font5: "Roboto", sans-serif;
+    --font6: "Roboto Mono", sans-serif;
+    --font7: "Tektur", sans-serif;
+    --font8: "Unbounded", sans-serif;
+    --font9: "IBM Plex Sans", sans-serif;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 123%;
+    color: #fff;
+    font-family: var(--font-family);
+}
+h2{
+    font-weight: 700;
+    font-size: 45px;
+
+    text-transform: capitalize;
+}
+h3{
+    font-weight: 700;
+    font-size: 28px;
+
+}
+body{
+    background: #242424;
+    
+}
+body>div{
+    width: 100%;
+
+}
+
+
+.container{
+    margin: 0 auto; 
+    width: 1440px;
+    display: flex ;
+    align-self: center;
+
+}
+
+
+
+
+.block__first{
+    height: 1024px;
+}
+
+.block__second{
+    height: 903px;
+}
+.block__third{
+    height: 748px;
+}
+.block__four{
+    height: 516px;
+}
+.block__five{
+    height: 1467px;
+}
+.block__seven{
+    height: 896px;
+}
+.block__eight{
+    height: 954px;
+}
+.block__nine{
+    height: 365px;
+    margin-bottom: 18px;
+}
+.block__ten{
+    height: 449px;
+}
+.footer{
+    height: 491px;
+}
+
+
+.header{
+    position: absolute;
+    top: 0px;
+
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 0px;
+    height: 96px;
+
+
+}
+.header .container{
+    justify-content: space-between;
+}
+.header__items__left{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 8px 12px;
+    width: 277px;
+    height: 56px;
+
+}
+.header__items__left hr{
+    height: 40px;
+    margin: 0px 17px;
+}
+.header__item__discription{
+    font-family: var(--font4);
+    font-weight: 400;
+    font-size: 13px;
+    width: 129px;
+
+}
+
+.header__items__Lcenter ul{
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+.header__items__Lcenter ul li{
+    list-style:none;
+    height: 44px;
+
+    padding: 15px 24px;
+  
+
+}
+.header__items__Lcenter ul li a{
+    font-family: var(--font4);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.header__items__Rcenter{
+    border-radius: 10px;
+    padding: 8px 12px;
+    width: 136px;
+    height: 56px;
+}
+
+.header__yandex{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.header__yandex__stars{
+
+}
+
+.button__socialmedia__callback{
+    border-radius: 10px;
+
+    width: 187px;
+    height: 56px;
+    background: #f8b806;
+
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 16px;
+
+    color: #242424;
+}
+.header__items__right{
+    width: 314px;
+
+}
+
+
+.header__items__right{
+    display: flex;
+    height: 56px;
+    justify-content: space-between;
+}
+.header__items__right a{
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+.header__socialmedia{
+    display: flex;
+    align-self: center;
+    padding: 12px;
+    justify-content: space-between;
+}
+.header__socialmedia hr{
+    margin: 0px 9px;
+}
+
+.block__first{
+    background: url("src/FirstBlockBg_apacit.png") ,
+        url("src/FirstBlockBg.png"); 
+
+}
+.block__first .container{
+    justify-content: space-between;
+    gap: 71px;
+}
+.first__mainarea{
+    height: 506px;
+    width: 100%;
+    margin-top: 300px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.first__mainarea__left{
+    width: 655px;
+    height: 493px;
+}
+.first__mainarea__text{
+    margin-bottom: 32px;
+}
+
+.first__text__main{
+    font-weight: 700;
+    font-size: 72px;
+
+    text-transform: uppercase;
+
+}
+    
+.first__text__additional{
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 123%;
+    color: #fff;
+}
+.button__viewPlan{
+    border: 1px solid #979797;
+    border-radius: 16px;
+
+    width: 260px;
+    height: 60px;
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #242424;
+
+    background: #fff;
+}
+
+
+.button__viewPlan:hover{
+    background: #eee;
+}
+

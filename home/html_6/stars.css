@@ -1,0 +1,17 @@
+.rating:hover .star{
+    background-image: url('star1.png');
+
+}
+.rating .star{
+    float: left;
+    display: block;
+    width: 76px;
+    height: 78px;
+    background-image: url('star0.png');
+}
+
+.rating .star:hover ~ .star {
+    
+    background-image: url('star0.png');
+
+}

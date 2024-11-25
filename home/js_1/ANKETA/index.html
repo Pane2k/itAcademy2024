@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {}
+
+        div.wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 10px;
+
+        }
+
+        div.wrap button {
+            font-family: 'Courier New', Courier, monospace;
+            width: 200px;
+            height: 100px;
+            background-color: #dddd00;
+            border: none;
+            border-radius: 10px;
+            font-size: large;
+            color: black;
+            border: #aaaa00 1px solid;
+            transition: 0.2s;
+        }
+
+        div.wrap button:hover {
+            background-color: #efef00;
+        }
+
+        #output{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <button onclick="showIfAlert()">Анкета на IF</button>
+        <button onclick="showTernarAlert()">Анкета на тернарных оператарах</button>
+    </div>
+    <div id="output"></div>
+
+    <script>
+        const NAME_OUTPUT = "ваше ФИО: ";
+        const AGE_OUTPUT = "ваш возраст: ";
+        const AGE_IN_DAYS_OUTPUT = "ваш возраст в днях: ";
+        const AGE_IN_FIVE_YEARS_OUTPUT = "ваш возраст в 5 годах: ";
+
+        const USER_SEX_OUTPUT = "ваш пол: ";
+        const DO_USER_PENSIONER = "вы пенсионер: ";
+
+        const YEARS_FOR_PENSIONER = 60;
+
+        function showIfAlert() {
+            // -- Vars
+
+            let lastName = prompt("Введите вашу фамилию", "Иванов");
+            let firstName = prompt("Введите ваше имя", "Иван");
+            let fatherName = prompt("Введите ваше отчество", "Иванович");;
+
+
+            let age;
+            while (!Number.isInteger(age)) {
+                age = parseInt(prompt("Введите ваш возраст", 20));
+            }
+
+            let sex = prompt("Введите ваш пол", "мужской");
+
+            // -- Math
+
+            let agesInDays = age * 365.25;
+            agesInDays = Math.round(agesInDays);
+            let agesInFiveYears = age * 5;
+            let isUserPensioner;
+
+            if (age >= YEARS_FOR_PENSIONER) {
+                isUserPensioner = "да";
+            }
+            else {
+                isUserPensioner = "нет";
+            }
+
+
+
+            alert(
+                NAME_OUTPUT + lastName + " " + firstName + " " + fatherName + "\n" +
+                AGE_OUTPUT + age + "\n" +
+                AGE_IN_DAYS_OUTPUT + agesInDays + "\n" +
+                AGE_IN_FIVE_YEARS_OUTPUT + agesInFiveYears + "\n" +
+                USER_SEX_OUTPUT + sex + "\n" +
+                DO_USER_PENSIONER + isUserPensioner);
+
+            // -- To HTML 
+            document.getElementById("output").innerHTML =
+                NAME_OUTPUT + lastName + " " + firstName + " " + fatherName + "<br>" +
+                AGE_OUTPUT + age + "<br>" +
+                AGE_IN_DAYS_OUTPUT + agesInDays + "<br>" +
+                AGE_IN_FIVE_YEARS_OUTPUT + agesInFiveYears + "<br>" +
+                USER_SEX_OUTPUT + sex + "<br>" +
+                DO_USER_PENSIONER + isUserPensioner;
+
+        }
+        function showTernarAlert() {
+            // -- Vars
+
+            let lastName = prompt("Введите вашу фамилию", "Иванов");
+            let firstName = prompt("Введите ваше имя", "Иван");
+            let fatherName = prompt("Введите ваше отчество", "Иванович");;
+
+
+            let age;
+            while (!Number.isInteger(age)) {
+                age = parseInt(prompt("Введите ваш возраст", 20));
+            }
+
+            let sex = prompt("Введите ваш пол", "мужской");
+
+            // -- Math
+
+            let agesInDays = age * 365.25;
+            agesInDays = Math.round(agesInDays);
+            let agesInFiveYears = age * 5;
+            let isUserPensioner = age >= YEARS_FOR_PENSIONER ? "да" : "нет";
+
+
+
+
+
+            alert(
+                NAME_OUTPUT + lastName + " " + firstName + " " + fatherName + "\n" +
+                AGE_OUTPUT + age + "\n" +
+                AGE_IN_DAYS_OUTPUT + agesInDays + "\n" +
+                AGE_IN_FIVE_YEARS_OUTPUT + agesInFiveYears + "\n" +
+                USER_SEX_OUTPUT + sex + "\n" +
+                DO_USER_PENSIONER + isUserPensioner);
+
+            // -- To HTML 
+
+            document.getElementById("output").innerHTML =
+                NAME_OUTPUT + lastName + " " + firstName + " " + fatherName + "<br>" +
+                AGE_OUTPUT + age + "<br>" +
+                AGE_IN_DAYS_OUTPUT + agesInDays + "<br>" +
+                AGE_IN_FIVE_YEARS_OUTPUT + agesInFiveYears + "<br>" +
+                USER_SEX_OUTPUT + sex + "<br>" +
+                DO_USER_PENSIONER + isUserPensioner;
+
+
+        }
+    </script>
+</body>
+
+</html>

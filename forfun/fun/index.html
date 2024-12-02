@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        section{
+            width: 100%;
+            height: 700px;
+
+        }
+        aside{
+            width: 100px;
+            overflow: hidden;
+
+        }
+        header{
+
+        }
+        footer{
+
+        }
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+        menu{
+            display: flex;
+            flex-direction: column;
+            
+            justify-content: space-between;
+            height: 100%;
+
+            margin:0;
+            padding:0;
+        }
+        menu button{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background-color: transparent;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            color: black;
+            cursor: pointer;
+        }
+        menu button:hover{
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>HEAD</header>
+    <div class="main">
+        <section>
+            <iframe id="frame" src="" frameborder="0" ></iframe>
+        </section>
+        <aside>
+            <menu>
+                <command>
+                    <button onclick="" data-src="../../index.html">INDEX</button>
+                </command>
+                <command>
+                    <button onclick="" data-src="../../home/html_1/base/DIARY.html">HTML1</button>
+                </command>
+                <command>
+                    <button onclick="" data-src="../../home/html_2/childbook/childbook.html">HTML2</button>
+                </command>
+                <command>
+                    <button onclick="" data-src="../../home/html_3/font_gwf/dub.html">HTML3</button>
+                </command>
+                <command>
+                    <button onclick="" data-src="../../home/html_4/DIV_FRAME.html">HTML4</button>
+                </command>
+            </menu>
+        </aside>
+        
+    </div>
+    <footer>Footer</footer>
+    
+    <script>
+        const frame = document.getElementById('frame');
+        const menu = document.querySelector('menu');
+        const buttons = menu.querySelectorAll('button');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                frame.src = button.getAttribute('data-src');
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pic {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        picture::after {
+            content: "Это фото собаки";
+            display: flex;
+            justify-content: center;
+            
+            font-size: 60px
+
+        }
+
+        @media (max-width: 1024px) {
+            picture::after {
+                content: "Это фото большой собаки";
+            }
+        }
+
+        @media (max-width: 768px) {
+            picture::after {
+                content: "Это фото кота";
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pic">
+        <picture>
+            <source srcset="img/img1.jpg" media="(min-width: 1024px)" width="1000px" alt="small dog">
+            <source srcset="img/img2.jpg" media="(min-width: 768px)" width="750px" alt="big dog">
+            <img src="img/img3.jpg" alt="cat">
+        </picture>
+    </div>
+
+
+
+</body>
+
+</html>

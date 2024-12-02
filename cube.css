@@ -28,6 +28,7 @@
     
     animation: rotate 15s linear infinite; 
 }
+
 @keyframes rotate{
     from{
         transform: rotateY(0deg) rotateX(0deg);
@@ -39,7 +40,10 @@
 
 div.cube>div{
     position: absolute;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     width: 100px;
     height: 100px;
     background-color: red;

@@ -71,7 +71,7 @@
                 <div class="header__item__discription">Продажа и покупка недвижимости в Минске</div>
             </div>
             <div class="header__items__Lcenter">
-                <ul>
+                <ul id="menu">
                     <li>
                         <a href="#!">Продать объект</a>
                     </li>
@@ -138,6 +138,62 @@
                 </div>
                 <button class="button__socialmedia__callback button__class">Перезвоните мне</button>
             </div>
+            <div id="burger" onclick="burger(this.id)">
+                <div id="burger__img"></div>
+            </div>
+            <div class="burger__menu__wrap" id="burger__menu__wrap">
+                <div id="burger__menu">
+                    <ul id="menu">
+                        <li>
+                            <a href="#!">Продать объект</a>
+                        </li>
+                        <li>
+                            <a href="#!">Купить обьект</a>
+                        </li>
+                        <li>
+                            <a href="#!">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#!">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                let burgerIsOpen = false;
+                function burger(clicked_id) {
+                    burgerIsOpen = !burgerIsOpen;
+                    if (burgerIsOpen == false) {
+
+                        console.log(burgerIsOpen);
+                        document.getElementById("burger__img").style.background = "url('src/svg/burger.svg') no-repeat center";
+                        document.getElementById("burger__img").style.backgroundSize = "contain";
+                        document.getElementById("burger__menu__wrap").style.animation = ""
+                    
+                        setTimeout(() => {
+                            document.getElementById("burger__menu__wrap").style.animation = "showmenu 0.5s ease-in-out reverse both";
+
+                          }, 0);
+                        document.getElementsByTagName("body")[0].style.overflow = "auto";
+
+
+
+                    } else {
+                        console.log(burgerIsOpen);
+                        document.getElementById("burger__img").style.background = "url('src/svg/times.svg') no-repeat center";
+                        document.getElementById("burger__img").style.backgroundSize = "contain";
+                        document.getElementById("burger__menu__wrap").style.animation = ""
+
+                        setTimeout(() => {
+                            document.getElementById("burger__menu__wrap").style.animation = "showmenu 0.5s ease-in-out  both";
+
+                          }, 0);
+                          document.getElementsByTagName("body")[0].style.overflow = "hidden";
+
+                    }
+
+                }
+            </script>
         </div>
     </div>
     <div class="block__first">
@@ -902,7 +958,8 @@
                             <li class="left">
                                 <svg width="12" height="20" viewBox="0 0 12 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10 18L2 10L10 2" stroke="white" stroke-width="2" stroke-linecap="square" />
+                                    <path d="M10 18L2 10L10 2" stroke="white" stroke-width="2"
+                                        stroke-linecap="square" />
                                 </svg>
                             </li>
                             <li class="right">
@@ -912,7 +969,7 @@
                                 </svg>
                             </li>
                         </ul>
-    
+
                     </div>
                     <div class="block__eight__right__adress">
                         <p>ул. Нововиленская 47 , 3-комн., 70 м<sup>2</sup></p>
@@ -920,7 +977,7 @@
                             Оставить заяавку</button>
                     </div>
                 </div>
-                
+
             </div>
         </div>
 
@@ -986,13 +1043,7 @@
     </div>
     <div class="block__ten">
         <div style="position:relative;overflow:hidden;">
-            <a href="https://yandex.by/maps/org/rezultativnaya_nedvizhimost/86871463828/?utm_medium=mapframe&utm_source=maps"
-                style="color:#eee;font-size:12px;position:absolute;top:0px;">Результативная недвижимость</a><a
-                href="https://yandex.by/maps/157/minsk/category/real_estate_agency/184107503/?utm_medium=mapframe&utm_source=maps"
-                style="color:#eee;font-size:12px;position:absolute;top:14px;">Агентство недвижимости в Минске</a><a
-                href="https://yandex.by/maps/157/minsk/category/sale_and_lease_of_commercial_real_estate/184107521/?utm_medium=mapframe&utm_source=maps"
-                style="color:#eee;font-size:12px;position:absolute;top:28px;">Продажа и аренда коммерческой недвижимости
-                в Минске</a>
+
             <iframe
                 src="https://yandex.by/map-widget/v1/?ll=27.552985%2C53.886571&mode=search&oid=86871463828&ol=biz&sctx=ZAAAAAgBEAAaKAoSCezf9ZmzkjtAEQN64c6F80pAEhIJl3SUg9kEwj8RO6sF9phIoT8iBgABAgMEBSgKOABA%2FJ4GSAFqAnVhnQHNzMw9oAEAqAEAvQHnYI7TwgEGlK%2FFz8MCggINcmVzdWx0IGVzdGF0ZYoCAJICAJoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=27.552985%2C53.886571&sspn=0.323412%2C0.077584&text=result%20estate&z=13.14"
                 frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
@@ -1050,6 +1101,8 @@
 
 
         }
+
+
 
     </script>
 </body>

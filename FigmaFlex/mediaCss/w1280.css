@@ -1,39 +1,109 @@
 @media (max-width: 1280px) {
-  .header{
-    height: auto;
-  }
-  .header__items__Lcenter ul li{
-    display: flex;
-    justify-content: center;
+    .header {
+        height: auto;
+    }
 
-  }
-  .header__items__Lcenter{
-    width: 405px;
-  }
-  .header .container{
-    align-items: center;
-  }
-  .about__park{
-    flex-direction:column-reverse;
-    align-items: center;
-  }
-  .about__park__text{
-    align-items: center;
-  }
-  .about__park__text__p{
-    width: 500px;
-    text-align: center;
-  }
-  .about__park__contacts__phone{
-    text-align: center;
-  }
-  .six__wraper{
-    flex-direction: column;
-    align-items: center;
-  }
-  .six__right.text__block{
-    width: 1000px; 
-    text-align: center;
+    .header__items__Lcenter ul li {
+        display: flex;
+        justify-content: center;
 
-  }
+    }
+
+    .header__items__Lcenter {
+        width: 405px;
+    }
+
+    .header .container {
+        align-items: center;
+    }
+
+    .about__park {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 0;
+    }
+    .block__eight__left h3{
+        font-size: 5vw;
+
+    }
+    .about__park__text {
+        align-items: center;
+    }
+
+    .about__park__text__p {
+        width: 500px;
+        text-align: center;
+    }
+
+    .about__park__contacts__phone {
+        text-align: center;
+    }
+
+    .six__wraper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .six__right.text__block {
+        width: 1000px;
+        text-align: center;
+
+    }
+
+    .footer__right ul li {
+        max-width: 250px;
+
+
+
+    }
+
+    .block__text h2 {
+        text-align: center;
+    }
+    .block__eight__left h2{
+        margin: 0;
+    }
+
+    .block__seven__company {
+        margin: 70px 0px;
+    }
+
+    .block__first {
+        padding-top: 350px;
+
+    }
+    .header {
+        padding-left: var(--padding-block);
+        padding-right: var(--padding-block);
+    }
+    .header__socialmedia{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .header__items__right{
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .header__socialmedia hr{
+        width: 100%;
+    }
+    .block__nine__get form{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        
+        grid-template-columns: 2fr 1fr;
+        
+        gap: 10px;
+
+
+    }
+    .button__form{
+            grid-column: 1/3;
+       
+    }
+    .block__seven .container{
+        margin-bottom: 30px;
+    }
 }

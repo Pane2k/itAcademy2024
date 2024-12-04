@@ -1,0 +1,21 @@
+@media screen and (max-width: 430px) {
+    
+    
+    .block__second .block__text{
+        height: 75px;
+    }
+    .block__cards{
+        grid-template-columns: 1fr;
+        flex-basis: 200px;
+        height: auto;
+        
+    }
+    .block__cards .block__card__item{
+        height: 210px;
+    }
+    .block__nine__get form{
+        display: grid;
+        justify-content: center;
+    }
+
+}

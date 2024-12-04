@@ -1,4 +1,7 @@
 @media screen and (max-width: 1460px) {
+    :root{
+        --padding-block: 30px;
+    }
     .first__mainarea{
         flex-direction: column;
         align-items: center;
@@ -37,5 +40,64 @@
         flex-direction: column;
         align-items: center;
     }
+    .footer .container{
+        padding-left: var(--padding-block);
+        padding-right: var(--padding-block);
+    }
+    .block__nine{
+        margin-top: 72px;
+        
+        padding-left: var(--padding-block);
+        padding-right: var(--padding-block);
+    }
+    .block__six__bg{
+        padding-left: var(--padding-block);
+        padding-right: var(--padding-block);
+    }
+    .block__seven{
+        padding-left: var(--padding-block);
+        padding-right: var(--padding-block);
+    }
+    .block__four{
+        padding-left: var(--padding-block);
+        padding-right: var(--padding-block);
+    }
     
+    .block__seven__company__right img{
+        width: 50vw;
+    }
+
+    .first__mainarea__video img{
+        width: 655px;
+    }
+    .block__find__form>div{
+        width: 100%;
+    }
+    .block__find__form{
+        padding-left: var(--padding-block);
+        padding-right: var(--padding-block);
+    }
+    .find__form__buttons input{
+        width: 100%;
+
+    }
+    .block__find__form__left{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    .block__find__form__left__bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .block__find__mainarea{
+        padding-top: 0;
+    }
+    .block__eight__left{
+        padding-left: var(--padding-block);
+        padding-right: var(--padding-block);
+    }
 }

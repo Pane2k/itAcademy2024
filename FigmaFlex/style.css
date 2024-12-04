@@ -101,6 +101,12 @@ body>div{
 
 
 }
+#burger{
+    display: none;
+}
+#burger__menu{
+    display: none;
+}
 .header .container{
     justify-content: space-between;
     flex-direction: row;  
@@ -429,7 +435,8 @@ body>div{
 
 .find__form__radiobuttons{
     display: flex;
-
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 16px;
     counter-reset: form-radiobuttons;
 }
@@ -1265,11 +1272,14 @@ font-size: 18px;
     gap: 8px;
 }
 .block__nine__personalData label, .personalData__link{
+    
     font-weight: 400;
     font-size: 22px;
     color: red;
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+
 
     align-items: center;
     gap: 20px;
@@ -1284,7 +1294,7 @@ font-size: 18px;
 .personalData__link{
     color: #f8b806;
     text-decoration: none;
-    display: inline;
+    gap: 0;
 }
 .personalData__link:hover{
     text-decoration: underline;

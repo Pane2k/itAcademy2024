@@ -1,0 +1,38 @@
+@media screen and (max-width: 520px) {
+    .header__items__Rcenter{
+        display: none;
+    }
+    .header .container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .block__nine__callus button{
+        font-size: 11px;
+
+    }
+    .footer__top .container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .burger__menu__wrap{
+        width: 100%;
+        
+
+    }
+    #burger__menu{
+        border-radius: 0px;
+    }
+    .find__form__buttons{
+        flex-direction: column-reverse;
+    }
+    .about__park__text__p{
+        width: 100%;
+    }
+    .about__park__text__p p{
+        font-size: 16px;
+        
+    }
+    .about__park__contacts__address{
+        font-size: 16px;
+    }
+    
+}

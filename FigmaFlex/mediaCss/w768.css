@@ -1,0 +1,84 @@
+@media screen and (max-width: 768px) {
+    .block__nine__get form{
+        grid-template-rows: 1fr 1fr 1fr; 
+        grid-template-columns: 1fr;
+    }
+    .button__form{
+        grid-column: 1;
+    }
+    .block__nine__get form label, .block__nine__get form label input{
+        width: auto;
+    }
+    .block__nine__personalData{
+        font-size: 16px;
+    }
+    .block__nine__personalData label{
+        font-size: 2vw;
+    }
+    .personalData__link{
+        font-size: 2vw;
+
+    }
+    .block__find__form__left__bottom {
+        overflow: hidden;
+    }
+    .block__find__form__left__bottom img{
+        width: 100%;
+        
+    }
+    .block__seven__company{
+        flex-direction: column;
+        gap: 120px;
+        margin-top: 100px;
+    }
+    .block__seven__company__right img {
+        width: 100%;
+    }
+    .first__mainarea__video img{
+        width: 100%;
+    }
+    .first__mainarea__left {
+        width: 100%;
+
+    }
+    .first__text__main{
+        font-size: 35px;
+    
+    }
+    .block__first {
+        padding-left: var(--padding-block);
+        padding-right: var(--padding-block);
+        padding-top: 150px;
+    }
+    .first__mainarea{
+        height: auto;
+        gap: 70px;
+    }
+    .first__mainarea__left{
+        height: auto;
+        
+    }
+    #plan_main{
+        width: 100%;
+    }
+    .six__left__top{
+        width: 100%;
+       
+    }
+    .six__left{
+        width: 100%;
+    }
+    .block__eight__video img{
+        width: 100%;
+    }
+    .block__eight__video{
+        width: 100%;
+        height: auto;
+    }
+    .about__park__right img{
+        width: 100%;
+    }
+    .block__seven__company{
+        margin-bottom: 0;
+    }
+}

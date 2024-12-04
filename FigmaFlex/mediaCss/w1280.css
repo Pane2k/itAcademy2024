@@ -1,0 +1,39 @@
+@media (max-width: 1280px) {
+  .header{
+    height: auto;
+  }
+  .header__items__Lcenter ul li{
+    display: flex;
+    justify-content: center;
+
+  }
+  .header__items__Lcenter{
+    width: 405px;
+  }
+  .header .container{
+    align-items: center;
+  }
+  .about__park{
+    flex-direction:column-reverse;
+    align-items: center;
+  }
+  .about__park__text{
+    align-items: center;
+  }
+  .about__park__text__p{
+    width: 500px;
+    text-align: center;
+  }
+  .about__park__contacts__phone{
+    text-align: center;
+  }
+  .six__wraper{
+    flex-direction: column;
+    align-items: center;
+  }
+  .six__right.text__block{
+    width: 1000px; 
+    text-align: center;
+
+  }
+}

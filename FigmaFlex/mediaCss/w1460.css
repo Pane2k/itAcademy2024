@@ -1,0 +1,41 @@
+@media screen and (max-width: 1460px) {
+    .first__mainarea{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .block__eight{
+        flex-direction: column;
+
+    }
+    .block__eight__right{
+        width: 100%;
+        position: relative;
+        justify-content: center;
+            align-items: center;
+        margin-top: 30px;
+    }
+    .block__eight__left{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .wrap__complexAdvantages{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+    .block__find__h2 {
+        text-align: center;
+    }
+    .block__find__form{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}

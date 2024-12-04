@@ -9,6 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tektur:wght@400..900&family=Unbounded:wght@200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaCss/main.css">
 
 
 </head>
@@ -842,13 +843,13 @@
                     </p>
                 </div>
             </div>
-           
+
         </div>
         <div class="block__eight__right">
             <div class="block__eight__imgs">
                 <div class="top__imgs">
                     <div class="img__small img__slider">
-                        <ul>
+                        <ul class="imgs__sl">
                             <li>
                                 <img src="src/IMGS/s_1.png" alt="">
                             </li>
@@ -864,7 +865,7 @@
                         </ul>
                     </div>
                     <div class="img__medium img__slider">
-                        <ul>
+                        <ul class="imgs__sl">
                             <li>
                                 <img src="src/IMGS/m_1.png" alt="">
                             </li>
@@ -881,7 +882,8 @@
                     </div>
                 </div>
                 <div class="img__large img__slider">
-                    <ul>
+
+                    <ul class="imgs__sl">
                         <li>
                             <img src="src/IMGS/l_1.png" alt="">
                         </li>
@@ -895,39 +897,94 @@
                             <img src="src/IMGS/l_1.png" alt="">
                         </li>
                     </ul>
+                    <div class="block__eight__right__nav">
+                        <ul>
+                            <li class="left">
+                                <svg width="12" height="20" viewBox="0 0 12 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 18L2 10L10 2" stroke="white" stroke-width="2" stroke-linecap="square" />
+                                </svg>
+                            </li>
+                            <li class="right">
+                                <svg width="12" height="20" viewBox="0 0 12 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 18L10 10L2 2" stroke="white" stroke-width="2" stroke-linecap="square" />
+                                </svg>
+                            </li>
+                        </ul>
+    
+                    </div>
+                    <div class="block__eight__right__adress">
+                        <p>ул. Нововиленская 47 , 3-комн., 70 м<sup>2</sup></p>
+                        <button class="button__class">
+                            Оставить заяавку</button>
+                    </div>
                 </div>
-
-            </div>
-            <div class="block__eight__right__nav">
-                <ul>
-                    <li class="left">
-                        <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 18L2 10L10 2" stroke="white" stroke-width="2" stroke-linecap="square" />
-                          </svg>
-                    </li>
-                    <li class="right">
-                        <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2 18L10 10L2 2" stroke="white" stroke-width="2" stroke-linecap="square" />
-                          </svg> 
-                    </li>
-                </ul>
-
-            </div>
-            <div class="block__eight__right__adress">
-                <p>ул. Нововиленская 47 , 3-комн., 70 м<sup>2</sup></p>
-                <button class="button__class">
-                Оставить заяавку</button>
+                
             </div>
         </div>
+
     </div>
     <div class="block__nine">
         <div class="container">
             <h3>
                 Здесь можно оставить вашу заявку
             </h3>
+            <div class="block__nine__get">
+                <form action="#!" method="get">
+                    <div class="name__form">
+                        <label>
+                            <input type="text" placeholder="Ваше имя">
+                        </label>
+                    </div>
+                    <div class="phone__form">
+
+                        <label for="country_phone" class="phone__prefix" data-country="+375">
+                            <select name="country_phone" id="country_phone">
+                                <option value="+375">Bel</option>
+                            </select>
+                        </label>
+                        <input type="tel" placeholder="(_) ___-__-__" value="">
+                    </div>
+                    <div class="button__form">
+                        <button class="button__class">Оставить заявку</button>
+                    </div>
+                </form>
+            </div>
+            <div class="block__nine__personalData">
+                <input type="checkbox" name="personalData" id="personalData">
+                <label for="personalData">
+
+                    Я согласен(а) с условиями обработки
+                </label>
+                <a href="#!" class="personalData__link">персональных данных</a>
+            </div>
+            <div class="block__nine__callus">
+                <button>Удобно в мессенджере? Пишите, ответим там:</button>
+                <a href="#!">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M33.9765 8.42344C34.1947 6.8125 32.8545 5.54097 31.6011 6.16985L6.63843 18.6955C5.73965 19.1465 5.80539 20.7024 6.73757 21.0416L11.8855 22.9152C12.868 23.2728 13.9319 23.0879 14.7899 22.4105L26.3962 13.2464C26.7462 12.9701 27.1277 13.5388 26.8287 13.8911L18.4742 23.7352C17.6638 24.6901 17.8246 26.3082 18.7994 27.0068L28.1532 33.7104C29.2023 34.4623 30.5519 33.707 30.7482 32.2582L33.9765 8.42344Z"
+                            fill="white" />
+                    </svg>
+                </a>
+                <a href="#!">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M30.0704 12.3846C29.8362 11.7815 29.5563 11.3507 29.104 10.8983C28.6518 10.446 28.2211 10.166 27.6181 9.93171C27.1632 9.754 26.4795 9.54399 25.2196 9.48745C23.8575 9.42552 23.4484 9.41206 19.9974 9.41206C19.5667 9.41206 19.1817 9.41206 18.8372 9.41206C16.4279 9.41206 15.9676 9.42821 14.7751 9.48206C13.5153 9.5386 12.8316 9.74862 12.3766 9.92633C11.7736 10.1606 11.3429 10.4406 10.8907 10.8929C10.4385 11.3453 10.1585 11.7761 9.92431 12.3792C9.74664 12.8342 9.53667 13.5181 9.48014 14.7782C9.41823 16.1406 9.40477 16.5472 9.40477 19.999C9.40477 23.4508 9.41823 23.8601 9.48014 25.2225C9.53667 26.4826 9.74933 27.1665 9.92431 27.6215C10.1585 28.2247 10.4385 28.6555 10.8907 29.1078C11.3429 29.5601 11.7736 29.8402 12.3766 30.0744C12.8316 30.2521 13.5153 30.4621 14.7751 30.5214C16.1372 30.5833 16.5464 30.5968 19.9974 30.5968C23.4484 30.5968 23.8575 30.5833 25.2196 30.5214C26.4795 30.4648 27.1632 30.2548 27.6181 30.0771C28.2211 29.8429 28.6518 29.5628 29.104 29.1105C29.5563 28.6581 29.8362 28.23 30.0704 27.6269C30.2481 27.1719 30.4581 26.488 30.5146 25.2279C30.5765 23.8655 30.59 23.4562 30.59 20.0071C30.59 16.558 30.5765 16.1487 30.5146 14.7863C30.4581 13.5262 30.2454 12.8423 30.0704 12.3873V12.3846ZM19.9974 26.6441C16.3337 26.6441 13.3619 23.6743 13.3619 20.0071C13.3619 16.3399 16.3337 13.3701 19.9974 13.3701C23.661 13.3701 26.6329 16.3426 26.6329 20.0071C26.6329 23.6716 23.6637 26.6441 19.9974 26.6441ZM26.894 14.6598C26.038 14.6598 25.3435 13.9651 25.3435 13.1089C25.3435 12.2527 26.038 11.558 26.894 11.558C27.75 11.558 28.4445 12.2527 28.4445 13.1089C28.4445 13.9651 27.75 14.6598 26.894 14.6598Z"
+                            fill="white" />
+                        <path
+                            d="M19.9973 24.3153C22.376 24.3153 24.3043 22.3865 24.3043 20.0072C24.3043 17.628 22.376 15.6992 19.9973 15.6992C17.6186 15.6992 15.6903 17.628 15.6903 20.0072C15.6903 22.3865 17.6186 24.3153 19.9973 24.3153Z"
+                            fill="white" />
+                        <path
+                            d="M37.4677 10.0907C37.3573 8.68518 37.1177 7.74011 36.6251 6.74118C36.2213 5.92266 35.7745 5.31415 35.1257 4.68949C33.9682 3.58286 32.5523 2.90974 30.8645 2.66741C30.0461 2.54894 29.8846 2.51394 25.7014 2.50586H20.0054C12.6996 2.50586 10.5622 2.51394 10.1477 2.54894C8.64828 2.6728 7.7142 2.90974 6.69935 3.41593C5.91601 3.80634 5.29688 4.25599 4.68851 4.88874C3.57676 6.04113 2.90378 7.45739 2.66151 9.1456C2.54307 9.96413 2.50808 10.1311 2.5 14.3098C2.5 15.7046 2.5 17.5382 2.5 19.9991C2.5 27.3012 2.50808 29.4364 2.54307 29.851C2.66421 31.3104 2.89302 32.2285 3.37756 33.2328C4.30357 35.1553 6.07214 36.5985 8.15567 37.137C8.8771 37.3228 9.6739 37.4251 10.6968 37.4735C11.1302 37.4924 15.5476 37.5059 19.9677 37.5059C24.3878 37.5059 28.8079 37.5005 29.2305 37.4789C30.4149 37.4224 31.1041 37.3308 31.8632 37.1343C33.9602 36.5931 35.6964 35.1714 36.6413 33.2221C37.1151 32.242 37.3573 31.2888 37.4677 29.9049C37.4919 29.6033 37.5 24.7945 37.5 19.9937C37.5 15.193 37.4892 10.3922 37.465 10.0907H37.4677ZM32.8403 25.3357C32.7757 26.7116 32.5577 27.6513 32.24 28.4725C31.9089 29.3233 31.4675 30.0422 30.7487 30.7611C30.03 31.48 29.3113 31.9216 28.4606 32.2528C27.6396 32.5732 26.6974 32.7913 25.3219 32.8532C23.9436 32.9151 23.5048 32.9313 19.9946 32.9313C16.4844 32.9313 16.0456 32.9151 14.6674 32.8532C13.2918 32.7913 12.3523 32.5732 11.5313 32.2528C10.6807 31.9216 9.96193 31.48 9.24319 30.7611C8.52446 30.0422 8.08299 29.3206 7.75188 28.4725C7.43155 27.6513 7.2162 26.7116 7.15159 25.3357C7.08968 23.9571 7.07353 23.5182 7.07353 20.0072C7.07353 16.4962 7.08968 16.0573 7.15159 14.6787C7.21351 13.3028 7.43155 12.3632 7.75188 11.5419C8.08299 10.6911 8.52446 9.9722 9.24319 9.2533C9.96193 8.5344 10.6834 8.09283 11.5313 7.76434C12.3523 7.44393 13.2918 7.22584 14.6674 7.16391C16.0456 7.10198 16.4871 7.08583 19.9919 7.08583H19.9973C23.5048 7.08583 23.9436 7.10198 25.3219 7.16391C26.6974 7.22584 27.6369 7.44393 28.4606 7.76434C29.3113 8.09283 30.03 8.5344 30.7487 9.2533C31.4675 9.9722 31.9089 10.6938 32.24 11.5419C32.5577 12.3632 32.7757 13.3028 32.8403 14.6787C32.9022 16.0573 32.9184 16.4989 32.9184 20.0072C32.9184 23.5156 32.9022 23.9571 32.8403 25.3357Z"
+                            fill="white" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
-    <div class="block__ten" hidden>
+    <div class="block__ten">
         <div style="position:relative;overflow:hidden;">
             <a href="https://yandex.by/maps/org/rezultativnaya_nedvizhimost/86871463828/?utm_medium=mapframe&utm_source=maps"
                 style="color:#eee;font-size:12px;position:absolute;top:0px;">Результативная недвижимость</a><a
@@ -941,16 +998,56 @@
                 frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
         </div>
     </div>
-    <div class="footer">
+    <footer class="footer">
 
-    </div>
+
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__left">
+                    <div class="footer__left__top">
+                        <img src="src/svg/logofooter.svg" alt="">
+                        <a href="tel: +375 (29) 188-55-98"> +375 (29) 188-55-98</a>
+                    </div>
+                    <div class="footer__left__bottom">
+                        <p>Напишите нам и мы вам поможем</p>
+                        <a class="footer__helpyou" href="#!">
+                            <img src="src/svg/helpyou.svg" alt="">
+                            Служба заботы
+                            о клиентах
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <ul>
+                        <li><a href="#!">Главная</a></li>
+                        <li><a href="#!">Условия покупки</a></li>
+                        <li><a href="#!">О застройщике</a></li>
+                        <li><a href="#!">О комплексе</a></li>
+                        <li><a href="#!">Контакты</a></li>
+                        <li><a href="#!">Условия обработки персональных данных</a></li>
+                        <li><a href="#!">Настройка cookie</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>Представленные на сайте иллюстрации и планировочные решения носят информационный характер и
+                    отображают ключевые принципы и концепцию объекта. Застройщик оставляет за собой право изменять
+                    отдельные элементы концепции, сохраняя заявленную функциональную составляющую. Предложение на
+                    сайте не является публичной офертой. Актуальную информацию о наличии и стоимости квартир
+                    уточняйте по телефону или в офисе продаж. УНП 691797838.</p>
+            </div>
+        </div>
+
+    </footer>
 
     <script>
         // get the elements by click and place in plan_main
         let plan_main = document.getElementById("plan_main");
         function reply_click(clicked_id) {
             plan_main.style.backgroundImage = `url(${document.getElementById(clicked_id).src})`;
-           
+
 
         }
 

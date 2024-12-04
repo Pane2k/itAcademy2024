@@ -191,5 +191,8 @@
         grid-template-columns: 1fr;
         
     }
+    #burger__menu__wrap{
+        display: block;
+    }
     
 }

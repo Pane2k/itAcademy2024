@@ -90,6 +90,9 @@ body>div{
     height: 491px;
 } */
 
+#burger__menu__wrap{
+    display: none;
+}
 
 .header{
     position: absolute;
@@ -958,8 +961,8 @@ body>div{
 }
 .play__insideCircle{
 
-    width: 72px;
-    height: 72px;
+    width: 88%;
+    height: 88%;
     background: #f8b806;
     border-radius: 100%;
 }
@@ -1382,6 +1385,7 @@ font-size: 18px;
     font-size: 14px;
     line-height: 1.5;
     margin: 0 0 32px 0;
+    text-align: justify;
 }
 .footer__left{
     display: flex;

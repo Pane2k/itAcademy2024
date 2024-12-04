@@ -34,5 +34,23 @@
     .about__park__contacts__address{
         font-size: 16px;
     }
+    :root{
+        --button-size: 52px;
+        --buttom-radius: 10px;
+    }
+    .block__eight__video__play{
+       
+        width: var(--button-size);
+        height: var(--button-size);
+    }
+    .play__insideCircle{
+        /* width: calc((var(--button-size) * 5.4vw) - var(--buttom-radius)*2);
+        height: calc((var(--button-size) * 5.4vw) - var(--buttom-radius)*2); */
+
+    }
+    .play__insideCircle svg{
+        width: calc(45.75px);
+        height: calc(45.75px);
+    }
     
 }

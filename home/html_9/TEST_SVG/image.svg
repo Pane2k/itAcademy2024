@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="86.2981 194.2551 332.5422 107.2649" width="332.542px" height="107.265px">
+  
+  <rect class="carbody" x="97.939" y="43.332" width="211.23" height="41.465" style="stroke: rgba(0, 0, 0, 0); fill: rgb(161, 161, 161); transform-origin: 203.554px 64.0645px;" transform="matrix(0.982874929905, 0.18427503109, -0.163633957505, 0.986744999886, 107.649046585119, 170.11083630956)"/>
+  <rect class="carbody" x="61.416" y="34.239" width="132.461" height="32.764" style="paint-order: fill; stroke: rgba(0, 0, 0, 0); fill: rgb(161, 161, 161); transform-origin: 127.646px 50.619px;" transform="matrix(0.932597100735, -0.360920011997, 0.324112057686, 0.946842133999, 26.686627466126, 183.049510909632)"/>
+  <rect class="carbody" x="381.35" y="75.589" width="22.846" height="42.432" style="stroke: rgba(0, 0, 0, 0); fill: rgb(161, 161, 161); transform-origin: 392.773px 96.805px;" transform="matrix(0.998451113701, 0.055638000369, -0.049230001867, 0.998808026314, 13.617529003897, 157.302197821051)"/>
+  <rect class="carbody" x="1150.07" y="172.545" width="92.804" height="33.739" style="stroke: rgba(0, 0, 0, 0); fill: rgb(161, 161, 161); transform-origin: 1196.47px 189.414px;" transform="matrix(0.999311029911, -0.037105001509, 0.032824005932, 0.999470055103, -1062.371395413812, 68.110976630929)"/>
+  <rect class="carbody" x="122.731" y="231.346" width="275.81" height="43.362" style="stroke: rgba(0, 0, 0, 0); fill: rgb(161, 161, 161);"/>
+  <rect class="carbody" x="86.75" y="271.731" width="331.223" height="6.078" style="stroke: rgba(0, 0, 0, 0); fill: rgb(83, 83, 83);"/>
+  <rect class="carbody" x="86.466" y="187.94" width="29.561" height="12.875" style="fill: rgb(83, 83, 83); stroke: rgba(0, 0, 0, 0); transform-origin: 101.246px 194.378px;" transform="matrix(0.998451113701, -0.055638000369, 0.049230001867, 0.998808026314, 0.126163036418, 74.891357130556)"/>
+  <path style="stroke: rgba(0, 0, 0, 0); fill: rgb(83, 83, 83);" d="M 121.986 244.104 L 153.851 243.866 L 171.01 275.614 L 104.904 275.747 L 121.986 244.104 Z"/>
+  <path style="stroke: rgba(0, 0, 0, 0); fill: rgb(12, 12, 12);" d="M 123.629 246.517 L 151.945 246.305 L 168.371 277.809 L 106.885 277.827 L 123.629 246.517 Z"/>
+  <path style="stroke: rgba(0, 0, 0, 0); fill: rgb(83, 83, 83);" d="M 347.618 243.972 L 379.484 243.734 L 396.643 275.482 L 330.537 275.615 L 347.618 243.972 Z"/>
+  <path style="stroke: rgba(0, 0, 0, 0); fill: rgb(12, 12, 12);" d="M 349.262 246.385 L 377.577 246.173 L 394.004 277.677 L 332.518 277.695 L 349.262 246.385 Z"/>
+  <ellipse style="paint-order: fill; fill-rule: nonzero; stroke: rgba(0, 0, 0, 0); fill: rgb(27, 27, 27);" cx="364.199" cy="276.82" rx="23.23" ry="24.7"/>
+  <ellipse style="paint-order: fill; fill-rule: nonzero; stroke: rgba(0, 0, 0, 0); fill: rgb(77, 77, 77);" cx="364.218" cy="276.82" rx="20.691" ry="22"/>
+  <ellipse style="paint-order: fill; fill-rule: nonzero; stroke: rgba(0, 0, 0, 0); fill: rgb(27, 27, 27);" cx="138.365" cy="276.696" rx="23.23" ry="24.7"/>
+  <ellipse style="paint-order: fill; fill-rule: nonzero; stroke: rgba(0, 0, 0, 0); fill: rgb(77, 77, 77);" cx="138.384" cy="276.696" rx="20.691" ry="22"/>
+  <path style="stroke: rgba(0, 0, 0, 0); fill: rgb(47, 47, 47);" d="M 132.731 227.886 C 132.731 227.886 211.523 198.021 211.225 198.021 C 210.927 198.021 294.799 214.148 294.799 214.148 L 295.096 228.52 L 132.731 227.886 Z"/>
+  <path style="stroke: rgba(0, 0, 0, 0); fill: rgb(12, 12, 12);" d="M 133.174 227.828 L 169.621 213.901 L 169.621 227.992 L 133.174 227.828 Z"/>
+  <path style="stroke: rgb(0, 0, 0); fill: rgba(216, 216, 216, 0);" d="M 229.713 271.618 C 229.713 271.618 229.916 235.78 229.713 235.996 C 229.51 236.212 234.18 228.44 234.18 228.44 L 237.022 202.965"/>
+  <path style="stroke: rgb(0, 0, 0); fill: rgba(216, 216, 216, 0);" d="M 295.005 228.316 L 298.966 235.898 C 298.966 235.898 300.023 272.123 299.759 272.123"/>
+  <path style="stroke: rgb(0, 0, 0); fill: rgba(216, 216, 216, 0);" d="M 169.923 227.896 L 167.932 234.602 L 168.761 271.839"/>
+  <path style="fill: rgb(216, 216, 216); stroke: rgba(0, 0, 0, 0);" d="M 87.189 243.808 C 87.189 243.808 107.593 238.677 107.707 238.677 C 107.821 238.677 107.48 244.882 107.48 244.882 L 87.273 245.956 L 87.189 243.808 Z"/>
+</svg>
+
+<style>
+    .carbody{
+        fill: rgb(255, 0, 0);
+    }
+</style>

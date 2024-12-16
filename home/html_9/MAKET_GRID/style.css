@@ -8,8 +8,7 @@ body{
 }
 
 header, footer{
-    display: flex;
-    justify-content: center;
+
 
     text-transform: uppercase;
     background-color: aqua;
@@ -20,15 +19,16 @@ header, footer{
 
 
 main{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
 
 }
 
 
 aside.menu{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 65px 1fr;
+
     background-color: yellow;
     
     white-space: nowrap;
@@ -43,8 +43,8 @@ aside.menu p{
 }
 
 main aside.menu ul{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr; 
 }
 main aside.menu ul li{
     list-style: disc;
@@ -56,10 +56,9 @@ main aside.menu ul li{
 
 
 article.text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 65px 1fr;
+    
     background: url("ball.png") repeat-y right top;
 }
 
@@ -72,6 +71,7 @@ article.text section{
 }
 article.text h2{
     text-transform: uppercase;
+    text-align: center;
     margin: 20px; 
 }
 article.text p{
@@ -96,31 +96,40 @@ article.text section img{
         width: 100%;
         margin-right: 0px;
     }
+    main aside.menu ul{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9,  20px);;
+    }
     
 }
 @media screen and (max-width: 500px){ 
     main{
-        flex-direction: column-reverse;
+        grid-template-columns: 1fr;
+        
     }
     aside.menu{
         background-color: white;
+        grid-row: 2;
     }
     article.text{
         background: none;
+        grid-row: 1;
     }
     header, footer{
         display: none;
     }
     main aside.menu ul{
-        flex-direction: row;
-        flex-wrap: wrap;
         margin-bottom: 20px;
-        padding: 0 30px;
+        padding: 0 ;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 30px);
+        text-align: center; 
     }
     main aside.menu ul li{
         list-style: none;
         padding: 0;
         padding-right: 10px;
+
 
     }
     aside.menu p{

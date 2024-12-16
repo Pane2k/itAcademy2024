@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --sprite-w: 48px;
+            --sprite-h: 72px;
+        }
+
+        #sprite {
+            background-image: url("95f6ppkuhvt41.webp");
+
+            width: var(--sprite-w);
+            height: var(--sprite-h);
+            background-color: aqua;
+            animation: rowanim 1s infinite steps(3), colanim 4s infinite steps(4);
+
+        }
+        @keyframes rowanim {
+            0% {
+                background-position-x: 0 ;
+            }
+            100%{
+                background-position-x: calc(var(--sprite-w) * -3) ;
+            }
+        }
+        @keyframes colanim{
+            0%{
+                background-position-y: 0;
+            }
+            100%{
+                background-position-y: calc(var(--sprite-h) * -4);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="sprite"></div>
+
+</body>
+
+</html>

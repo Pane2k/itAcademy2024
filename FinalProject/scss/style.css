@@ -1,0 +1,9 @@
+@import url("normalize/normalize.css");
+@import url("variables/variables.css");
+@import url("container/container.css");
+@import url("header/header.css");
+@import url("footer/footer.css");
+@import url("buttonClass/buttonClass.css");
+body {
+  font-family: "Geometria", sans-serif;
+}/*# sourceMappingURL=style.css.map */

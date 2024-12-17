@@ -1,0 +1,83 @@
+footer{
+    
+    position: relative;
+    
+    z-index: 1;
+    background-color: black;
+    padding: 54px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        .logoAndCR{
+            display: flex;
+            flex-direction: column;
+            gap:48px;
+            p{
+                opacity: 0.5;
+            }
+        }
+        .gridList{
+            display: grid;
+            grid-template-columns: repeat(4, 130px);
+            gap: 20px;
+            div{
+                display: flex;
+                flex-direction: column;
+                gap:20px;
+                ul{
+                    font-size: 12px;
+                    
+                    display: grid;
+                    gap:16px;
+                    a{
+                        opacity: 0.5;
+                        transition: 0.1s;  
+                    }
+                    a:hover{
+                        opacity: 0.8;
+                    }
+                }
+            }
+            .Servise{
+                ul{
+                    gap: 32px;
+                }
+            }
+        }
+        .contact{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            .phoneNumber, .email{
+                position: relative;
+            }
+            .phoneNumber::before, .email::before{
+                content: url("../../img/svg/phone.svg");
+                position: absolute;
+                left: -(20px+8px);
+            }
+            .email::before{
+                content: url("../../img/svg/mail.svg");
+            }
+            .footer__Button{
+                margin-top: 20px - 8px;
+            }
+        }
+    }
+}
+footer::before{
+    content: "";
+    display: block;
+    position: absolute;
+    
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../img/jpg/carImg.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    
+}

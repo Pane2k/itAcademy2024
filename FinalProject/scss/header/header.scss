@@ -1,0 +1,70 @@
+@use "../variables/variables" as v;
+header {
+    background: v.$grayColor;
+    height: 100px;
+    display: flex;
+
+    div.container {
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-bottom: 18px;
+       
+        .logo{
+            
+        }
+        .menuWrap{
+            align-self: flex-end;
+            ul{
+
+                display: flex;
+                gap: 12px;
+                li{
+                    padding: 8px;
+                    padding-bottom: 26px - 18px;
+                    a{
+                        color: white;
+                        transition: 0.2s;
+                        
+                    }
+                    a:hover{
+                        color: red;
+
+                    }
+                }
+            }
+
+        }
+
+        .searchAndCart{
+            display: flex;
+            a{
+                display: block;
+                width: 40px;
+                height: 40px;
+                position: relative;
+            }
+            #card::after{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                content: attr(data-itemsInCard);
+                text-align: center;
+                font-weight: 700;
+                position: absolute;
+                width: 32px;
+                height: 32px;
+                top: 0;
+                margin: 4px;
+                right: -40px;
+
+                border-radius: 100%;
+                background-color: #c53720;
+
+
+            }
+        }
+
+
+    }
+}

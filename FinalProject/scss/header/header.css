@@ -1,0 +1,53 @@
+header {
+  background: #0e0e0e;
+  height: 100px;
+  display: flex;
+}
+header div.container {
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 18px;
+}
+header div.container .menuWrap {
+  align-self: flex-end;
+}
+header div.container .menuWrap ul {
+  display: flex;
+  gap: 12px;
+}
+header div.container .menuWrap ul li {
+  padding: 8px;
+  padding-bottom: 8px;
+}
+header div.container .menuWrap ul li a {
+  color: white;
+  transition: 0.2s;
+}
+header div.container .menuWrap ul li a:hover {
+  color: red;
+}
+header div.container .searchAndCart {
+  display: flex;
+}
+header div.container .searchAndCart a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+header div.container .searchAndCart #card::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: attr(data-itemsInCard);
+  text-align: center;
+  font-weight: 700;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 0;
+  margin: 4px;
+  right: -40px;
+  border-radius: 100%;
+  background-color: #c53720;
+}/*# sourceMappingURL=header.css.map */

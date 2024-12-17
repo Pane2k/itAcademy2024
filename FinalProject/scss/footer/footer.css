@@ -1,0 +1,77 @@
+footer {
+  position: relative;
+  z-index: 1;
+  background-color: black;
+  padding: 54px;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .logoAndCR {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+footer .container .logoAndCR p {
+  opacity: 0.5;
+}
+footer .container .gridList {
+  display: grid;
+  grid-template-columns: repeat(4, 130px);
+  gap: 20px;
+}
+footer .container .gridList div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .container .gridList div ul {
+  font-size: 12px;
+  display: grid;
+  gap: 16px;
+}
+footer .container .gridList div ul a {
+  opacity: 0.5;
+  transition: 0.1s;
+}
+footer .container .gridList div ul a:hover {
+  opacity: 0.8;
+}
+footer .container .gridList .Servise ul {
+  gap: 32px;
+}
+footer .container .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+footer .container .contact .phoneNumber, footer .container .contact .email {
+  position: relative;
+}
+footer .container .contact .phoneNumber::before, footer .container .contact .email::before {
+  content: url("../../img/svg/phone.svg");
+  position: absolute;
+  left: -28px;
+}
+footer .container .contact .email::before {
+  content: url("../../img/svg/mail.svg");
+}
+footer .container .contact .footer__Button {
+  margin-top: 12px;
+}
+
+footer::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/jpg/carImg.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+}/*# sourceMappingURL=footer.css.map */

@@ -1,3 +1,11 @@
 $grayColor: #0e0e0e;
-
-$mainFont: "Geometria", sans-serif;
+@font-face {
+    font-family: GeometriaMedium;
+    src: url("../fonts/Geometria.ttf");
+}
+@font-face {
+    font-family: GeometriaBold;
+    src: url("../fonts/Geometria-Bold.ttf");
+}
+$mainFont: "GeometriaMedium", sans-serif;
+$boldFont: "GeometriaBold", sans-serif;

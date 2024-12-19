@@ -1,1 +1,8 @@
-/*# sourceMappingURL=variables.css.map */
+@font-face {
+  font-family: GeometriaMedium;
+  src: url("../fonts/Geometria.ttf");
+}
+@font-face {
+  font-family: GeometriaBold;
+  src: url("../fonts/Geometria-Bold.ttf");
+}/*# sourceMappingURL=variables.css.map */

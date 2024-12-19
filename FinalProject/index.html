@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProAuto</title>
-    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="/FinalProject/scss/style.css">
+    <link rel="stylesheet" href="/FinalProject/scss/webpages/mainpage/style.css">
 </head>
 
 <body>
 
     <header>
         <div class="container">
+            <div class="burger">
+                <button id="burgerButton">
+
+                </button>
+            </div>
             <div class="logo">
                 <a href="#!">
-                    <img src="img/svg/logo.svg" alt="">
+                    <img src="/FinalProject/img/svg/logo.svg" alt="">
                 </a>
             </div>
-            <div class="menuWrap">
+            <div class="menuWrap" id="menuWrap">
                 <ul>
                     <li>
                         <a href="#!">КОМПАНИЯ</a>
                     </li>
                     <li>
-                        <a href="#!">КАТАЛОГ</a>
+                        <a href="./catalog">КАТАЛОГ</a>
                     </li>
                     <li>
                         <a href="#!">УСЛУГИ</a>
@@ -43,21 +49,145 @@
             </div>
             <div class="searchAndCart">
                 <a id="search" href="#!">
-                    <img src="img/svg/Lupa.svg" alt="">
+                    <img src="/FinalProject/img/svg/Lupa.svg" alt="">
                 </a>
                 <a id="card" href="#!" data-itemsInCard="0">
-                    <img src="img/svg/card.svg" alt="">
+                    <img src="/FinalProject/img/svg/card.svg" alt="">
                 </a>
             </div>
         </div>
     </header>
-    
+    <div class="banner mainBanner">
+        <div class="container">
+            <h1>НАДЕЖНЫЕ, КАЧЕСТВЕННЫЕ АККУМУЛЯТОРЫ</h1>
+            <div class="button">
+                <button class="buttonClass mediumButton">ПЕРЕЙТИ В КАТАЛОГ</button>
+            </div>
+        </div>
+    </div>
+    <section class="first">
+        <div class="container">
+            <div class="payments">
+                <img src="/FinalProject/img/svg/mainPage/payments.svg" alt="">
+                <div class="pwraper">
+                    <p>Наличный и безналичный расчет</p>
+                </div>
+            </div>
+            <div class="consult">
+                <img src="/FinalProject/img/svg/mainPage/consult.svg" alt="">
+                <div>
+                    <p>Техническая помощь и консультация</p>
+                </div>
+            </div>
+            <div class="quality">
+                <img src="/FinalProject/img/svg/mainPage/garant.svg" alt="">
+                <div>
+                    <p>Только качественная и проверенная продукция</p>
+                </div>
+            </div>
+            <div class="worktime">
+                <img src="/FinalProject/img/svg/mainPage/support.svg" alt="">
+                <div>
+                    <p>Мы всегда на связи <br>
+                        с 9:00 до 18:00!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="second">
+        <div class="container">
+            <h2>Автотовары: аксессуары, <br>
+                расходники и многое другое</h2>
+            <hr>
+            <p>PROAuto - это специализированный интернет магазин востребованных товаров для автомобилей. </p>
+            <div class="wraper">
+                <div data-name="АККУМУЛЯТОРЫ" class="batteries">
+                    <div class="button">
+                        <button class="buttonClass mediumButton">ЗАКАЗАТЬ ОНЛАЙН</button>
+                    </div>
+                </div>
+                <div data-name="АВТОМАСЛА" class="oil">
+                    <div class="button">
+                        <button class="buttonClass mediumButton">ЗАКАЗАТЬ ОНЛАЙН</button>
+                    </div>
+                </div>
+                <div data-name="ПОЛИРОВКА" class="polish">
+                    <div class="button">
+                        <button class="buttonClass mediumButton">ЗАКАЗАТЬ ОНЛАЙН</button>
+                    </div>
+                </div>
+                <div data-name="АВТОАКСЕССУАРЫ" class="autoac">
+                    <div class="button">
+                        <button class="buttonClass mediumButton">ЗАКАЗАТЬ ОНЛАЙН</button>
+                    </div>
+                </div>
+                <div data-name="АВТОХИМИЯ" class="autochem">
+                    <div class="button">
+                        <button class="buttonClass mediumButton">ЗАКАЗАТЬ ОНЛАЙН</button>
+                    </div>
+                </div>
+                <div data-name="ДЕТАЛИ" class="details">
+                    <div class="button">
+                        <button class="buttonClass mediumButton">ЗАКАЗАТЬ ОНЛАЙН</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="third">
+        <div class="container">
+            <h2>УСЛУГИ</h2>
+            <hr>
+            <p>Менеджеры компании с радостью ответят на ваши вопросы и помогут с выбором продукции.</p>
+            <div class="wrap">
+                <div class="left">
+                    <div class="consult">
+                        <div class="img">
+                            <img src="/FinalProject/img/svg/mainPage/servis/consult.svg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА</h3>
+                            <p>Поможем с выбором аккумулятора, моторного масла и аксессуаров для автомобиля под ваши
+                                требования. </p>
+                        </div>
+                    </div>
+
+                    <div class="exchange">
+                        <div class="img">
+                            <img src="/FinalProject/img/svg/mainPage/servis/arrow.svg" alt="">
+                            <img src="/FinalProject/img/svg/mainPage/servis/case.svg" alt="">
+                            <img src="/FinalProject/img/svg/mainPage/servis/arrow2.svg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА</h3>
+                            <p>Поможем с выбором аккумулятора, моторного масла и аксессуаров для автомобиля под ваши
+                                требования. </p>
+                        </div>
+                    </div>
+
+                    <div class="diagnostic">
+                        <div class="img">
+                            <img src="/FinalProject/img/svg/mainPage/servis/laptop.svg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА</h3>
+                            <p>Поможем с выбором аккумулятора, моторного масла и аксессуаров для автомобиля под ваши
+                                требования. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="container">
             <div class="logoAndCR">
                 <div class="logo">
                     <a href="#!">
-                        <img src="img/svg/logo.svg" alt="">
+                        <img src="/FinalProject/img/svg/logo.svg" alt="">
                     </a>
                 </div>
                 <p class="copyRight">
@@ -109,6 +239,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="/FinalProject/js/script.js"></script>
 </body>
 
 </html>

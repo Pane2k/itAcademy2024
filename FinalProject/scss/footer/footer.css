@@ -2,7 +2,7 @@ footer {
   position: relative;
   z-index: 1;
   background-color: black;
-  padding: 54px;
+  padding: 54px 0;
 }
 footer .container {
   display: flex;
@@ -41,15 +41,33 @@ footer .container .gridList div ul a:hover {
 footer .container .gridList .Servise ul {
   gap: 32px;
 }
+@media screen and (max-width: 990px) {
+  footer .container .gridList {
+    grid-template-columns: repeat(2, 130px);
+  }
+}
+@media screen and (max-width: 990px) and (max-width: 680px) {
+  footer .container .gridList {
+    grid-template-columns: repeat(1, 130px);
+  }
+}
 footer .container .contact {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-left: 35px;
 }
-footer .container .contact .phoneNumber, footer .container .contact .email {
+footer .container .contact .phoneNumber,
+footer .container .contact .email {
   position: relative;
+  transition: 0.1s;
 }
-footer .container .contact .phoneNumber::before, footer .container .contact .email::before {
+footer .container .contact .phoneNumber:hover,
+footer .container .contact .email:hover {
+  opacity: 0.5;
+}
+footer .container .contact .phoneNumber::before,
+footer .container .contact .email::before {
   content: url("../../img/svg/phone.svg");
   position: absolute;
   left: -28px;
@@ -59,6 +77,17 @@ footer .container .contact .email::before {
 }
 footer .container .contact .footer__Button {
   margin-top: 12px;
+}
+@media screen and (max-width: 680px) {
+  footer .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+  footer .container .contact {
+    margin-left: 0;
+  }
 }
 
 footer::before {

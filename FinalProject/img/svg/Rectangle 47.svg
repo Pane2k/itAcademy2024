@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0.008 482.5027 159.505" width="482.503px" height="159.505px">
+  <defs>
+    <filter id="filter0_d_37_61" x="0" y="0" width="613" height="208" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37_61"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_37_61" result="shape"/>
+    </filter>
+    <linearGradient id="paint0_linear_37_61" x1="4" y1="124" x2="590" y2="124" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C53720"/>
+      <stop offset="1" stop-color="#C53720" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g opacity="0.6" filter="url(#filter0_d_37_61)" transform="matrix(0.7975250482559204, 0, 0, 0.7975250482559204, -3.190100908279419, 0.008040000684559345)" style="">
+    <path d="M37 0L20.5 16.5L4 33V200H576L609 167V0H37Z" fill="url(#paint0_linear_37_61)"/>
+  </g>
+</svg>

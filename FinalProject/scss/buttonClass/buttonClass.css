@@ -1,3 +1,11 @@
+@font-face {
+  font-family: GeometriaMedium;
+  src: url("../fonts/Geometria.ttf");
+}
+@font-face {
+  font-family: GeometriaBold;
+  src: url("../fonts/Geometria-Bold.ttf");
+}
 .buttonClass {
   width: 100%;
   height: 100%;
@@ -9,14 +17,15 @@
   padding: 12px 20px;
   cursor: pointer;
   transition: 0.1s;
-  line-height: 0.5em;
 }
-
 .buttonClass:hover {
   transform: scale(1.05);
   box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
 }
-
 .buttonClass:active {
   transform: scale(0.95);
+}
+
+.mediumButton {
+  font-size: 14px;
 }/*# sourceMappingURL=buttonClass.css.map */

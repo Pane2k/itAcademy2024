@@ -1,0 +1,306 @@
+@use '../../variables/variables' as v;
+
+section.first {
+    background-color: #0e0e0e;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        >div {
+            height: 272px;
+            display: grid;
+            grid-template-rows: 136px calc(164px - 136px) 1fr;
+            justify-items: center;
+            text-align: center;
+            padding: 0 28px;
+
+            img {
+                align-self: end;
+                justify-self: center;
+            }
+
+            >div {
+                grid-row: 3/4;
+            }
+        }
+
+        .payments {
+            background-image: url(../../../img/svg/mainPage/Rectangle.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+        .quality,
+        .worktime {
+            p {
+                position: relative;
+
+                &::after {
+                    content: url(../../../img/svg/mainPage/arrow.svg);
+                    position: absolute;
+                    bottom: -20px - 24px;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                }
+            }
+
+        }
+
+        @media screen and (max-width: 1100px) {
+            grid-template-columns: repeat(2, 1fr);
+
+            @media screen and (max-width: 680px) {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+
+section.second {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url(../../../img/jpg/sectionBG.jpg);
+        opacity: 0.15;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    $color-text: #1d1d1d;
+
+    .container {
+        flex-direction: column;
+        padding: 88px 0;
+
+        >h2 {
+            font-size: 36px;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: v.$boldFont;
+            color: $color-text;
+
+        }
+
+        hr {
+            width: 856px;
+            border: 2px solid #c53720;
+            align-self: center;
+            margin: 12px 0 32px 0;
+        }
+
+        >p {
+            font-family: v.$boldFont;
+            font-weight: 500;
+            font-size: 24px;
+            text-align: center;
+            color: #1d1d1d;
+            max-width: 892px;
+            align-self: center;
+            margin-bottom: 36px;
+        }
+
+        .wraper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+
+
+            >div {
+                background-position: center;
+                background-size: cover;
+                height: 400px;
+                position: relative;
+
+                .button {
+                    opacity: 0;
+                    display: none;
+
+                }
+
+                transition: 0.3s;
+                $animOpacity: buttonAnimation 0.1s ease-in forwards;
+
+                &:hover {
+                    .button {
+                        display: block;
+
+                        width: 216px;
+                        position: absolute;
+                        bottom: 68px;
+                        left: 50%;
+                        transform: translate(-50%, 0);
+                        animation: $animOpacity;
+
+                        button {
+                            font-size: 14px;
+                        }
+
+                        @keyframes buttonAnimation {
+                            0% {
+                                display: flex;
+
+
+                                opacity: 0;
+                            }
+
+                            100% {
+                                opacity: 1;
+                            }
+
+                        }
+                    }
+
+                    &::before {
+                        content: attr(data-name);
+                        position: absolute;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 24px;
+                        text-align: center;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.8);
+                        animation: $animOpacity;
+                    }
+                }
+            }
+
+            .batteries {
+                background-image: url(../../../img/jpg/mainPage/battery.jpg);
+            }
+
+            .oil {
+                background-image: url(../../../img/jpg/mainPage/oil.jpg);
+            }
+
+            .polish {
+                background-image: url(../../../img/jpg/mainPage/polish.jpg);
+            }
+
+            .autoac {
+                background-image: url(../../../img/jpg/mainPage/autoac.jpg);
+            }
+
+            .autochem {
+                background-image: url(../../../img/jpg/mainPage/autochem.jpg);
+            }
+
+            .details {
+                background-image: url(../../../img/jpg/mainPage/details.jpg);
+            }
+        }
+    }
+}
+
+section.third {
+    background-image: radial-gradient(24.05% 24.05% at 50% 56.14%, rgba(14, 14, 14, 0.7) 0%, rgba(14, 14, 14, 0.97) 100%), url(../../../img/jpg/hexagon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 88px 0 98px;
+
+        h2 {
+            font-family: v.$boldFont;
+            font-weight: 700;
+            font-size: 36px;
+        }
+
+        hr {
+            width: 170px;
+            border: 2px solid #c53720;
+            align-self: center;
+            margin: 12px 0 32px 0;
+        }
+
+        >p {
+            max-width: 892px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .wrap {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            // gap: 48px;
+            
+            .left {
+                display: flex;
+                flex-direction: column;
+                >div {
+                    background-image: url(../../../img/svg/Rectangle\ 47.svg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 605px;
+                    max-width: 605px;
+                    padding: 40px;
+                    padding-right: 0;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 21px;
+                    .img{
+                        width: 124px;
+                        height: 120px;
+                        background-image: url(../../../img/svg/RectangleItem.svg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            
+                        }
+                        
+                    }
+                    .text{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        h3{
+                            font-family: v.$boldFont;
+                            font-weight: 700;
+                            font-size: 16px;
+
+                            max-width: 286px;
+                        }
+                        p{
+                            max-width: 352px;
+                        }
+                    }
+                }
+                .consult{
+
+                }
+                .exchange{
+                    background: none;
+                    
+                }
+                .diagnostic{
+                    background: none;
+                }
+            }
+            
+            .right{
+                width: 489px;
+                height: 566px;
+            }
+        }
+
+    }
+}

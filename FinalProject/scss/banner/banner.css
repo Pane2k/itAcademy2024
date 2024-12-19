@@ -1,0 +1,43 @@
+@font-face {
+  font-family: GeometriaMedium;
+  src: url("../fonts/Geometria.ttf");
+}
+@font-face {
+  font-family: GeometriaBold;
+  src: url("../fonts/Geometria-Bold.ttf");
+}
+.mainBanner {
+  background-image: url("../../img/jpg/mainBanner.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.banner .container {
+  flex-direction: column;
+  padding-top: 255px;
+  gap: 52px;
+}
+.banner .container h1 {
+  font-family: "GeometriaBold", sans-serif;
+  width: 586px;
+  height: 172px;
+  font-weight: 700;
+  font-size: 48px;
+}
+.banner .container .button {
+  width: 216px;
+  margin-bottom: 189px;
+}
+@media screen and (max-width: 840px) {
+  .banner .container {
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 840px) and (max-width: 640px) {
+  .banner .container h1 {
+    width: 100%;
+    height: auto;
+    font-size: 7vw;
+  }
+}/*# sourceMappingURL=banner.css.map */

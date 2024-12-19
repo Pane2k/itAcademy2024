@@ -2,8 +2,17 @@
 @import url("variables/variables.css");
 @import url("container/container.css");
 @import url("header/header.css");
+@import url("banner/banner.css");
 @import url("footer/footer.css");
 @import url("buttonClass/buttonClass.css");
+@font-face {
+  font-family: GeometriaMedium;
+  src: url("../fonts/Geometria.ttf");
+}
+@font-face {
+  font-family: GeometriaBold;
+  src: url("../fonts/Geometria-Bold.ttf");
+}
 body {
-  font-family: "Geometria", sans-serif;
+  font-family: "GeometriaMedium", sans-serif;
 }/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: GeometriaMedium;
   src: url("../fonts/Geometria.ttf");
@@ -73,7 +74,8 @@ section.second::before {
 }
 section.second .container {
   flex-direction: column;
-  padding: 88px 0;
+  padding-bottom: 88px;
+  padding-top: 88px;
 }
 section.second .container > h2 {
   font-size: 36px;
@@ -98,10 +100,31 @@ section.second .container > p {
   align-self: center;
   margin-bottom: 36px;
 }
+@media screen and (max-width: 990px) {
+  section.second .container hr {
+    width: 90%;
+  }
+}
 section.second .container .wraper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  justify-content: space-around;
+  gap: 16px;
+}
+@media screen and (max-width: 840px) {
+  section.second .container .wraper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 840px) and (max-width: 680px) {
+  section.second .container .wraper {
+    grid-template-columns: 340px;
+  }
+}
+@media screen and (max-width: 840px) and (max-width: 680px) and (max-width: 430px) {
+  section.second .container .wraper {
+    grid-template-columns: 1fr;
+  }
 }
 section.second .container .wraper > div {
   background-position: center;
@@ -172,12 +195,13 @@ section.third {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 section.third .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 88px 0 98px;
+  padding: 88px 15px 98px;
 }
 section.third .container h2 {
   font-family: "GeometriaBold", sans-serif;
@@ -205,11 +229,8 @@ section.third .container .wrap .left {
   flex-direction: column;
 }
 section.third .container .wrap .left > div {
-  background-image: url(../../../img/svg/Rectangle\ 47.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
   width: 605px;
-  max-width: 605px;
   padding: 40px;
   padding-right: 0;
   display: flex;
@@ -242,13 +263,654 @@ section.third .container .wrap .left > div .text h3 {
 section.third .container .wrap .left > div .text p {
   max-width: 352px;
 }
+section.third .container .wrap .left .consult {
+  background: none;
+}
 section.third .container .wrap .left .exchange {
   background: none;
 }
 section.third .container .wrap .left .diagnostic {
   background: none;
 }
+section.third .container .wrap .left .selected {
+  position: absolute;
+  background-image: url(../../../img/svg/Rectangle\ 47.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  transition: 0.2s;
+  animation: select 9s ease-in-out infinite;
+}
+@keyframes select {
+  0%, 20% {
+    transform: translateY(0%);
+  }
+  28%, 52% {
+    transform: translateY(100%);
+  }
+  60%, 90% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
 section.third .container .wrap .right {
   width: 489px;
   height: 566px;
+  position: relative;
+}
+section.third .container .wrap .right .masterimg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 3;
+  animation: selectmaster 9s ease-in-out infinite;
+}
+@keyframes selectmaster {
+  0%, 20% {
+    background-image: url(../../../img/png/mainPage/sesz/2.png);
+  }
+  28%, 52% {
+    background-image: url(../../../img/png/mainPage/sesz/3.png);
+  }
+  60%, 90% {
+    background-image: url(../../../img/png/mainPage/sesz/1.png);
+  }
+  100% {
+    background-image: url(../../../img/png/mainPage/sesz/2.png);
+  }
+}
+section.third .container .wrap .right img {
+  position: absolute;
+}
+section.third .container .wrap .right #thirdFirstTriangle {
+  width: 65px;
+  height: 65px;
+  right: 30px;
+  filter: blur(5px);
+  transform: rotate(212deg);
+  z-index: 1;
+  animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(212deg);
+  }
+  to {
+    transform: rotate(572deg);
+  }
+}
+section.third .container .wrap .right #thirdSecondTriangle {
+  z-index: 2;
+  width: 125px;
+  height: 125px;
+  right: 235px;
+  top: 104px;
+  filter: blur(12px);
+  transform: rotate(240deg);
+  animation: rotate 15s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(240deg);
+  }
+  to {
+    transform: rotate(600deg);
+  }
+}
+section.third .container .wrap .right #thirdThirdTriangle {
+  z-index: 4;
+  width: 146px;
+  height: 146px;
+  left: 22px;
+  top: 368px;
+  transform: rotate(249deg);
+  animation: rotate 35s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(249deg);
+  }
+  to {
+    transform: rotate(609deg);
+  }
+}
+section.third .container .wrap .right #thirdFourTriangle {
+  z-index: 5;
+  width: 166px;
+  height: 166px;
+  right: -83px;
+  top: 304px;
+  transform: rotate(322deg);
+  filter: blur(17px);
+  animation: rotate 30s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(322deg);
+  }
+  to {
+    transform: rotate(682deg);
+  }
+}
+section.third .container .wrap .right #thirdFiveTriangle {
+  z-index: 6;
+  width: 78px;
+  height: 78px;
+  right: 110px;
+  bottom: 20px;
+  transform: rotate(322deg);
+  animation: rotate 20s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(322deg);
+  }
+  to {
+    transform: rotate(682deg);
+  }
+}
+@media screen and (max-width: 970px) {
+  section.third .container .wrap {
+    justify-content: center;
+  }
+  section.third .container .wrap .right {
+    display: none;
+  }
+}
+@media screen and (max-width: 970px) and (max-width: 730px) {
+  section.third .container .wrap .left > div {
+    width: 100%;
+  }
+  section.third .container .wrap .left > div:first-child {
+    width: 85%;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 970px) and (max-width: 730px) and (max-width: 640px) {
+  section.third .container .wrap .left > div {
+    height: 200px;
+  }
+  section.third .container .wrap .left > div:first-child {
+    width: 100%;
+    left: 0;
+  }
+  section.third .container .wrap .left > div .img {
+    display: none;
+  }
+}
+section.third .container .button {
+  margin-top: 32px;
+}
+
+section.fourth {
+  background: linear-gradient(180deg, rgba(14, 14, 14, 0.6) 0%, rgba(14, 14, 14, 0.6) 100%), url("../../../img/jpg/porsche.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.fourth .container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 88px 15px 98px;
+}
+section.fourth .container h2 {
+  font-family: "GeometriaBold", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+section.fourth .container hr {
+  border: 2px solid #c53720;
+  margin-top: 8px;
+  margin-bottom: 74px;
+  width: 280px;
+}
+section.fourth .container .aboutCompony {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+}
+section.fourth .container .aboutCompony .left {
+  width: 117%;
+}
+section.fourth .container .aboutCompony .left img {
+  max-width: 100%;
+}
+@media screen and (max-width: 970px) {
+  section.fourth .container .aboutCompony .left {
+    display: none;
+  }
+}
+section.fourth .container .aboutCompony .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  background-color: rgba(14, 14, 14, 0.6);
+  border: #c53720 4px solid;
+  padding: 32px;
+  padding-bottom: 43px;
+  margin-bottom: 9.1%;
+  gap: 28px;
+}
+section.fourth .container .aboutCompony .right .button {
+  width: 216px;
+}
+@media screen and (max-width: 1100px) {
+  section.fourth .container .aboutCompony .right {
+    margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 1100px) and (max-width: 970px) {
+  section.fourth .container .aboutCompony .right {
+    margin-bottom: 0%;
+  }
+  section.fourth .container .aboutCompony .right p {
+    text-align: justify;
+  }
+  section.fourth .container .aboutCompony .right .button {
+    align-self: center;
+  }
+}
+
+section.fiveth {
+  background: #ededed;
+  padding: 88px 15px 98px;
+}
+section.fiveth .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+section.fiveth .container h2 {
+  font-family: "GeometriaBold", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #1d1d1d;
+}
+section.fiveth .container hr {
+  border: 2px solid #c53720;
+  margin-top: 8px;
+  margin-bottom: 74px;
+  width: 216px;
+}
+section.fiveth .container .wrapCard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+section.fiveth .container .wrapCard .newCard {
+  flex-grow: 1;
+  flex-basis: 300px;
+  background: #1d1d1d;
+}
+section.fiveth .container .wrapCard .newCard .img {
+  height: 284px;
+}
+section.fiveth .container .wrapCard .newCard .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+section.fiveth .container .wrapCard .newCard .text {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  position: relative;
+  height: 138px;
+  padding: 12px 20px;
+}
+section.fiveth .container .wrapCard .newCard .text p {
+  font-weight: 500;
+  font-size: 12px;
+  color: #c53720;
+}
+section.fiveth .container .wrapCard .newCard .text h3 {
+  font-family: "GeometriaBold", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+section.fiveth .container .wrapCard .newCard .text a {
+  position: absolute;
+  bottom: 12px;
+  right: 20px;
+}
+section.fiveth .container .wrapCard .newCard .text a path {
+  transition: 0.1s;
+}
+section.fiveth .container .wrapCard .newCard .text a:hover {
+  transform: scale(1.05);
+}
+section.fiveth .container .wrapCard .newCard .text a:hover path {
+  fill: #f02f11 !important;
+}
+section.fiveth .container .button {
+  margin-top: 72px;
+}
+section.fiveth .container .button button {
+  color: #c53720;
+}
+
+section.linkInSite .container {
+  gap: 16px;
+  height: 52px;
+  align-items: center;
+}
+section.linkInSite .container img {
+  width: 20px;
+}
+section.linkInSite .container .ToMainPage a {
+  color: #c53720;
+}
+section.linkInSite .container p a {
+  font-size: 12px;
+  color: #1d1d1d;
+}
+section.linkInSite .container a:hover {
+  filter: brightness(1.5);
+}
+
+section.vendors {
+  background-color: #ededed;
+}
+section.vendors .container {
+  padding-top: 89px;
+  padding-bottom: 88px;
+  display: flex;
+  flex-direction: column;
+}
+section.vendors .container h2 {
+  margin-bottom: 35px;
+  font-family: "GeometriaBold", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #1d1d1d;
+}
+section.vendors .container ul {
+  background: #000;
+}
+section.vendors .container .vendorWrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+section.vendors .container #menu-container {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #000000;
+  color: #fff;
+  width: 264px;
+  font-family: "GeometriaBold", sans-serif;
+}
+section.vendors .container #menu-container > ul > li > ul a {
+  font-family: "GeometriaMedium", sans-serif;
+}
+section.vendors .container #menu-container .activeElement {
+  background-color: #c53720;
+}
+section.vendors .container #menu-container ul > li > ul > li a.activeElement {
+  box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+section.vendors .container #menu-container .activeElement > span {
+  transform: translateY(-50%) rotate(0deg);
+}
+section.vendors .container #menu-container .main-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+section.vendors .container #menu-container .main-menu > li {
+  border-bottom: 1px solid #333;
+}
+section.vendors .container #menu-container .main-menu > li:first-child {
+  border-top: 1px solid #333;
+}
+section.vendors .container #menu-container .main-menu > li > a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+section.vendors .container #menu-container .main-menu > li > a:hover {
+  box-shadow: inset 0 0 1000px rgba(255, 255, 255, 0.1);
+}
+section.vendors .container #menu-container .sub-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  background-color: #1d1d1d;
+}
+section.vendors .container #menu-container .sub-menu .sub-menu {
+  background-color: #2d2d2d;
+}
+section.vendors .container #menu-container .sub-menu li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #eee;
+}
+section.vendors .container #menu-container .sub-menu li a:hover {
+  box-shadow: inset 0 0 1000px rgba(255, 255, 255, 0.1);
+}
+section.vendors .container #menu-container .has-children > a {
+  position: relative;
+}
+section.vendors .container #menu-container .dropdown-arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+}
+section.vendors .container #wrapVendos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+section.vendors .container #wrapVendos .vendorCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #1d1d1d;
+  width: 264px;
+  height: 356px;
+}
+section.vendors .container #wrapVendos .vendorCard .imgCard {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+section.vendors .container #wrapVendos .vendorCard .textCard {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 12px;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+section.vendors .container #wrapVendos .vendorCard .textCard .textWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+section.vendors .container #wrapVendos .vendorCard .textCard .textWrap h3 {
+  font-size: 16px;
+  font-family: "GeometriaBold", sans-serif;
+}
+section.vendors .container #wrapVendos .vendorCard .textCard .textWrap p {
+  font-size: 12px;
+}
+section.vendors .container #wrapVendos .vendorCard .textCard .button {
+  font-size: 12px;
+}
+section.vendors .container #itemWrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+section.vendors .container #itemWrap .itemCard {
+  position: relative;
+  padding: 36px 20px 27px;
+  width: 264px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  border: 4px solid #a5a5a5;
+}
+section.vendors .container #itemWrap .itemCard .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.vendors .container #itemWrap .itemCard h2 {
+  font-family: "GeometriaMedium", sans-serif;
+  font-size: 20px;
+  color: #c53720;
+  margin: 16px 0 20px;
+}
+section.vendors .container #itemWrap .itemCard .nodiscount {
+  font-family: "GeometriaBold", sans-serif;
+  text-decoration: line-through;
+  color: #a5a5a5;
+}
+section.vendors .container #itemWrap .itemCard .withDiscount {
+  font-family: "GeometriaBold", sans-serif;
+  font-size: 28px;
+  color: #1d1d1d;
+  margin-bottom: 12px;
+}
+section.vendors .container #itemWrap .itemCard .disclamer {
+  font-size: 12px;
+  color: #a5a5a5;
+  margin-bottom: 18px;
+}
+section.vendors .container #itemWrap .itemCard .cardWrap {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section.vendors .container #itemWrap .itemCard .cardWrap .counter {
+  display: grid;
+  grid-template-columns: 40px 84px 40px;
+}
+section.vendors .container #itemWrap .itemCard .cardWrap .counter input, section.vendors .container #itemWrap .itemCard .cardWrap .counter button {
+  border: 4px solid #a5a5a5;
+  background: none;
+  text-align: center;
+  font-family: "GeometriaBold", sans-serif;
+  font-size: 14px;
+  color: #a5a5a5;
+  cursor: pointer;
+}
+section.vendors .container #itemWrap .itemCard .cardWrap .counter input {
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+section.vendors .container #itemWrap .itemCard .cardWrap .button {
+  width: 40px;
+  height: 40px;
+}
+section.vendors .container #itemWrap .itemCard .cardWrap .button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border: 4px solid #c53720;
+  cursor: pointer;
+}
+section.vendors .container #itemWrap .itemCard .button .buttonClass {
+  font-family: "GeometriaBold", sans-serif;
+  color: #c53720;
+  padding: 8px;
+}
+section.vendors .container #itemWrap .inCount {
+  border: 4px solid #3cc051;
+}
+section.vendors .container #itemWrap .inCount h2 {
+  color: #1d1d1d;
+}
+section.vendors .container #itemWrap .inCount::before {
+  content: "В НАЛИЧИИ";
+  position: absolute;
+  font-family: "GeometriaBold", sans-serif;
+  font-size: 10px;
+  text-align: center;
+  background-color: #3cc051;
+  top: -3px;
+  right: -3px;
+  padding: 8px;
+}
+section.vendors .container #itemWrap .notInCount {
+  border: 4px solid #c53720;
+}
+section.vendors .container #itemWrap .notInCount h2 {
+  color: #1d1d1d;
+}
+section.vendors .container #itemWrap .notInCount::before {
+  content: "ПОД ЗАКАЗ";
+  position: absolute;
+  font-family: "GeometriaBold", sans-serif;
+  font-size: 10px;
+  text-align: center;
+  background-color: #c53720;
+  top: -3px;
+  right: -3px;
+  padding: 8px;
+}
+section.vendors .container #itemWrap .notInCount .cardWrap .counter input, section.vendors .container #itemWrap .notInCount .cardWrap .counter button {
+  position: relative;
+  cursor: not-allowed;
+}
+section.vendors .container #itemWrap .notInCount .cardWrap .counter button {
+  background-color: #a5a5a5;
+  color: #fff;
+}
+section.vendors .container .right .wrapAdwar {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 52px;
+}
+section.vendors .container .right .wrapAdwar .adwar {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+section.vendors .container .right .wrapAdwar .adwar svg {
+  width: 60px;
+  height: 60px;
+}
+section.vendors .container .right .wrapAdwar .adwar p {
+  color: #1d1d1d;
+}
+section.vendors .container .right > p {
+  margin-top: 36px;
+  color: #1d1d1d;
+}
+section.vendors .container .right > p span {
+  font-family: "GeometriaBold", sans-serif;
+  color: #1d1d1d;
 }/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+  console.log(window.location.hostname)
     var menuData = [
       {
         text: "АККУМУЛЯТОРЫ",
@@ -8,12 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
             text: "AKE MAGNUM",
             isParent: true,
             children: [
-              { text: "MAGNUM 60Ah" },
-              { text: "MAGNUM 75Ah" },
-              { text: "MAGNUM 90Ah" },
-              { text: "MAGNUM 132Ah" },
-              { text: "MAGNUM 190Ah" },
-              { text: "MAGNUM 230Ah" }
+              { text: "MAGNUM 60Ah"  , link: "/FinalProject/catalog/battery/magnum/" },
+              { text: "MAGNUM 75Ah"  , link: "./magnum/" },
+              { text: "MAGNUM 90Ah"  , link: "./magnum/" },
+              { text: "MAGNUM 132Ah" , link: "./magnum/" },
+              { text: "MAGNUM 190Ah" , link: "./magnum/" },
+              { text: "MAGNUM 230Ah" , link: "./magnum/" }
             ]
           },
           { text: "АКБ ЗВЕРЬ", isParent: false },
@@ -91,7 +92,13 @@ document.addEventListener('DOMContentLoaded', function() {
     function createMenuItem(item) {
       var listItem = document.createElement('li');
       var link = document.createElement('a');
-      link.href = '#';
+      if(item.link) {
+        link.href = item.link;
+      }
+      else{
+        link.href = '#';
+      }
+      
       link.textContent = item.text;
       listItem.appendChild(link);
   

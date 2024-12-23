@@ -603,6 +603,8 @@ section.fiveth .container .button button {
 }
 
 section.linkInSite .container {
+  text-wrap: nowrap;
+  overflow-y: auto;
   gap: 16px;
   height: 52px;
   align-items: center;
@@ -645,6 +647,18 @@ section.vendors .container .vendorWrap {
   display: flex;
   justify-content: space-between;
   gap: 24px;
+}
+@media screen and (max-width: 880px) {
+  section.vendors .container .vendorWrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.vendors .container .vendorWrap .left {
+    width: 100%;
+  }
+  section.vendors .container .vendorWrap .left #menu-container {
+    width: 100%;
+  }
 }
 section.vendors .container #menu-container {
   padding-top: 12px;
@@ -727,7 +741,6 @@ section.vendors .container #wrapVendos .vendorCard {
   flex-direction: column;
   justify-content: space-between;
   background-color: #1d1d1d;
-  width: 264px;
   height: 356px;
 }
 section.vendors .container #wrapVendos .vendorCard .imgCard {
@@ -767,12 +780,14 @@ section.vendors .container #itemWrap {
 section.vendors .container #itemWrap .itemCard {
   position: relative;
   padding: 36px 20px 27px;
-  width: 264px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background: #fff;
   border: 4px solid #a5a5a5;
+}
+section.vendors .container #itemWrap .itemCard .characteristic {
+  display: none;
 }
 section.vendors .container #itemWrap .itemCard .img {
   display: flex;
@@ -802,16 +817,17 @@ section.vendors .container #itemWrap .itemCard .disclamer {
   margin-bottom: 18px;
 }
 section.vendors .container #itemWrap .itemCard .cardWrap {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  gap: 20px;
   justify-content: space-between;
 }
 section.vendors .container #itemWrap .itemCard .cardWrap .counter {
   display: grid;
   grid-template-columns: 40px 84px 40px;
 }
-section.vendors .container #itemWrap .itemCard .cardWrap .counter input, section.vendors .container #itemWrap .itemCard .cardWrap .counter button {
+section.vendors .container #itemWrap .itemCard .cardWrap .counter input,
+section.vendors .container #itemWrap .itemCard .cardWrap .counter button {
   border: 4px solid #a5a5a5;
   background: none;
   text-align: center;
@@ -839,10 +855,155 @@ section.vendors .container #itemWrap .itemCard .cardWrap .button button {
   border: 4px solid #c53720;
   cursor: pointer;
 }
-section.vendors .container #itemWrap .itemCard .button .buttonClass {
+section.vendors .container #itemWrap .itemCard .buttona {
+  grid-column: 1/3;
+}
+section.vendors .container #itemWrap .itemCard .buttona .buttonClass {
   font-family: "GeometriaBold", sans-serif;
   color: #c53720;
   padding: 8px;
+}
+section.vendors .container #itemWrap .horizontal {
+  display: grid;
+  padding: 48px 40px;
+  grid-template-columns: 212px 1fr 164px;
+}
+section.vendors .container #itemWrap .horizontal .characteristic {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  display: flex;
+  flex-direction: column;
+}
+section.vendors .container #itemWrap .horizontal .characteristic p {
+  font-size: 12px;
+  color: rgb(165, 165, 165);
+}
+section.vendors .container #itemWrap .horizontal .characteristic p strong {
+  color: rgb(29, 29, 29);
+  font-family: "GeometriaBold", sans-serif;
+}
+section.vendors .container #itemWrap .horizontal h2 {
+  margin: 0;
+}
+section.vendors .container #itemWrap .horizontal .disclamer {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+section.vendors .container #itemWrap .horizontal .img {
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+section.vendors .container #itemWrap .horizontal .withDiscount {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  margin: 0;
+}
+section.vendors .container #itemWrap .horizontal .nodiscount {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  font-size: 20px;
+}
+section.vendors .container #itemWrap .horizontal .cardWrap {
+  display: grid;
+  align-content: center;
+  gap: 16px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 40px;
+  grid-row: 3/5;
+  grid-column: 3/4;
+  margin: 0;
+  height: 100%;
+}
+section.vendors .container #itemWrap .horizontal .cardWrap .buttona {
+  grid-column: auto;
+}
+section.vendors .container #itemWrap .horizontal .cardWrap .button {
+  position: relative;
+  justify-self: end;
+}
+section.vendors .container #itemWrap .horizontal .cardWrap .button::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 12px;
+  content: "В КОРЗИНУ";
+  position: absolute;
+  font-family: "GeometriaBold", sans-serif;
+  border: #c53720 4px solid;
+  color: #c53720;
+  height: 32px;
+  left: -123px;
+  cursor: pointer;
+}
+section.vendors .container #itemWrap .horizontal > .button {
+  grid-column: 3/5;
+  grid-row: 4/5;
+}
+@media screen and (max-width: 700px) {
+  section.vendors .container #itemWrap .horizontal {
+    grid-template-columns: 1fr 164px;
+  }
+  section.vendors .container #itemWrap .horizontal .img {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  section.vendors .container #itemWrap .horizontal h2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  section.vendors .container #itemWrap .horizontal .disclamer {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  section.vendors .container #itemWrap .horizontal .characteristic {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  section.vendors .container #itemWrap .horizontal .withDiscount {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  section.vendors .container #itemWrap .horizontal .nodiscount {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  section.vendors .container #itemWrap .horizontal .cardWrap {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+}
+@media screen and (max-width: 700px) and (max-width: 375px) {
+  section.vendors .container #itemWrap .horizontal {
+    grid-template-columns: 1fr;
+  }
+  section.vendors .container #itemWrap .horizontal .img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  section.vendors .container #itemWrap .horizontal h2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  section.vendors .container #itemWrap .horizontal .disclamer {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  section.vendors .container #itemWrap .horizontal .characteristic {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  section.vendors .container #itemWrap .horizontal .withDiscount {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  section.vendors .container #itemWrap .horizontal .nodiscount {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  section.vendors .container #itemWrap .horizontal .cardWrap {
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
 }
 section.vendors .container #itemWrap .inCount {
   border: 4px solid #3cc051;
@@ -878,13 +1039,84 @@ section.vendors .container #itemWrap .notInCount::before {
   right: -3px;
   padding: 8px;
 }
-section.vendors .container #itemWrap .notInCount .cardWrap .counter input, section.vendors .container #itemWrap .notInCount .cardWrap .counter button {
+section.vendors .container #itemWrap .notInCount .cardWrap .counter input,
+section.vendors .container #itemWrap .notInCount .cardWrap .counter button {
   position: relative;
   cursor: not-allowed;
 }
 section.vendors .container #itemWrap .notInCount .cardWrap .counter button {
   background-color: #a5a5a5;
   color: #fff;
+}
+section.vendors .container #itemWrap.horizontal {
+  grid-template-columns: 1fr !important;
+}
+@media screen and (max-width: 1170px) {
+  section.vendors .container #wrapVendos,
+  section.vendors .container #itemWrap,
+  section.vendors .container .wrapAdwar {
+    grid-template-columns: repeat(2, 1fr) !important;
+    justify-content: start;
+  }
+}
+@media screen and (max-width: 1170px) and (max-width: 600px) {
+  section.vendors .container #wrapVendos,
+  section.vendors .container #itemWrap,
+  section.vendors .container .wrapAdwar {
+    grid-template-columns: 1fr !important;
+  }
+}
+section.vendors .container .right {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+section.vendors .container .right .rightTop {
+  display: flex;
+  justify-content: space-between;
+}
+section.vendors .container .right .rightTop .topRight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+section.vendors .container .right .rightTop .topRight span {
+  color: rgb(29, 29, 29);
+}
+section.vendors .container .right .rightTop .topRight .select {
+  display: flex;
+}
+section.vendors .container .right .rightTop .topRight .select > div {
+  border: #c53720 4px solid;
+}
+section.vendors .container .right .rightTop .topRight .select #gridLike, section.vendors .container .right .rightTop .topRight .select #listLike {
+  width: 48px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section.vendors .container .right .rightTop .topRight .select #gridLike.selected {
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQuMDAwMDAwIiBoZWlnaHQ9IjI2LjAwMDAwMCIgdmlld0JveD0iMCAwIDI0IDI2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KCTxkZXNjPgoJCQlDcmVhdGVkIHdpdGggUGl4c28uCgk8L2Rlc2M+Cgk8ZGVmcy8+Cgk8cmVjdCBpZD0iUmVjdGFuZ2xlIDcxIiB3aWR0aD0iNi4wMDAwMDAiIGhlaWdodD0iNi4wMDAwMDAiIGZpbGw9IiNGRkZGRkYiIGZpbGwtb3BhY2l0eT0iMS4wMDAwMDAiLz4KCTxyZWN0IGlkPSJSZWN0YW5nbGUgNzMiIHk9IjEwLjAwMDAwMCIgd2lkdGg9IjYuMDAwMDAwIiBoZWlnaHQ9IjYuMDAwMDAwIiBmaWxsPSIjRkZGRkZGIiBmaWxsLW9wYWNpdHk9IjEuMDAwMDAwIi8+Cgk8cmVjdCBpZD0iUmVjdGFuZ2xlIDc1IiB5PSIyMC4wMDAwMDAiIHdpZHRoPSI2LjAwMDAwMCIgaGVpZ2h0PSI2LjAwMDAwMCIgZmlsbD0iI0ZGRkZGRiIgZmlsbC1vcGFjaXR5PSIxLjAwMDAwMCIvPgoJPHJlY3QgaWQ9IlJlY3RhbmdsZSA3MSIgeD0iOS4wMDAwMDAiIHdpZHRoPSI2LjAwMDAwMCIgaGVpZ2h0PSI2LjAwMDAwMCIgZmlsbD0iI0ZGRkZGRiIgZmlsbC1vcGFjaXR5PSIxLjAwMDAwMCIvPgoJPHJlY3QgaWQ9IlJlY3RhbmdsZSA3MyIgeD0iOS4wMDAwMDAiIHk9IjEwLjAwMDAwMCIgd2lkdGg9IjYuMDAwMDAwIiBoZWlnaHQ9IjYuMDAwMDAwIiBmaWxsPSIjRkZGRkZGIiBmaWxsLW9wYWNpdHk9IjEuMDAwMDAwIi8+Cgk8cmVjdCBpZD0iUmVjdGFuZ2xlIDc1IiB4PSI5LjAwMDAwMCIgeT0iMjAuMDAwMDAwIiB3aWR0aD0iNi4wMDAwMDAiIGhlaWdodD0iNi4wMDAwMDAiIGZpbGw9IiNGRkZGRkYiIGZpbGwtb3BhY2l0eT0iMS4wMDAwMDAiLz4KCTxyZWN0IGlkPSJSZWN0YW5nbGUgNzEiIHg9IjE4LjAwMDAwMCIgd2lkdGg9IjYuMDAwMDAwIiBoZWlnaHQ9IjYuMDAwMDAwIiBmaWxsPSIjRkZGRkZGIiBmaWxsLW9wYWNpdHk9IjEuMDAwMDAwIi8+Cgk8cmVjdCBpZD0iUmVjdGFuZ2xlIDczIiB4PSIxOC4wMDAwMDAiIHk9IjEwLjAwMDAwMCIgd2lkdGg9IjYuMDAwMDAwIiBoZWlnaHQ9IjYuMDAwMDAwIiBmaWxsPSIjRkZGRkZGIiBmaWxsLW9wYWNpdHk9IjEuMDAwMDAwIi8+Cgk8cmVjdCBpZD0iUmVjdGFuZ2xlIDc1IiB4PSIxOC4wMDAwMDAiIHk9IjIwLjAwMDAwMCIgd2lkdGg9IjYuMDAwMDAwIiBoZWlnaHQ9IjYuMDAwMDAwIiBmaWxsPSIjRkZGRkZGIiBmaWxsLW9wYWNpdHk9IjEuMDAwMDAwIi8+Cjwvc3ZnPgo=), rgb(197, 55, 32);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section.vendors .container .right .rightTop .topRight .select #gridLike.notSelected {
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQuMDAwMDAwIiBoZWlnaHQ9IjI2LjAwMDAwMCIgdmlld0JveD0iMCAwIDI0IDI2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KCTxkZXNjPgoJCQlDcmVhdGVkIHdpdGggUGl4c28uCgk8L2Rlc2M+Cgk8ZGVmcy8+Cgk8cmVjdCBpZD0iUmVjdGFuZ2xlIDcxIiB3aWR0aD0iNi4wMDAwMDAiIGhlaWdodD0iNi4wMDAwMDAiIGZpbGw9IiMwMDAwMDAiIGZpbGwtb3BhY2l0eT0iMS4wMDAwMDAiLz4KCTxyZWN0IGlkPSJSZWN0YW5nbGUgNzMiIHk9IjEwLjAwMDAwMCIgd2lkdGg9IjYuMDAwMDAwIiBoZWlnaHQ9IjYuMDAwMDAwIiBmaWxsPSIjMDAwMDAwIiBmaWxsLW9wYWNpdHk9IjEuMDAwMDAwIi8+Cgk8cmVjdCBpZD0iUmVjdGFuZ2xlIDc1IiB5PSIyMC4wMDAwMDAiIHdpZHRoPSI2LjAwMDAwMCIgaGVpZ2h0PSI2LjAwMDAwMCIgZmlsbD0iIzAwMDAwMCIgZmlsbC1vcGFjaXR5PSIxLjAwMDAwMCIvPgoJPHJlY3QgaWQ9IlJlY3RhbmdsZSA3MSIgeD0iOS4wMDAwMDAiIHdpZHRoPSI2LjAwMDAwMCIgaGVpZ2h0PSI2LjAwMDAwMCIgZmlsbD0iIzAwMDAwMCIgZmlsbC1vcGFjaXR5PSIxLjAwMDAwMCIvPgoJPHJlY3QgaWQ9IlJlY3RhbmdsZSA3MyIgeD0iOS4wMDAwMDAiIHk9IjEwLjAwMDAwMCIgd2lkdGg9IjYuMDAwMDAwIiBoZWlnaHQ9IjYuMDAwMDAwIiBmaWxsPSIjMDAwMDAwIiBmaWxsLW9wYWNpdHk9IjEuMDAwMDAwIi8+Cgk8cmVjdCBpZD0iUmVjdGFuZ2xlIDc1IiB4PSI5LjAwMDAwMCIgeT0iMjAuMDAwMDAwIiB3aWR0aD0iNi4wMDAwMDAiIGhlaWdodD0iNi4wMDAwMDAiIGZpbGw9IiMwMDAwMDAiIGZpbGwtb3BhY2l0eT0iMS4wMDAwMDAiLz4KCTxyZWN0IGlkPSJSZWN0YW5nbGUgNzEiIHg9IjE4LjAwMDAwMCIgd2lkdGg9IjYuMDAwMDAwIiBoZWlnaHQ9IjYuMDAwMDAwIiBmaWxsPSIjMDAwMDAwIiBmaWxsLW9wYWNpdHk9IjEuMDAwMDAwIi8+Cgk8cmVjdCBpZD0iUmVjdGFuZ2xlIDczIiB4PSIxOC4wMDAwMDAiIHk9IjEwLjAwMDAwMCIgd2lkdGg9IjYuMDAwMDAwIiBoZWlnaHQ9IjYuMDAwMDAwIiBmaWxsPSIjMDAwMDAwIiBmaWxsLW9wYWNpdHk9IjEuMDAwMDAwIi8+Cgk8cmVjdCBpZD0iUmVjdGFuZ2xlIDc1IiB4PSIxOC4wMDAwMDAiIHk9IjIwLjAwMDAwMCIgd2lkdGg9IjYuMDAwMDAwIiBoZWlnaHQ9IjYuMDAwMDAwIiBmaWxsPSIjMDAwMDAwIiBmaWxsLW9wYWNpdHk9IjEuMDAwMDAwIi8+Cjwvc3ZnPgo=), #fff;
+  border-right: none;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section.vendors .container .right .rightTop .topRight .select #listLike.selected {
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQuMDAwMDAwIiBoZWlnaHQ9IjI2LjAwMDAwMCIgdmlld0JveD0iMCAwIDI0IDI2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KCTxkZXNjPgoJCQlDcmVhdGVkIHdpdGggUGl4c28uCgk8L2Rlc2M+Cgk8ZGVmcy8+Cgk8cmVjdCBpZD0iUmVjdGFuZ2xlIDcxIiB3aWR0aD0iMjQuMDAwMDAwIiBoZWlnaHQ9IjYuMDAwMDAwIiBmaWxsPSIjRkZGRkZGIiBmaWxsLW9wYWNpdHk9IjEuMDAwMDAwIi8+Cgk8cmVjdCBpZD0iUmVjdGFuZ2xlIDczIiB5PSIxMC4wMDAwMDAiIHdpZHRoPSIyNC4wMDAwMDAiIGhlaWdodD0iNi4wMDAwMDAiIGZpbGw9IiNGRkZGRkYiIGZpbGwtb3BhY2l0eT0iMS4wMDAwMDAiLz4KCTxyZWN0IGlkPSJSZWN0YW5nbGUgNzUiIHk9IjIwLjAwMDAwMCIgd2lkdGg9IjI0LjAwMDAwMCIgaGVpZ2h0PSI2LjAwMDAwMCIgZmlsbD0iI0ZGRkZGRiIgZmlsbC1vcGFjaXR5PSIxLjAwMDAwMCIvPgo8L3N2Zz4K), rgb(197, 55, 32);
+  border-right: none;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section.vendors .container .right .rightTop .topRight .select #listLike.notSelected {
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQuMDAwMDAwIiBoZWlnaHQ9IjI2LjAwMDAwMCIgdmlld0JveD0iMCAwIDI0IDI2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KCTxkZXNjPgoJCQlDcmVhdGVkIHdpdGggUGl4c28uCgk8L2Rlc2M+Cgk8ZGVmcy8+Cgk8cmVjdCBpZD0iUmVjdGFuZ2xlIDcxIiB3aWR0aD0iMjQuMDAwMDAwIiBoZWlnaHQ9IjYuMDAwMDAwIiBmaWxsPSIjMUQxRDFEIiBmaWxsLW9wYWNpdHk9IjEuMDAwMDAwIi8+Cgk8cmVjdCBpZD0iUmVjdGFuZ2xlIDczIiB5PSIxMC4wMDAwMDAiIHdpZHRoPSIyNC4wMDAwMDAiIGhlaWdodD0iNi4wMDAwMDAiIGZpbGw9IiMxRDFEMUQiIGZpbGwtb3BhY2l0eT0iMS4wMDAwMDAiLz4KCTxyZWN0IGlkPSJSZWN0YW5nbGUgNzUiIHk9IjIwLjAwMDAwMCIgd2lkdGg9IjI0LjAwMDAwMCIgaGVpZ2h0PSI2LjAwMDAwMCIgZmlsbD0iIzFEMUQxRCIgZmlsbC1vcGFjaXR5PSIxLjAwMDAwMCIvPgo8L3N2Zz4K), #fff;
+  border-left: none;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 section.vendors .container .right .wrapAdwar {
   margin-top: 28px;

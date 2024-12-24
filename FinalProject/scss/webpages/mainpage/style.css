@@ -171,6 +171,42 @@ section.second .container .wraper > div:hover::before {
   background-color: rgba(0, 0, 0, 0.8);
   animation: buttonAnimation 0.1s ease-in forwards;
 }
+@media screen and (pointer: coarse) {
+  section.second .container .wraper > div .button {
+    display: block;
+    width: 216px;
+    position: absolute;
+    bottom: 68px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    animation: buttonAnimation 0.1s ease-in forwards;
+  }
+  section.second .container .wraper > div .button button {
+    font-size: 14px;
+  }
+  @keyframes buttonAnimation {
+    0% {
+      display: flex;
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  section.second .container .wraper > div::before {
+    content: attr(data-name);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: buttonAnimation 0.1s ease-in forwards;
+  }
+}
 section.second .container .wraper .batteries {
   background-image: url(../../../img/jpg/mainPage/battery.jpg);
 }
@@ -772,12 +808,14 @@ section.vendors .container #wrapVendos .vendorCard .textCard .textWrap p {
 section.vendors .container #wrapVendos .vendorCard .textCard .button {
   font-size: 12px;
 }
-section.vendors .container #itemWrap {
+section.vendors .container #itemWrap,
+section.vendors .container #item {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
-section.vendors .container #itemWrap .itemCard {
+section.vendors .container #itemWrap .itemCard,
+section.vendors .container #item .itemCard {
   position: relative;
   padding: 36px 20px 27px;
   display: flex;
@@ -786,48 +824,58 @@ section.vendors .container #itemWrap .itemCard {
   background: #fff;
   border: 4px solid #a5a5a5;
 }
-section.vendors .container #itemWrap .itemCard .characteristic {
+section.vendors .container #itemWrap .itemCard .characteristic,
+section.vendors .container #item .itemCard .characteristic {
   display: none;
 }
-section.vendors .container #itemWrap .itemCard .img {
+section.vendors .container #itemWrap .itemCard .img,
+section.vendors .container #item .itemCard .img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section.vendors .container #itemWrap .itemCard h2 {
+section.vendors .container #itemWrap .itemCard h2,
+section.vendors .container #item .itemCard h2 {
   font-family: "GeometriaMedium", sans-serif;
   font-size: 20px;
   color: #c53720;
   margin: 16px 0 20px;
 }
-section.vendors .container #itemWrap .itemCard .nodiscount {
+section.vendors .container #itemWrap .itemCard .nodiscount,
+section.vendors .container #item .itemCard .nodiscount {
   font-family: "GeometriaBold", sans-serif;
   text-decoration: line-through;
   color: #a5a5a5;
 }
-section.vendors .container #itemWrap .itemCard .withDiscount {
+section.vendors .container #itemWrap .itemCard .withDiscount,
+section.vendors .container #item .itemCard .withDiscount {
   font-family: "GeometriaBold", sans-serif;
   font-size: 28px;
   color: #1d1d1d;
   margin-bottom: 12px;
 }
-section.vendors .container #itemWrap .itemCard .disclamer {
+section.vendors .container #itemWrap .itemCard .disclamer,
+section.vendors .container #item .itemCard .disclamer {
   font-size: 12px;
   color: #a5a5a5;
   margin-bottom: 18px;
 }
-section.vendors .container #itemWrap .itemCard .cardWrap {
+section.vendors .container #itemWrap .itemCard .cardWrap,
+section.vendors .container #item .itemCard .cardWrap {
   display: grid;
   grid-template-columns: 1fr 40px;
   gap: 20px;
   justify-content: space-between;
 }
-section.vendors .container #itemWrap .itemCard .cardWrap .counter {
+section.vendors .container #itemWrap .itemCard .cardWrap .counter,
+section.vendors .container #item .itemCard .cardWrap .counter {
   display: grid;
   grid-template-columns: 40px 84px 40px;
 }
 section.vendors .container #itemWrap .itemCard .cardWrap .counter input,
-section.vendors .container #itemWrap .itemCard .cardWrap .counter button {
+section.vendors .container #itemWrap .itemCard .cardWrap .counter button,
+section.vendors .container #item .itemCard .cardWrap .counter input,
+section.vendors .container #item .itemCard .cardWrap .counter button {
   border: 4px solid #a5a5a5;
   background: none;
   text-align: center;
@@ -836,16 +884,19 @@ section.vendors .container #itemWrap .itemCard .cardWrap .counter button {
   color: #a5a5a5;
   cursor: pointer;
 }
-section.vendors .container #itemWrap .itemCard .cardWrap .counter input {
+section.vendors .container #itemWrap .itemCard .cardWrap .counter input,
+section.vendors .container #item .itemCard .cardWrap .counter input {
   border-left: none;
   border-right: none;
   outline: none;
 }
-section.vendors .container #itemWrap .itemCard .cardWrap .button {
+section.vendors .container #itemWrap .itemCard .cardWrap .button,
+section.vendors .container #item .itemCard .cardWrap .button {
   width: 40px;
   height: 40px;
 }
-section.vendors .container #itemWrap .itemCard .cardWrap .button button {
+section.vendors .container #itemWrap .itemCard .cardWrap .button button,
+section.vendors .container #item .itemCard .cardWrap .button button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -855,55 +906,67 @@ section.vendors .container #itemWrap .itemCard .cardWrap .button button {
   border: 4px solid #c53720;
   cursor: pointer;
 }
-section.vendors .container #itemWrap .itemCard .buttona {
+section.vendors .container #itemWrap .itemCard .buttona,
+section.vendors .container #item .itemCard .buttona {
   grid-column: 1/3;
 }
-section.vendors .container #itemWrap .itemCard .buttona .buttonClass {
+section.vendors .container #itemWrap .itemCard .buttona .buttonClass,
+section.vendors .container #item .itemCard .buttona .buttonClass {
   font-family: "GeometriaBold", sans-serif;
   color: #c53720;
   padding: 8px;
 }
-section.vendors .container #itemWrap .horizontal {
+section.vendors .container #itemWrap .horizontal,
+section.vendors .container #item .horizontal {
   display: grid;
   padding: 48px 40px;
   grid-template-columns: 212px 1fr 164px;
 }
-section.vendors .container #itemWrap .horizontal .characteristic {
+section.vendors .container #itemWrap .horizontal .characteristic,
+section.vendors .container #item .horizontal .characteristic {
   grid-column: 2/3;
   grid-row: 4/5;
   display: flex;
   flex-direction: column;
 }
-section.vendors .container #itemWrap .horizontal .characteristic p {
+section.vendors .container #itemWrap .horizontal .characteristic p,
+section.vendors .container #item .horizontal .characteristic p {
   font-size: 12px;
   color: rgb(165, 165, 165);
 }
-section.vendors .container #itemWrap .horizontal .characteristic p strong {
+section.vendors .container #itemWrap .horizontal .characteristic p strong,
+section.vendors .container #item .horizontal .characteristic p strong {
   color: rgb(29, 29, 29);
   font-family: "GeometriaBold", sans-serif;
 }
-section.vendors .container #itemWrap .horizontal h2 {
+section.vendors .container #itemWrap .horizontal h2,
+section.vendors .container #item .horizontal h2 {
   margin: 0;
 }
-section.vendors .container #itemWrap .horizontal .disclamer {
+section.vendors .container #itemWrap .horizontal .disclamer,
+section.vendors .container #item .horizontal .disclamer {
   grid-column: 2/3;
   grid-row: 3/4;
 }
-section.vendors .container #itemWrap .horizontal .img {
+section.vendors .container #itemWrap .horizontal .img,
+section.vendors .container #item .horizontal .img {
   grid-row-start: 1;
   grid-row-end: 5;
 }
-section.vendors .container #itemWrap .horizontal .withDiscount {
+section.vendors .container #itemWrap .horizontal .withDiscount,
+section.vendors .container #item .horizontal .withDiscount {
   grid-column: 3/4;
   grid-row: 1/2;
   margin: 0;
 }
-section.vendors .container #itemWrap .horizontal .nodiscount {
+section.vendors .container #itemWrap .horizontal .nodiscount,
+section.vendors .container #item .horizontal .nodiscount {
   grid-column: 3/4;
   grid-row: 2/3;
   font-size: 20px;
 }
-section.vendors .container #itemWrap .horizontal .cardWrap {
+section.vendors .container #itemWrap .horizontal .cardWrap,
+section.vendors .container #item .horizontal .cardWrap {
   display: grid;
   align-content: center;
   gap: 16px;
@@ -914,14 +977,17 @@ section.vendors .container #itemWrap .horizontal .cardWrap {
   margin: 0;
   height: 100%;
 }
-section.vendors .container #itemWrap .horizontal .cardWrap .buttona {
+section.vendors .container #itemWrap .horizontal .cardWrap .buttona,
+section.vendors .container #item .horizontal .cardWrap .buttona {
   grid-column: auto;
 }
-section.vendors .container #itemWrap .horizontal .cardWrap .button {
+section.vendors .container #itemWrap .horizontal .cardWrap .button,
+section.vendors .container #item .horizontal .cardWrap .button {
   position: relative;
   justify-self: end;
 }
-section.vendors .container #itemWrap .horizontal .cardWrap .button::before {
+section.vendors .container #itemWrap .horizontal .cardWrap .button::before,
+section.vendors .container #item .horizontal .cardWrap .button::before {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -935,83 +1001,103 @@ section.vendors .container #itemWrap .horizontal .cardWrap .button::before {
   left: -123px;
   cursor: pointer;
 }
-section.vendors .container #itemWrap .horizontal > .button {
+section.vendors .container #itemWrap .horizontal > .button,
+section.vendors .container #item .horizontal > .button {
   grid-column: 3/5;
   grid-row: 4/5;
 }
 @media screen and (max-width: 700px) {
-  section.vendors .container #itemWrap .horizontal {
+  section.vendors .container #itemWrap .horizontal,
+  section.vendors .container #item .horizontal {
     grid-template-columns: 1fr 164px;
   }
-  section.vendors .container #itemWrap .horizontal .img {
+  section.vendors .container #itemWrap .horizontal .img,
+  section.vendors .container #item .horizontal .img {
     grid-column: 1/3;
     grid-row: 1/2;
   }
-  section.vendors .container #itemWrap .horizontal h2 {
+  section.vendors .container #itemWrap .horizontal h2,
+  section.vendors .container #item .horizontal h2 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-  section.vendors .container #itemWrap .horizontal .disclamer {
+  section.vendors .container #itemWrap .horizontal .disclamer,
+  section.vendors .container #item .horizontal .disclamer {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-  section.vendors .container #itemWrap .horizontal .characteristic {
+  section.vendors .container #itemWrap .horizontal .characteristic,
+  section.vendors .container #item .horizontal .characteristic {
     grid-column: 1/2;
     grid-row: 4/5;
   }
-  section.vendors .container #itemWrap .horizontal .withDiscount {
+  section.vendors .container #itemWrap .horizontal .withDiscount,
+  section.vendors .container #item .horizontal .withDiscount {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-  section.vendors .container #itemWrap .horizontal .nodiscount {
+  section.vendors .container #itemWrap .horizontal .nodiscount,
+  section.vendors .container #item .horizontal .nodiscount {
     grid-column: 2/3;
     grid-row: 3/4;
   }
-  section.vendors .container #itemWrap .horizontal .cardWrap {
+  section.vendors .container #itemWrap .horizontal .cardWrap,
+  section.vendors .container #item .horizontal .cardWrap {
     grid-column: 2/3;
     grid-row: 4/5;
   }
 }
 @media screen and (max-width: 700px) and (max-width: 375px) {
-  section.vendors .container #itemWrap .horizontal {
+  section.vendors .container #itemWrap .horizontal,
+  section.vendors .container #item .horizontal {
     grid-template-columns: 1fr;
   }
-  section.vendors .container #itemWrap .horizontal .img {
+  section.vendors .container #itemWrap .horizontal .img,
+  section.vendors .container #item .horizontal .img {
     grid-column: 1/2;
     grid-row: 1/2;
   }
-  section.vendors .container #itemWrap .horizontal h2 {
+  section.vendors .container #itemWrap .horizontal h2,
+  section.vendors .container #item .horizontal h2 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-  section.vendors .container #itemWrap .horizontal .disclamer {
+  section.vendors .container #itemWrap .horizontal .disclamer,
+  section.vendors .container #item .horizontal .disclamer {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-  section.vendors .container #itemWrap .horizontal .characteristic {
+  section.vendors .container #itemWrap .horizontal .characteristic,
+  section.vendors .container #item .horizontal .characteristic {
     grid-column: 1/2;
     grid-row: 4/5;
   }
-  section.vendors .container #itemWrap .horizontal .withDiscount {
+  section.vendors .container #itemWrap .horizontal .withDiscount,
+  section.vendors .container #item .horizontal .withDiscount {
     grid-column: 1/2;
     grid-row: 5/6;
   }
-  section.vendors .container #itemWrap .horizontal .nodiscount {
+  section.vendors .container #itemWrap .horizontal .nodiscount,
+  section.vendors .container #item .horizontal .nodiscount {
     grid-column: 1/2;
     grid-row: 6/7;
   }
-  section.vendors .container #itemWrap .horizontal .cardWrap {
+  section.vendors .container #itemWrap .horizontal .cardWrap,
+  section.vendors .container #item .horizontal .cardWrap {
     grid-column: 1/2;
     grid-row: 7/8;
   }
 }
-section.vendors .container #itemWrap .inCount {
+section.vendors .container #itemWrap .inCount,
+section.vendors .container #item .inCount {
   border: 4px solid #3cc051;
 }
-section.vendors .container #itemWrap .inCount h2 {
+section.vendors .container #itemWrap .inCount h2,
+section.vendors .container #item .inCount h2 {
   color: #1d1d1d;
 }
-section.vendors .container #itemWrap .inCount::before {
+section.vendors .container #itemWrap .inCount::before,
+section.vendors .container #item .inCount::before {
   content: "В НАЛИЧИИ";
   position: absolute;
   font-family: "GeometriaBold", sans-serif;
@@ -1022,13 +1108,16 @@ section.vendors .container #itemWrap .inCount::before {
   right: -3px;
   padding: 8px;
 }
-section.vendors .container #itemWrap .notInCount {
+section.vendors .container #itemWrap .notInCount,
+section.vendors .container #item .notInCount {
   border: 4px solid #c53720;
 }
-section.vendors .container #itemWrap .notInCount h2 {
+section.vendors .container #itemWrap .notInCount h2,
+section.vendors .container #item .notInCount h2 {
   color: #1d1d1d;
 }
-section.vendors .container #itemWrap .notInCount::before {
+section.vendors .container #itemWrap .notInCount::before,
+section.vendors .container #item .notInCount::before {
   content: "ПОД ЗАКАЗ";
   position: absolute;
   font-family: "GeometriaBold", sans-serif;
@@ -1040,11 +1129,14 @@ section.vendors .container #itemWrap .notInCount::before {
   padding: 8px;
 }
 section.vendors .container #itemWrap .notInCount .cardWrap .counter input,
-section.vendors .container #itemWrap .notInCount .cardWrap .counter button {
+section.vendors .container #itemWrap .notInCount .cardWrap .counter button,
+section.vendors .container #item .notInCount .cardWrap .counter input,
+section.vendors .container #item .notInCount .cardWrap .counter button {
   position: relative;
   cursor: not-allowed;
 }
-section.vendors .container #itemWrap .notInCount .cardWrap .counter button {
+section.vendors .container #itemWrap .notInCount .cardWrap .counter button,
+section.vendors .container #item .notInCount .cardWrap .counter button {
   background-color: #a5a5a5;
   color: #fff;
 }
@@ -1089,7 +1181,8 @@ section.vendors .container .right .rightTop .topRight .select {
 section.vendors .container .right .rightTop .topRight .select > div {
   border: #c53720 4px solid;
 }
-section.vendors .container .right .rightTop .topRight .select #gridLike, section.vendors .container .right .rightTop .topRight .select #listLike {
+section.vendors .container .right .rightTop .topRight .select #gridLike,
+section.vendors .container .right .rightTop .topRight .select #listLike {
   width: 48px;
   height: 40px;
   background-repeat: no-repeat;
@@ -1145,4 +1238,101 @@ section.vendors .container .right > p {
 section.vendors .container .right > p span {
   font-family: "GeometriaBold", sans-serif;
   color: #1d1d1d;
+}
+section.vendors .container .right .noItem {
+  background: url(../../../img/jpg/noItem.jpeg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 840px;
+  height: 292px;
+  border: 1px dashed #a5a5a5;
+  border-style: dashed;
+  position: relative;
+}
+section.vendors .container .right .noItem .wrap {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 16px;
+  width: 380px;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+section.vendors .container .right .noItem .wrap p {
+  font-size: 32px;
+  grid-column: 1/3;
+}
+section.vendors .container .right .noItem .wrap #return {
+  border: 4px solid rgb(255, 255, 255);
+  font-size: 12px;
+}
+section.vendors .container .right .noItem .wrap #callManager {
+  border: 4px solid rgb(29, 29, 29);
+  color: rgb(29, 29, 29);
+  font-size: 12px;
+}
+section.vendors .container .right #item {
+  border: 4px solid rgb(165, 165, 165);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #FFF;
+  padding: 40px;
+}
+section.vendors .container .right #item .itemCard {
+  border: none;
+  padding: 0;
+}
+section.vendors .container .right #item .itemCard span {
+  color: rgb(60, 192, 81);
+  font-size: 12px;
+}
+section.vendors .container .right #item .itemCard .characteristic {
+  display: block;
+}
+section.vendors .container .right #item .itemCard .characteristic p {
+  font-size: 16px;
+  color: rgb(165, 165, 165);
+}
+section.vendors .container .right #item .itemCard .characteristic p strong {
+  color: rgb(29, 29, 29);
+  font-family: "GeometriaBold", sans-serif;
+}
+section.vendors .container .right #item .itemCard .cardWrap .button {
+  position: relative;
+  justify-self: end;
+}
+section.vendors .container .right #item .itemCard .cardWrap .button::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 12px;
+  content: "В КОРЗИНУ";
+  position: absolute;
+  font-family: "GeometriaBold", sans-serif;
+  border: #c53720 4px solid;
+  color: #c53720;
+  height: 32px;
+  left: -123px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1120px) {
+  section.vendors .container .right #item .itemCard .cardWrap {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px;
+    justify-items: end;
+  }
+}
+@media screen and (max-width: 950px) {
+  section.vendors .container .right #item {
+    grid-template-columns: 1fr;
+  }
+  section.vendors .container .right #item .imgwrap {
+    justify-self: center;
+  }
+}
+@media screen and (max-width: 950px) and (max-width: 550px) {
+  section.vendors .container .right #item .imgwrap img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

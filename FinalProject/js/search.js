@@ -1,11 +1,13 @@
+if (window.location.hostname == 'pane2k.github.io') {
+  repo = 'https://pane2k.github.io/itAcademy2024';
+}
+else {
+  repo = '';
+}
 document.addEventListener('DOMContentLoaded', function () {
   console.log(window.location.hostname)
-  if (window.location.hostname == 'pane2k.github.io') {
-    repo = 'https://pane2k.github.io/itAcademy2024';
-  }
-  else {
-    repo = '';
-  }
+
+  
   var menuData = [
     {
       text: "АККУМУЛЯТОРЫ",
@@ -16,11 +18,11 @@ document.addEventListener('DOMContentLoaded', function () {
           isParent: true,
           children: [
             { text: "MAGNUM 60Ah", link: repo + "/FinalProject/catalog/battery/magnum/" },
-            { text: "MAGNUM 75Ah", link: "./magnum/" },
-            { text: "MAGNUM 90Ah", link: "./magnum/" },
-            { text: "MAGNUM 132Ah", link: "./magnum/" },
-            { text: "MAGNUM 190Ah", link: "./magnum/" },
-            { text: "MAGNUM 230Ah", link: "./magnum/" }
+            { text: "MAGNUM 75Ah", link: repo + "/FinalProject/catalog/battery/magnum/" },
+            { text: "MAGNUM 90Ah", link: repo + "/FinalProject/catalog/battery/magnum/" },
+            { text: "MAGNUM 132Ah", link: repo + "/FinalProject/catalog/battery/magnum/" },
+            { text: "MAGNUM 190Ah", link: repo + "/FinalProject/catalog/battery/magnum/" },
+            { text: "MAGNUM 230Ah", link: repo + "/FinalProject/catalog/battery/magnum/" }
           ]
         },
         { text: "АКБ ЗВЕРЬ", isParent: false },
@@ -28,10 +30,10 @@ document.addEventListener('DOMContentLoaded', function () {
           text: "ТЮМЕНСКИЙ\nАККУМУЛЯТОРНЫЙ ЗАВОД",
           isParent: true,
           children: [
-            { text: "ТЗ 60Ah" },
-            { text: "ТЗ 75Ah" },
-            { text: "ТЗ 90Ah" },
-            { text: "ТЗ 100Ah" }
+            { text: "ТЗ 60Ah"   },
+            { text: "ТЗ 75Ah"   },
+            { text: "ТЗ 90Ah"   },
+            { text: "ТЗ 100Ah"  }
           ]
         },
         { text: "AKB AKOM", isParent: false },
@@ -102,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
       link.href = item.link;
     }
     else {
-      link.href = '#';
+      link.href = repo + '/FinalProject/catalog/noitem/';
     }
 
     link.textContent = item.text;

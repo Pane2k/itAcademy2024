@@ -21,13 +21,7 @@ function AccumCharacteristics(capacity, starting, polarity, terminals, dimension
     this.manufacturer = manufacturer;
     this.weight = weight;
 }
-/*Емкость, Ач: 60 
-Пусковой ток, А: 500 
-Полярность: Прямая/Обратная 
-Клеммы: Толстые 
-Pазмеры (ДхШхВ), мм: 242х175х190 
-Производитель: Magnum 
-Bес, кг: 14.5 */
+
 var accumCharacteristics = new AccumCharacteristics('60', '500', 'Прямая/Обратная', 'Толстые', '242х175х190', 'Magnum', '14.5');
 
 
@@ -89,7 +83,7 @@ function renderAccum(accum) {
                             </button>
                         </div>
                         <div class="buttona">
-                            <button class="buttonClass">ПОДРОБНЕЕ</button>
+                            <button class="buttonClass" onclick="location.href='magnum60'">ПОДРОБНЕЕ</button>
                         </div>
                     </div>
                     
@@ -97,6 +91,7 @@ function renderAccum(accum) {
     }
     itemWrap.innerHTML = html;
 }
+
 renderAccum(accum);
 
 

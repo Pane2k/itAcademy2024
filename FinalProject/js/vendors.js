@@ -38,7 +38,7 @@ function renderVendors(companys) {
                                 <p>${companys[i].description}</p>
                             </div>
                             <div class="button">
-                                <button class="buttonClass mediumButton" onclick="window.open('${companys[i].url}', '_blank')">ПОДРОБНЕЕ</button>
+                                <button class="buttonClass mediumButton" onclick="location.href='${companys[i].url}'">ПОДРОБНЕЕ</button>
                             </div>
                         </div>
                     </div>`

@@ -1,27 +1,5 @@
 itemWrap = document.getElementById('itemWrap');
 
-
-function Accum(img, title, price, oldPrice, disclamer, available, characteristics) {
-    this.img = img;
-    this.title = title;
-    this.price = price;
-
-    this.oldPrice = oldPrice;
-    this.disclamer = disclamer;
-    this.available = available;
-    this.characteristics = characteristics
-}
-
-function AccumCharacteristics(capacity, starting, polarity, terminals, dimensions, manufacturer, weight) {
-    this.capacity = capacity;
-    this.starting = starting;
-    this.polarity = polarity;
-    this.terminals = terminals;
-    this.dimensions = dimensions;
-    this.manufacturer = manufacturer;
-    this.weight = weight;
-}
-
 var accumCharacteristics = new AccumCharacteristics('60', '500', 'Прямая/Обратная', 'Толстые', '242х175х190', 'Magnum', '14.5');
 
 

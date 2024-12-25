@@ -53,6 +53,3 @@ html = `<div class="imgwrap">
         </div>`;
 
 itemWrap.innerHTML = html;
-
-
-console.log(item);

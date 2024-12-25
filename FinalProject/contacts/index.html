@@ -5,117 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProAuto</title>
-    <link rel="stylesheet" href="/FinalProject/scss/style.css">
+    <link rel="stylesheet" href="../scss/style.css">
+    <link rel="stylesheet" href="../scss/webpages/mainpage/style.css">
 </head>
 
 <body>
 
-    <header>
+    <header></header>
+    <div class="banner contactsBanner">
         <div class="container">
-            <div class="burger">
-                <button id="burgerButton">
-
-                </button>
-            </div>
-            <div class="logo">
-                <a href="/FinalProject/">
-                    <img src="/FinalProject/img/svg/logo.svg" alt="">
-                </a>
-            </div>
-            <div class="menuWrap" id="menuWrap">
-                <ul>
-                    <li>
-                        <a href="#!">КОМПАНИЯ</a>
-                    </li>
-                    <li>
-                        <a href="#!">КАТАЛОГ</a>
-                    </li>
-                    <li>
-                        <a href="#!">УСЛУГИ</a>
-                    </li>
-                    <li>
-                        <a href="#!">ИНФОРМАЦИЯ</a>
-                    </li>
-                    <li>
-                        <a href="#!">КОНТАКТЫ</a>
-                    </li>
-                </ul>
-            </div>
+            <h1>БУДЬТЕ НА СВЯЗИ С КОМАНДОЙ PRO AUTO</h1>
             <div class="button">
-                <button class="buttonClass">
-                    ЗАКАЗАТЬ ЗВОНОК
-                </button>
-            </div>
-            <div class="searchAndCart">
-                <a id="search" href="#!">
-                    <img src="/FinalProject/img/svg/Lupa.svg" alt="">
-                </a>
-                <a id="card" href="#!" data-itemsInCard="0">
-                    <img src="/FinalProject/img/svg/card.svg" alt="">
-                </a>
+                <button class="buttonClass mediumButton" onclick="location.href='../../catalog/'">ПЕРЕЙТИ В
+                    КАТАЛОГ</button>
             </div>
         </div>
-    </header>
-
-    <footer>
+    </div>
+    <div class="linkInSite" id="links">
         <div class="container">
-            <div class="logoAndCR">
-                <div class="logo">
-                    <a href="#!">
-                        <img src="/FinalProject/img/svg/logo.svg" alt="">
-                    </a>
+            <p class="ToMainPage"><a href="../">ГЛАВНАЯ</a></p>
+            <p><a href="./">КОНТАКТЫ</a></p>
+        </div>
+    </div>
+    <section class="contacts">
+        <div class="container">
+            <h2>КОНТАКТЫ</h2>
+            <p>Аккумуляторы и автомасла в Перми</p>
+            <div class="wrap">
+                <div class="textWrap">
+                    <div>
+                        <h3>Как с нами связаться</h3>
+                        <p class="phoneNumber"><a href="tel://0">+7 (342) 279-36-13
+                            </a></p>
+                        <p class="email"><a href="mailto://0">proauto59@yandex.ru</a></p>
+                        <p class="address">г. Пермь, Леонова 82 Б</p>
+                    </div>
+                    <div>
+                        <h3>Режим работы</h3>
+                        <p class="worktime">Пн. – Вс.: с 9:00 до 18:00</p>
+                    </div>
                 </div>
-                <p class="copyRight">
-                    © 2019 PRO Auto. <br>Все права защищены.
-                </p>
-            </div>
-            <div class="gridList">
-                <div class="Company">
-                    <p>КОМПАНИЯ</p>
-                    <ul>
-                        <li><a href="#!">О КОМПАНИИ</a></li>
-                        <li><a href="#!">ЛИЦЕНЗИИ</a></li>
-                        <li><a href="#!">ПАРТНЕРЫ</a></li>
-                        <li><a href="#!">ОТЗЫВЫ КЛИЕНТОВ</a></li>
-                        <li><a href="#!">РЕКВИЗИТЫ</a></li>
-                        <li><a href="#!">ВАКАНСИИ</a></li>
-                    </ul>
+                <div class="mapWrap">
+                    <img src="../img/png/map.png" alt="">
                 </div>
-                <div class="Catalog">
-                    <p>КАТАЛОГ</p>
-                    <ul>
-                        <li><a href="#!">АККУМУЛЯТОРЫ</a></li>
-                        <li><a href="#!">АВТОМАСЛА</a></li>
-                        <li><a href="#!">АКСЕССУАРЫ</a></li>
-                        <li><a href="#!">АВТОХИМИЯ</a></li>
-                    </ul>
-                </div>
-                <div class="Servise">
-                    <p>УСЛУГИ</p>
-                    <ul>
-                        <li><a href="">ДИАГНОСТИКА АККУМУЛЯТОРА</a></li>
-                        <li><a href="">ПРИЕМ АККУМУЛЯТОРОВ</a></li>
-                    </ul>
-                </div>
-                <div class="Info">
-                    <p>ИНФОРМАЦИЯ</p>
-                    <ul>
-                        <li><a href="">АКЦИИ</a></li>
-                        <li><a href="">НОВОСТИ</a></li>
-                        <li><a href="">СТАТЬИ</a></li>
-                        <li><a href="">ВОПРОС - ОТВЕТ</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="contact">
-                <div class="phoneNumber"><a href="tel://0">+7 (342) 279-36-13</a></div>
-                <div class="email"><a href="mailto://0">proauto59@yandex.ru</a></div>
-                <div class="footer__Button"><button class="buttonClass">ЗАКАЗАТЬ ЗВОНОК</button></div>
             </div>
         </div>
-    </footer>
+    </section>
+    <section class="askQuestion">
+        <span class="container">
+            <h2>ЗАДАЙТЕ ВОПРОС</h2>
+            <p>Менеджеры компании с радостью ответят на ваши вопросы и помогут с <br> выбором нужной продукции.</p>
+            <form action="http://fe.it-academy.by/TestForm.php" method="POST">
+                <input type="hidden" name="recept" value="question">
+                <input type="hidden" name="userwant" value="question">
+                <label for="name">Ваше имя:<sup>*</sup></label>
+                <input type="text" name="name" id="name" placeholder="Имя" required>
+                <label for="phone">Телефон:<sup>*</sup></label>
+                <input type="text" name="phone" id="phone" placeholder="Телефон" required>
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" id="email" placeholder="E-mail">
+                <label for="service">Услуга</label>
+                <input type="text" name="service" id="service" placeholder="Диагностика аккумулятора автомобиля">
+                <label for="comment">Сообщение</label>
+                <textarea name="comment" id="comment"></textarea>
+                <input type="checkbox" name="pesonaldata" id="pesonaldata" required>
+                <label for="pesonaldata">
+                    <span>Я согласен на <a href="#!"> обработку персональных данных:<sup>*</sup></a></span>
+                </label>
+                <div class="formBottom">
+                    <p>* Обязательное поле</p>
+                    <button class="buttonClass mediumButton" type="submit">ЗАКАЗАТЬ ЗВОНОК</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer></footer>
 
-    <script src="/FinalProject/js/script.js"></script>
+    <script src="../js/headerRender.js"></script>
+    <script src="../js/footerRender.js"></script>
+    <script src="../js/renderPage.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

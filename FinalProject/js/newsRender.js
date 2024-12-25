@@ -1,15 +1,26 @@
 var newsElement = document.getElementById('news');
+
+
+if (window.location.hostname == 'pane2k.github.io') {
+    repo = 'https://pane2k.github.io/itAcademy2024';
+  }
+  else {
+    repo = '';
+  }
 function News(img, time, title, link) {
     this.img = img;
     this.time = time;
     this.title = title;
     this.link = link;
-
 }
+var repo='';
+
+
+
 var news = [
-    new News('img/jpg/news/VARTA-Facebook-Bit-1-1400x920.jpg', '12 февраля 2020 года', 'У НАС НОВЫЙ ЛОГОТИП И НОВЫЙ САЙТ!', '!'),
-    new News('img/jpg/news/VARTA-Facebook-Bit-1-1400x920.jpg', '12 февраля 2020 года', 'У НАС НОВЫЙ ЛОГОТИП И НОВЫЙ САЙТ!', '!'),
-    new News('img/jpg/news/VARTA-Facebook-Bit-1-1400x920.jpg', '12 февраля 2020 года', 'У НАС НОВЫЙ ЛОГОТИП И НОВЫЙ САЙТ!', '!')
+    new News(repo + '/FinalProject/img/jpg/news/newlogo.jpg', '12 февраля 2020 года', 'У НАС НОВЫЙ ЛОГОТИП И НОВЫЙ САЙТ!', '#!'),
+    new News(repo + '/FinalProject/img/jpg/news/VARTA-Facebook-Bit-1-1400x920.jpg', '10 февраля 2020 года', 'ОБНОВЛЕНИЕ ЛИНЕЙКИ АККУМУЛЯТОРОВ VARTRA', '#!'),
+    new News(repo + '/FinalProject/img/jpg/news/consult.jpeg', '3 февраля 2020 года', 'БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА ТЕПЕРЬ В РЕЖИМЕ ONLINE', '#!')
 ]
 function renderNews(news) {
     var newsElement = document.getElementById('news');

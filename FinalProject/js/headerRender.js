@@ -115,7 +115,7 @@ function headerRender(){
                             <a href="${repo}/FinalProject/info">ИНФОРМАЦИЯ</a>
                             <ul>
                                 <li>
-                                    <a href="${repo}/FinalProject/info/#news">НОВОСТИ</a>
+                                    <a href="${repo}/FinalProject/info/#links">НОВОСТИ</a>
                                 </li>
                                 <li>
                                     <a href="${repo}/FinalProject/info/#faq">F.A.Q</a>
@@ -123,7 +123,7 @@ function headerRender(){
                             </ul>
                         </li>
                         <li>
-                            <a href="#!">КОНТАКТЫ</a>
+                            <a href="${repo}/FinalProject/contacts">КОНТАКТЫ</a>
                         </li>
                     </ul>
                 </div>

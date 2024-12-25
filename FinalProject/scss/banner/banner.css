@@ -8,14 +8,32 @@
 }
 .mainBanner {
   background-image: url("../../img/jpg/mainBanner.jpg");
+}
+
+.serviceBanner {
+  background-image: url("../../img/jpg/serviceBanner.jpeg");
+}
+
+.companyBanner {
+  background-image: url("../../img/jpg/companyBanner.jpeg");
+}
+
+.banner404 {
+  background-image: url("../../img/jpg/404.jpeg");
+  padding-bottom: 189px;
+}
+
+.banner {
   background-position: center;
   background-size: cover;
 }
-
 .banner .container {
   flex-direction: column;
   padding-top: 255px;
   gap: 52px;
+}
+.banner .container p {
+  font-size: 24px;
 }
 .banner .container h1 {
   font-family: "GeometriaBold", sans-serif;

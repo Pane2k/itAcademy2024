@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../scss/style.css">
+    <link rel="stylesheet" href="../../scss/webpages/mainpage/style.css">
+    <style></style>
+</head>
+
+<body>
+    <header></header>
+    <div class="banner serviceBanner">
+        <div class="container">
+            <h1>ПРОФЕССИОНАЛЬНАЯ
+                ПОМОЩЬ ВАШЕМУ АВТОМОБИЛЮ</h1>
+            <div class="button">
+                <button class="buttonClass mediumButton" onclick="location.href='../../catalog/'">ПЕРЕЙТИ В
+                    КАТАЛОГ</button>
+            </div>
+        </div>
+    </div>
+    <section class="linkInSite" id="links">
+        <div class="container" >
+            <p class="ToMainPage" ><a href="../../">ГЛАВНАЯ</a></p>
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNOCA0TDEyIDEwTDggMTYiIHN0cm9rZT0iI0M1MzcyMCIgc3Ryb2tlLXdpZHRoPSI0IiAvPgo8L3N2Zz4="
+                alt="">
+            <p><a href="../">УСЛУГИ</a></p>
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNOCA0TDEyIDEwTDggMTYiIHN0cm9rZT0iI0M1MzcyMCIgc3Ryb2tlLXdpZHRoPSI0IiAvPgo8L3N2Zz4="
+                alt="">
+            <p><a href="./">ДИАГНОСТИКА АККУМУЛЯТОРА</a></p>
+
+        </div>
+    </section>
+    <section class="service">
+        <div class="container">
+            <h2>ДИАГНОСТИКА АККУМУЛЯТОРА</h2>
+            <div class="smallBanner">
+                <h3>
+                    ТРЕБУЕТ ЛИ ЗАМЕНЫ<br>АККУМУЛЯТОР?
+                </h3>
+            </div>
+            <div class="textWrap">
+                <p>
+                    Профессионалы магазина «PRO auto» совершенно бесплатно проведут диагностику АКБ Вашего автомобиля, а
+                    также дадут рекомендации по дальнейшей эксплуатации аккумулятора, или по его замене, в случае
+                    необходимости.
+                </p>
+                <br>
+                <p>Ждём Вас в наших отделах продаж!</p>
+            </div>
+            <ul>
+                <li class="active" onclick="this.classList.add('active');
+                                            this.nextElementSibling.classList.remove('active');
+                                            document.querySelector('#formWrap').children[0].children[0].innerText = 'Данные для заказа';
+                                            document.querySelector('#formWrap').children[0].children[1].attributes.value.nodeValue = 'service';
+                                            document.querySelector('#formImgs').classList.remove('question');
+                                            ">
+                    Заказать услугу
+                </li>
+                <li onclick="this.classList.add('active');
+                             this.previousElementSibling.classList.remove('active');
+                             document.querySelector('#formWrap').children[0].children[0].innerText = 'Задайте вопрос';
+                             document.querySelector('#formWrap').children[0].children[1].attributes.value.nodeValue = 'question';
+                             document.querySelector('#formImgs').classList.add('question');
+                             ">
+                    Задать вопрос
+                </li>
+            </ul>
+            <div class="formWrap" id="formWrap">
+                <form action="http://fe.it-academy.by/TestForm.php" method="POST">
+                    <p>Данные для заказа</p>
+                    <input type="hidden" name="recept" value="diagnostic">
+                    <input type="hidden" name="userwant" value="service">
+                    <label for="name">Ваше имя:<sup>*</sup></label>
+                    <input type="text" name="name" id="name" placeholder="Имя" required>
+                    <label for="phone">Телефон:<sup>*</sup></label>
+                    <input type="text" name="phone" id="phone" placeholder="Телефон" required>
+                    <label for="email">E-mail:</label>
+                    <input type="text" name="email" id="email" placeholder="E-mail">
+                    <label for="service">Услуга</label>
+                    <input type="text" name="service" id="service" placeholder="Диагностика аккумулятора автомобиля">
+                    <label for="comment">Сообщение</label>
+                    <textarea name="comment" id="comment"></textarea>
+                    <input type="checkbox" name="pesonaldata" id="pesonaldata" required>
+                    <label for="pesonaldata"><div>Я согласен на <a href="#!"> обработку персональных данных:<sup>*</sup></a></div></label>
+                    <div class="formBottom">
+                        <p>* Обязательное поле</p>
+                        <button class="buttonClass mediumButton" type="submit">ЗАКАЗАТЬ ЗВОНОК</button>
+                    
+                </form>
+            </div>
+            <div class="formimg" id="formImgs"></div>
+            </div>
+
+        </div>
+    </section>
+    <footer></footer>
+
+    <script src="../../js/headerRender.js"></script>
+    <script src="../../js/footerRender.js"></script>
+    <script src="../../js/renderPage.js"></script>
+    <script src="../../js/script.js"></script>
+
+</body>
+
+</html>

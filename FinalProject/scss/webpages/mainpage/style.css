@@ -827,7 +827,7 @@ section.vendors .container #itemWrap,
 section.vendors .container #item {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 10px;
 }
 section.vendors .container #itemWrap .itemCard,
 section.vendors .container #item .itemCard {

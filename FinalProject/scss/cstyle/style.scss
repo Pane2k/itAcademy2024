@@ -1,0 +1,15 @@
+@use "../variables/variables" as v;
+@import url("../normalize/normalize.css");
+@import url("../variables/variables.css");
+@import url("../container/container.css");
+@import url("../header/header.css");
+@import url("../banner/banner.css"); 
+@import url("../footer/footer.css");
+@import url("../buttonClass/buttonClass.css");
+@import url("../webpages/styles/modalwindow.css");
+@import url("../webpages/styles/linkInSite.css");
+body{
+    font-family: v.$mainFont
+}
+
+

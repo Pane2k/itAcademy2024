@@ -1,10 +1,10 @@
 @font-face {
   font-family: GeometriaMedium;
-  src: url("../fonts/Geometria.ttf");
+  src: url("../../fonts/Geometria.ttf");
 }
 @font-face {
   font-family: GeometriaBold;
-  src: url("../fonts/Geometria-Bold.ttf");
+  src: url("../../fonts/Geometria-Bold.ttf");
 }
 #modalwindow {
   position: fixed;

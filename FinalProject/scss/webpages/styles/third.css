@@ -1,10 +1,10 @@
 @font-face {
   font-family: GeometriaMedium;
-  src: url("../fonts/Geometria.ttf");
+  src: url("../../fonts/Geometria.ttf");
 }
 @font-face {
   font-family: GeometriaBold;
-  src: url("../fonts/Geometria-Bold.ttf");
+  src: url("../../fonts/Geometria-Bold.ttf");
 }
 section.third {
   background-image: radial-gradient(24.05% 24.05% at 50% 56.14%, rgba(14, 14, 14, 0.7) 0%, rgba(14, 14, 14, 0.97) 100%), url(../../../img/jpg/hexagon.jpg);

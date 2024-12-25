@@ -26,7 +26,6 @@ function renderNews(news) {
     var newsElement = document.getElementById('news');
     var html = '';
     for (var i = 0; i < news.length; i++) {
-        console.log(news[i])
         html +=
             `
                 <div class="newCard">

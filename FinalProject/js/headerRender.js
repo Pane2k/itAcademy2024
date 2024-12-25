@@ -1,5 +1,4 @@
 header = document.getElementsByTagName('header');
-console.log(header);
 var repo='';
 if (window.location.hostname == 'pane2k.github.io') {
     repo = 'https://pane2k.github.io/itAcademy2024';
@@ -9,7 +8,6 @@ if (window.location.hostname == 'pane2k.github.io') {
   }
 
 function headerRender(){
-    console.log(header);
     var headerHTML = `<div class="mainColor">
             <div class="container">
                 <div class="burger">

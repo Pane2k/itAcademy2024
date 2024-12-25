@@ -5,9 +5,6 @@ else {
   repo = '';
 }
 document.addEventListener('DOMContentLoaded', function () {
-  console.log(window.location.hostname)
-
-  
   var menuData = [
     {
       text: "АККУМУЛЯТОРЫ",
@@ -30,10 +27,10 @@ document.addEventListener('DOMContentLoaded', function () {
           text: "ТЮМЕНСКИЙ\nАККУМУЛЯТОРНЫЙ ЗАВОД",
           isParent: true,
           children: [
-            { text: "ТЗ 60Ah"   },
-            { text: "ТЗ 75Ah"   },
-            { text: "ТЗ 90Ah"   },
-            { text: "ТЗ 100Ah"  }
+            { text: "ТЗ 60Ah" },
+            { text: "ТЗ 75Ah" },
+            { text: "ТЗ 90Ah" },
+            { text: "ТЗ 100Ah" }
           ]
         },
         { text: "AKB AKOM", isParent: false },
@@ -91,8 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { text: "Полироли", isParent: false },
         { text: "Автошампуни", isParent: false }
       ]
-    }
-  ];
+    }];
   var menuContainer = document.getElementById('menu-container');
   var menuList = document.createElement('ul');
   menuList.className = 'main-menu';
@@ -133,13 +129,10 @@ document.addEventListener('DOMContentLoaded', function () {
         thiselement.classList.toggle('activeElement');
       });
     }
-
     return listItem;
   }
-
   for (var i = 0; i < menuData.length; i++) {
     menuList.appendChild(createMenuItem(menuData[i]));
   }
-
   menuContainer.appendChild(menuList);
 });

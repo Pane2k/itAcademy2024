@@ -1,5 +1,4 @@
 footer = document.getElementsByTagName('footer');
-console.log(header);
 var repo='';
 if (window.location.hostname == 'pane2k.github.io') {
     repo = 'https://pane2k.github.io/itAcademy2024';
@@ -9,7 +8,6 @@ if (window.location.hostname == 'pane2k.github.io') {
   }
 
 function footerRender(){
-    console.log(header);
     var headerHTML = `
         <div class="container">
             <div class="logoAndCR">

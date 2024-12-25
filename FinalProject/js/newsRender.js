@@ -1,6 +1,6 @@
 var newsElement = document.getElementById('news');
 
-
+var repo='';
 if (window.location.hostname == 'pane2k.github.io') {
     repo = 'https://pane2k.github.io/itAcademy2024';
   }
@@ -13,7 +13,7 @@ function News(img, time, title, link) {
     this.title = title;
     this.link = link;
 }
-var repo='';
+
 
 
 

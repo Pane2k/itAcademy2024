@@ -1,0 +1,178 @@
+@charset "UTF-8";
+@font-face {
+  font-family: GeometriaMedium;
+  src: url("../fonts/Geometria.ttf");
+}
+@font-face {
+  font-family: GeometriaBold;
+  src: url("../fonts/Geometria-Bold.ttf");
+}
+section.askQuestion {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0)), url(../../../img/jpg/question.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.askQuestion .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 88px 15px;
+}
+section.askQuestion .container h2 {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "GeometriaBold", sans-serif;
+  color: rgb(255, 255, 255);
+  border-bottom: #c53720 4px solid;
+  margin-bottom: 34px;
+  padding-bottom: 8px;
+}
+section.askQuestion .container > p {
+  font-family: "GeometriaBold", sans-serif;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 36px;
+}
+section.askQuestion .container form {
+  display: flex;
+  flex-direction: column;
+  max-width: 650px;
+  width: 100%;
+}
+section.askQuestion .container form label {
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
+  margin-bottom: 8px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+section.askQuestion .container form label sup {
+  color: #c53720;
+}
+section.askQuestion .container form label > span {
+  color: rgb(255, 255, 255);
+  gap: 6px;
+  height: 100%;
+}
+section.askQuestion .container form label > span a {
+  color: #c53720;
+  position: relative;
+}
+section.askQuestion .container form input#pesonaldata {
+  display: none;
+}
+section.askQuestion .container form label[for=pesonaldata] {
+  margin: 40px 0;
+  gap: 6px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+section.askQuestion .container form label[for=pesonaldata] a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 498px) {
+  section.askQuestion .container form label[for=pesonaldata] {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 0;
+  }
+  section.askQuestion .container form label[for=pesonaldata]::before {
+    grid-row: 1/3;
+    width: 64px;
+    height: 64px;
+  }
+  section.askQuestion .container form label[for=pesonaldata] > span {
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+section.askQuestion .container form label[for=pesonaldata]::before {
+  content: "⯀";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  color: #c53720;
+  width: 36px;
+  height: 36px;
+  margin-right: 16px;
+  background-color: #fff;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 0px;
+  transition: 0.1s cubic-bezier(0.75, 0.7, 0.7, 1.35);
+}
+section.askQuestion .container form input#pesonaldata:checked + label[for=pesonaldata]::before {
+  font-size: 25px;
+}
+@media screen and (max-width: 498px) {
+  section.askQuestion .container form label[for=pesonaldata] {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 0 4px;
+    align-items: end;
+  }
+  section.askQuestion .container form label[for=pesonaldata] a {
+    align-self: start;
+  }
+  section.askQuestion .container form label[for=pesonaldata]::before {
+    grid-row: 1/2;
+    width: 48px;
+    height: 48px;
+  }
+  section.askQuestion .container form input#pesonaldata:checked + label[for=pesonaldata]::before {
+    font-size: 50px;
+  }
+}
+section.askQuestion .container form input#pesonaldata:user-invalid + label[for=pesonaldata]::before {
+  border: 4px solid #c53720;
+}
+section.askQuestion .container form input[type=text],
+section.askQuestion .container form textarea {
+  font-family: "GeometriaMedium", sans-serif;
+  color: #000;
+  padding: 10px;
+  resize: none;
+}
+section.askQuestion .container form input[type=text]:focus,
+section.askQuestion .container form textarea:focus {
+  outline: none;
+}
+section.askQuestion .container form input[type=text]:user-invalid {
+  border: 4px solid #c53720;
+}
+section.askQuestion .container form textarea {
+  height: 120px;
+}
+section.askQuestion .container form .formBottom {
+  display: grid;
+  grid-template-columns: 175px 1fr 175px;
+  align-items: center;
+}
+section.askQuestion .container form .formBottom p {
+  grid-column: 1/2;
+  font-size: 16px;
+  color: #c53720;
+}
+section.askQuestion .container form .formBottom button {
+  grid-column: 3/4;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+}
+@media screen and (max-width: 400px) {
+  section.askQuestion .container form .formBottom {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=askQuestion.css.map */

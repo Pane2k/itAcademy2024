@@ -1,0 +1,191 @@
+@font-face {
+  font-family: GeometriaMedium;
+  src: url("../fonts/Geometria.ttf");
+}
+@font-face {
+  font-family: GeometriaBold;
+  src: url("../fonts/Geometria-Bold.ttf");
+}
+section.second {
+  position: relative;
+}
+section.second::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../../img/jpg/sectionBG.jpg);
+  opacity: 0.15;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+section.second .container {
+  flex-direction: column;
+  padding-bottom: 88px;
+  padding-top: 88px;
+}
+section.second .container > h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "GeometriaBold", sans-serif;
+  color: #1d1d1d;
+}
+section.second .container hr {
+  width: 856px;
+  border: 2px solid #c53720;
+  align-self: center;
+  margin: 12px 0 32px 0;
+}
+section.second .container > p {
+  font-family: "GeometriaBold", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  color: #1d1d1d;
+  max-width: 892px;
+  align-self: center;
+  margin-bottom: 36px;
+}
+@media screen and (max-width: 990px) {
+  section.second .container hr {
+    width: 90%;
+  }
+}
+section.second .container .wraper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  gap: 16px;
+}
+@media screen and (max-width: 840px) {
+  section.second .container .wraper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 840px) and (max-width: 680px) {
+  section.second .container .wraper {
+    grid-template-columns: 340px;
+  }
+}
+@media screen and (max-width: 840px) and (max-width: 680px) and (max-width: 430px) {
+  section.second .container .wraper {
+    grid-template-columns: 1fr;
+  }
+}
+section.second .container .wraper > div {
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+  transition: 0.3s;
+}
+section.second .container .wraper > div .button {
+  opacity: 0;
+  display: none;
+}
+section.second .container .wraper > div:hover .button {
+  display: block;
+  width: 216px;
+  position: absolute;
+  bottom: 68px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  animation: buttonAnimation 0.1s ease-in forwards;
+}
+section.second .container .wraper > div:hover .button button {
+  font-size: 14px;
+}
+@keyframes buttonAnimation {
+  0% {
+    display: flex;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+section.second .container .wraper > div:hover::before {
+  content: attr(data-name);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  animation: buttonAnimation 0.1s ease-in forwards;
+}
+@media screen and (pointer: coarse) {
+  section.second .container .wraper > div .button {
+    display: block;
+    width: 216px;
+    position: absolute;
+    bottom: 68px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    animation: buttonAnimation 0.1s ease-in forwards;
+  }
+  section.second .container .wraper > div .button button {
+    font-size: 14px;
+  }
+  @keyframes buttonAnimation {
+    0% {
+      display: flex;
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  section.second .container .wraper > div::before {
+    content: attr(data-name);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: buttonAnimation 0.1s ease-in forwards;
+  }
+}
+section.second .container .wraper .batteries {
+  background-image: url(../../../img/jpg/mainPage/battery.jpg);
+}
+section.second .container .wraper .oil {
+  background-image: url(../../../img/jpg/mainPage/oil.jpg);
+}
+section.second .container .wraper .polish {
+  background-image: url(../../../img/jpg/mainPage/polish.jpg);
+}
+section.second .container .wraper .autoac {
+  background-image: url(../../../img/jpg/mainPage/autoac.jpg);
+}
+section.second .container .wraper .autochem {
+  background-image: url(../../../img/jpg/mainPage/autochem.jpg);
+}
+section.second .container .wraper .details {
+  background-image: url(../../../img/jpg/mainPage/details.jpg);
+}
+section.second .container .serviceWraper {
+  grid-template-columns: repeat(2, 1fr);
+}
+section.second .container .serviceWraper .diganostic {
+  background-image: url(../../../img/jpg/service/diagnostic.jpeg);
+  background-position: left;
+}
+section.second .container .serviceWraper .trade {
+  background-image: url(../../../img/jpg/service/trade.jpeg);
+}
+@media screen and (max-width: 680px) {
+  section.second .container .serviceWraper {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=second.css.map */

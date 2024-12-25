@@ -1,0 +1,117 @@
+@use '../../variables/variables' as v;
+$color-text: #1d1d1d;
+$color-red: #c53720;
+
+section.faq {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(../../../img/jpg/faqBg.jpeg);
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 88px 15px;
+
+        h2 {
+            font-size: 36px;
+            font-family: v.$boldFont;
+            text-align: center;
+        }
+
+        >p {
+            font-size: 24px;
+            text-align: center;
+            padding: 44px 0 36px;
+        }
+
+        >ul {
+
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+
+            li {
+                color: rgb(255, 255, 255);
+                border-bottom: rgba(29, 29, 29, 0.4) 4px solid;
+                padding: 6px 0;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgba($color: #ffffff, $alpha: 0.05);
+                }
+            }
+
+            .active {
+                color: $color-red;
+                border-bottom: $color-red 4px solid;
+            }
+        }
+
+        .questions {
+            display: none;
+            width: 100%;
+            margin-top: 32px;
+
+            flex-direction: column;
+            text-align: left;
+
+            ul {
+
+                li {
+                    padding: 32px 8px;
+                    border-bottom: rgb(255, 255, 255) 2px solid;
+                    position: relative;
+                    transition: 0.2s;
+
+                    &::after {
+                        content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDkuMDAwMDAwIiBoZWlnaHQ9IjQ5LjAwMDAwMCIgdmlld0JveD0iMCAwIDQ5IDQ5IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KCTxkZXNjPgoJCQlDcmVhdGVkIHdpdGggUGl4c28uCgk8L2Rlc2M+Cgk8ZGVmcy8+Cgk8Y2lyY2xlIGlkPSJFbGxpcHNlIDI5IiBjeD0iMjQuNTAwMDAwIiBjeT0iMjQuNTAwMDAwIiByPSIyMi41MDAwMDAiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLW9wYWNpdHk9IjEuMDAwMDAwIiBzdHJva2Utd2lkdGg9IjQuMDAwMDAwIi8+Cgk8cGF0aCBpZD0iVmVjdG9yIDU0IiBkPSJNMjQuNSAxNEwyNC41IDM1IiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1vcGFjaXR5PSIxLjAwMDAwMCIgc3Ryb2tlLXdpZHRoPSI0LjAwMDAwMCIvPgoJPHBhdGggaWQ9IlZlY3RvciA1NSIgZD0iTTM1IDI0LjVMMTQgMjQuNSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utb3BhY2l0eT0iMS4wMDAwMDAiIHN0cm9rZS13aWR0aD0iNC4wMDAwMDAiLz4KPC9zdmc+Cg==);
+                        width: 49px;
+                        height: 49px;
+                        position: absolute;
+                        top: 41.5px;
+                        right: 17.5px;
+                        transform: translateY(-50%);
+
+                        filter: brightness(1000%);
+                        transition: 0.1s;
+                    }
+
+                    &.active::after {
+                        content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDkuMDAwMDAwIiBoZWlnaHQ9IjQ5LjAwMDAwMCIgdmlld0JveD0iMCAwIDQ5IDQ5IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KCTxkZXNjPgoJCQlDcmVhdGVkIHdpdGggUGl4c28uCgk8L2Rlc2M+Cgk8ZGVmcy8+Cgk8Y2lyY2xlIGlkPSJFbGxpcHNlIDI5IiBjeD0iMjQuNTAwMDAwIiBjeT0iMjQuNTAwMDAwIiByPSIyMi41MDAwMDAiIHN0cm9rZT0iI2M1MzcyMCIgc3Ryb2tlLW9wYWNpdHk9IjEuMDAwMDAwIiBzdHJva2Utd2lkdGg9IjQuMDAwMDAwIi8+Cgk8cGF0aCBpZD0iVmVjdG9yIDU0IiBkPSJNMjQuNSAxNEwyNC41IDM1IiBzdHJva2U9IiNjNTM3MjAiIHN0cm9rZS1vcGFjaXR5PSIxLjAwMDAwMCIgc3Ryb2tlLXdpZHRoPSI0LjAwMDAwMCIvPgoJPHBhdGggaWQ9IlZlY3RvciA1NSIgZD0iTTM1IDI0LjVMMTQgMjQuNSIgc3Ryb2tlPSIjYzUzNzIwIiBzdHJva2Utb3BhY2l0eT0iMS4wMDAwMDAiIHN0cm9rZS13aWR0aD0iNC4wMDAwMDAiLz4KCiAgCjwvc3ZnPgo=);
+
+                        transform: translateY(-50%) rotate(-45deg);
+                        filter: brightness(100%);
+                    }
+
+                    p {
+
+                        font-size: 16px;
+                        line-height: 0px;
+                        height: 0%;
+                        overflow: hidden;
+                        opacity: 0;
+                        transition: 0.2s;
+                        margin-right: 96px;
+
+                    }
+
+                    &.active p {
+                        margin-top: 20px;
+
+                        line-height: 20px;
+                        opacity: 0.7;
+                    }
+
+                }
+            }
+        }
+
+        .questions.active {
+            display: flex;
+        }
+
+        .button {
+            margin-top: 84px;
+        }
+    }
+}

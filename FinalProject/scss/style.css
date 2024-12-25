@@ -5,6 +5,8 @@
 @import url("banner/banner.css");
 @import url("footer/footer.css");
 @import url("buttonClass/buttonClass.css");
+@import url("webpages/styles/modalwindow.css");
+@import url("webpages/styles/linkInSite.css");
 @font-face {
   font-family: GeometriaMedium;
   src: url("../fonts/Geometria.ttf");

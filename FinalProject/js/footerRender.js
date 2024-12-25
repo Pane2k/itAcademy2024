@@ -15,7 +15,7 @@ function footerRender(){
             <div class="logoAndCR">
                 <div class="logo">
                     <a href="${repo}/FinalProject/">
-                        <img src="${repo}/FinalProject/img/svg/logo.svg" alt="">
+                        <img src="${repo}/FinalProject/img/svg/logo.svg" alt="Лого">
                     </a>
                 </div>
                 <p class="copyRight">
@@ -26,7 +26,7 @@ function footerRender(){
                 <div class="Company">
                     <p>КОМПАНИЯ</p>
                     <ul>
-                        <li><a href="${repo}/FinalProject/company/#aboutcomapy">О КОМПАНИИ</a></li>
+                        <li><a href="${repo}/FinalProject/company/#links">О КОМПАНИИ</a></li>
                         <li><a href="${repo}/FinalProject/company/#licens">ЛИЦЕНЗИИ</a></li>
                         <li><a href="${repo}/FinalProject/company/#partners">ПАРТНЕРЫ</a></li>
                        
@@ -35,23 +35,23 @@ function footerRender(){
                 <div class="Catalog">
                     <p>КАТАЛОГ</p>
                     <ul>
-                        <li><a href="${repo}/FinalProject/catalog/battery">АККУМУЛЯТОРЫ</a></li>
-                        <li><a href="${repo}/FinalProject/catalog/oil">АВТОМАСЛА</a></li>
-                        <li><a href="${repo}/FinalProject/catalog/autoac">АКСЕССУАРЫ</a></li>
-                        <li><a href="${repo}/FinalProject/catalog/autochem">АВТОХИМИЯ</a></li>
+                        <li><a href="${repo}/FinalProject/catalog/battery/#links">АККУМУЛЯТОРЫ</a></li>
+                        <li><a href="${repo}/FinalProject/catalog/oil/#links">АВТОМАСЛА</a></li>
+                        <li><a href="${repo}/FinalProject/catalog/autoac/#links">АКСЕССУАРЫ</a></li>
+                        <li><a href="${repo}/FinalProject/catalog/autochem/#links">АВТОХИМИЯ</a></li>
                     </ul>
                 </div>
                 <div class="Servise">
                     <p>УСЛУГИ</p>
                     <ul>
-                        <li><a href="${repo}/FinalProject/service/diagnostic">ДИАГНОСТИКА АККУМУЛЯТОРА</a></li>
-                        <li><a href="${repo}/FinalProject/service/reception">ПРИЕМ АККУМУЛЯТОРОВ</a></li>
+                        <li><a href="${repo}/FinalProject/service/diagnostic/#links">ДИАГНОСТИКА АККУМУЛЯТОРА</a></li>
+                        <li><a href="${repo}/FinalProject/service/reception/#links">ПРИЕМ АККУМУЛЯТОРОВ</a></li>
                     </ul>
                 </div>
                 <div class="Info">
                     <p>ИНФОРМАЦИЯ</p>
                     <ul>
-                        <li><a href="${repo}/FinalProject/info/#news">НОВОСТИ</a></li>
+                        <li><a href="${repo}/FinalProject/info/#links">НОВОСТИ</a></li>
                         <li><a href="${repo}/FinalProject/info/#faq">ВОПРОС - ОТВЕТ</a></li>
                     </ul>
                 </div>
@@ -59,7 +59,7 @@ function footerRender(){
             <div class="contact">
                 <div class="phoneNumber"><a href="tel://0">+7 (342) 279-36-13</a></div>
                 <div class="email"><a href="mailto://0">proauto59@yandex.ru</a></div>
-                <div class="footer__Button"><button class="buttonClass">ЗАКАЗАТЬ ЗВОНОК</button></div>
+                <div class="footer__Button"><button class="buttonClass" onclick="openModalTelephone()">ЗАКАЗАТЬ ЗВОНОК</button></div>
             </div>
         </div>`
         footer[0].innerHTML = headerHTML;

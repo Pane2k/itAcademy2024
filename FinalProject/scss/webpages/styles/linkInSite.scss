@@ -1,0 +1,49 @@
+@use '../../variables/variables' as v;
+$color-text: #1d1d1d;
+$color-red: #c53720;
+
+div.linkInSite {
+    .container {
+        text-wrap: nowrap;
+        overflow-y: auto;
+        gap: 16px;
+        height: 52px;
+        align-items: center;
+
+        img {
+            width: 20px;
+        }
+
+        .ToMainPage a {
+            color: $color-red;
+        }
+
+        p {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            a {
+                font-size: 12px;
+                color: $color-text;
+            }
+
+            &::after {
+                content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNOCA0TDEyIDEwTDggMTYiIHN0cm9rZT0iI0M1MzcyMCIgc3Ryb2tlLXdpZHRoPSI0IiAvPgo8L3N2Zz4=");
+                width: 20px;
+                height: 20px;
+            }
+
+            &:last-child::after {
+                content: none;
+            }
+
+        }
+
+        a:hover {
+            filter: brightness(1.5);
+        }
+
+    }
+
+}

@@ -30,7 +30,7 @@ function renderVendors(companys) {
     for (var i = 0; i < companys.length; i++) {
             html += `<div class="vendorCard">
                         <div class="imgCard">
-                            <img src="../../img/jpg/vendorlogo/${companys[i].img}.jpg" alt="">
+                            <img src="../../img/jpg/vendorlogo/${companys[i].img}.jpg" alt="Лого компании">
                         </div>
                         <div class="textCard">
                             <div class="textWrap">

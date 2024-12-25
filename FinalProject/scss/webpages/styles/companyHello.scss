@@ -1,0 +1,90 @@
+@use '../../variables/variables' as v;
+$color-text: #1d1d1d;
+$color-red: #c53720;
+
+section.companyHello {
+    background-image: linear-gradient(rgba($color: #0e0e0e, $alpha: 0.6), rgba($color: #0e0e0e, $alpha: 0.6)), url(../../../img/jpg/porsche.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 88px 15px;
+
+        h2 {
+
+            width: fit-content;
+            margin: 0 auto;
+            padding: 10px;
+            font-size: 36px;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: v.$boldFont;
+            color: #fff;
+            border-bottom: $color-red 4px solid;
+            margin-bottom: 34px;
+            padding-bottom: 8px;
+        }
+
+        .textcontainer {
+            position: relative;
+
+            .newWrap {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                background: $color-red;
+                clip-path: polygon(evenodd, 40px 0,
+                        0 40px,
+                        0 100%,
+                        calc(100% - 40px) 100%,
+                        100% calc(100% - 40px),
+                        100% 0,
+                        40px 0,
+                        40px 4px,
+
+                        41px 4px,
+                        4px 41px,
+                        4px calc(100% - 4px),
+                        calc(100% - 41px) calc(100% - 4px),
+                        calc(100% - 4px) calc(100% - 41px),
+                        calc(100% - 4px) 4px,
+                        40px 4px);
+            }
+
+            .transpWrap {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 0;
+                background: rgba(29, 29, 29, 0.6);
+                clip-path: polygon(41px 4px,
+                        4px 41px,
+                        4px calc(100% - 4px),
+                        calc(100% - 41px) calc(100% - 4px),
+                        calc(100% - 4px) calc(100% - 41px),
+                        calc(100% - 4px) 4px);
+            }
+
+            .textWrap {
+                padding: 32px;
+                position: relative;
+                z-index: 2;
+            }
+
+
+
+
+
+        }
+    }
+}

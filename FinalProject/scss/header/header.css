@@ -76,7 +76,7 @@ header div.container .menuWrap ul > li > a {
   transition: 0.2s;
   margin: 5px;
 }
-header div.container .menuWrap ul > li > a:hover {
+header div.container .menuWrap ul > li:hover > a {
   color: red;
 }
 header div.container .menuWrap ul > li > ul {

@@ -30,7 +30,7 @@ function renderNews(news) {
         html +=
             `
                 <div class="newCard">
-                    <div class="img"><img src="${news[i].img}" alt=""></div>
+                    <div class="img"><img src="${news[i].img}" alt="Превью новости"></div>
                     <div class="text">
                         <p class="time">${news[i].time}</p>
                         <h3>${news[i].title}</h3>

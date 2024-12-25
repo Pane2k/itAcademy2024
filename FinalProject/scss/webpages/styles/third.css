@@ -1,0 +1,265 @@
+@font-face {
+  font-family: GeometriaMedium;
+  src: url("../fonts/Geometria.ttf");
+}
+@font-face {
+  font-family: GeometriaBold;
+  src: url("../fonts/Geometria-Bold.ttf");
+}
+section.third {
+  background-image: radial-gradient(24.05% 24.05% at 50% 56.14%, rgba(14, 14, 14, 0.7) 0%, rgba(14, 14, 14, 0.97) 100%), url(../../../img/jpg/hexagon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+section.third .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 88px 15px 98px;
+}
+section.third .container h2 {
+  font-family: "GeometriaBold", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+section.third .container hr {
+  width: 170px;
+  border: 2px solid #c53720;
+  align-self: center;
+  margin: 12px 0 32px 0;
+}
+section.third .container > p {
+  max-width: 892px;
+  font-size: 24px;
+  text-align: center;
+}
+section.third .container .wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+section.third .container .wrap .left {
+  display: flex;
+  flex-direction: column;
+}
+section.third .container .wrap .left > div {
+  position: relative;
+  width: 605px;
+  padding: 40px;
+  padding-right: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 21px;
+}
+section.third .container .wrap .left > div .img {
+  width: 124px;
+  height: 120px;
+  background-image: url(../../../img/svg/RectangleItem.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.third .container .wrap .left > div .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section.third .container .wrap .left > div .text h3 {
+  font-family: "GeometriaBold", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  max-width: 286px;
+}
+section.third .container .wrap .left > div .text p {
+  max-width: 352px;
+}
+section.third .container .wrap .left .consult {
+  background: none;
+}
+section.third .container .wrap .left .exchange {
+  background: none;
+}
+section.third .container .wrap .left .diagnostic {
+  background: none;
+}
+section.third .container .wrap .left .selected {
+  position: absolute;
+  background-image: url(../../../img/svg/Rectangle\ 47.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  transition: 0.2s;
+  animation: select 9s ease-in-out infinite;
+}
+@keyframes select {
+  0%, 20% {
+    transform: translateY(0%);
+  }
+  28%, 52% {
+    transform: translateY(100%);
+  }
+  60%, 90% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+section.third .container .wrap .right {
+  width: 489px;
+  height: 566px;
+  position: relative;
+}
+section.third .container .wrap .right .masterimg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 3;
+  animation: selectmaster 9s ease-in-out infinite;
+}
+@keyframes selectmaster {
+  0%, 20% {
+    background-image: url(../../../img/png/mainPage/sesz/2.png);
+  }
+  28%, 52% {
+    background-image: url(../../../img/png/mainPage/sesz/3.png);
+  }
+  60%, 90% {
+    background-image: url(../../../img/png/mainPage/sesz/1.png);
+  }
+  100% {
+    background-image: url(../../../img/png/mainPage/sesz/2.png);
+  }
+}
+section.third .container .wrap .right img {
+  position: absolute;
+}
+section.third .container .wrap .right #thirdFirstTriangle {
+  width: 65px;
+  height: 65px;
+  right: 30px;
+  filter: blur(5px);
+  transform: rotate(212deg);
+  z-index: 1;
+  animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(212deg);
+  }
+  to {
+    transform: rotate(572deg);
+  }
+}
+section.third .container .wrap .right #thirdSecondTriangle {
+  z-index: 2;
+  width: 125px;
+  height: 125px;
+  right: 235px;
+  top: 104px;
+  filter: blur(12px);
+  transform: rotate(240deg);
+  animation: rotate 15s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(240deg);
+  }
+  to {
+    transform: rotate(600deg);
+  }
+}
+section.third .container .wrap .right #thirdThirdTriangle {
+  z-index: 4;
+  width: 146px;
+  height: 146px;
+  left: 22px;
+  top: 368px;
+  transform: rotate(249deg);
+  animation: rotate 35s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(249deg);
+  }
+  to {
+    transform: rotate(609deg);
+  }
+}
+section.third .container .wrap .right #thirdFourTriangle {
+  z-index: 5;
+  width: 166px;
+  height: 166px;
+  right: -83px;
+  top: 304px;
+  transform: rotate(322deg);
+  filter: blur(17px);
+  animation: rotate 30s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(322deg);
+  }
+  to {
+    transform: rotate(682deg);
+  }
+}
+section.third .container .wrap .right #thirdFiveTriangle {
+  z-index: 6;
+  width: 78px;
+  height: 78px;
+  right: 110px;
+  bottom: 20px;
+  transform: rotate(322deg);
+  animation: rotate 20s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(322deg);
+  }
+  to {
+    transform: rotate(682deg);
+  }
+}
+@media screen and (max-width: 970px) {
+  section.third .container .wrap {
+    justify-content: center;
+  }
+  section.third .container .wrap .right {
+    display: none;
+  }
+}
+@media screen and (max-width: 970px) and (max-width: 730px) {
+  section.third .container .wrap .left > div {
+    width: 100%;
+  }
+  section.third .container .wrap .left > div:first-child {
+    width: 85%;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 970px) and (max-width: 730px) and (max-width: 640px) {
+  section.third .container .wrap .left > div {
+    height: 200px;
+  }
+  section.third .container .wrap .left > div:first-child {
+    width: 100%;
+    left: 0;
+  }
+  section.third .container .wrap .left > div .img {
+    display: none;
+  }
+}
+section.third .container .button {
+  margin-top: 32px;
+}/*# sourceMappingURL=third.css.map */

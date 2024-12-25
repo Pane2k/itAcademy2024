@@ -1,0 +1,149 @@
+@font-face {
+  font-family: GeometriaMedium;
+  src: url("../fonts/Geometria.ttf");
+}
+@font-face {
+  font-family: GeometriaBold;
+  src: url("../fonts/Geometria-Bold.ttf");
+}
+#news {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+#news .newCard {
+  flex-grow: 1;
+  flex-basis: 300px;
+  background: #1d1d1d;
+}
+#news .newCard .img {
+  height: 284px;
+}
+#news .newCard .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+#news .newCard .text {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  position: relative;
+  height: 138px;
+  padding: 12px 20px;
+}
+#news .newCard .text p {
+  font-weight: 500;
+  font-size: 12px;
+  color: #c53720;
+}
+#news .newCard .text h3 {
+  font-family: "GeometriaBold", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+#news .newCard .text a {
+  position: absolute;
+  bottom: 12px;
+  right: 20px;
+}
+#news .newCard .text a path {
+  transition: 0.1s;
+}
+#news .newCard .text a:hover {
+  transform: scale(1.05);
+  filter: brightness(2);
+}
+
+section.news .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 88px 15px;
+}
+section.news .container h2 {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "GeometriaBold", sans-serif;
+  color: rgb(29, 29, 29);
+  border-bottom: #c53720 4px solid;
+  margin-bottom: 34px;
+  padding-bottom: 8px;
+}
+section.news .container > p {
+  font-family: "GeometriaBold", sans-serif;
+  font-size: 24px;
+  color: rgb(29, 29, 29);
+  text-align: center;
+  margin-bottom: 36px;
+}
+section.news .container .newsWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+section.news .container .newsWrap .newsMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: rgb(29, 29, 29);
+}
+section.news .container .newsWrap .newsMain .img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+section.news .container .newsWrap .newsMain .img img {
+  width: 100%;
+}
+section.news .container .newsWrap .newsMain .textWrap {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+section.news .container .newsWrap .newsMain .textWrap .time {
+  color: #c53720;
+  font-size: 16px;
+  font-family: "GeometriaBold", sans-serif;
+}
+section.news .container .newsWrap .newsMain .textWrap h3 {
+  font-family: "GeometriaBold", sans-serif;
+  font-size: 23px;
+}
+section.news .container .newsWrap .newsMain .textWrap .button {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media screen and (max-width: 1140px) {
+  section.news .container .newsWrap .newsMain {
+    grid-template-columns: 1fr;
+  }
+  section.news .container .newsWrap .newsMain .img {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 1140px) and (max-width: 670px) {
+  section.news .container .newsWrap .newsMain .img {
+    height: 100%;
+  }
+}
+section.news .container > .button {
+  margin-top: 92px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+section.news .container > .button button {
+  color: #c53720;
+}/*# sourceMappingURL=news.css.map */

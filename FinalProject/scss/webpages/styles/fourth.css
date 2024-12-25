@@ -1,0 +1,79 @@
+@font-face {
+  font-family: GeometriaMedium;
+  src: url("../fonts/Geometria.ttf");
+}
+@font-face {
+  font-family: GeometriaBold;
+  src: url("../fonts/Geometria-Bold.ttf");
+}
+section.fourth {
+  background: linear-gradient(180deg, rgba(14, 14, 14, 0.6) 0%, rgba(14, 14, 14, 0.6) 100%), url("../../../img/jpg/porsche.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.fourth .container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 88px 15px 98px;
+}
+section.fourth .container h2 {
+  font-family: "GeometriaBold", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+section.fourth .container hr {
+  border: 2px solid #c53720;
+  margin-top: 8px;
+  margin-bottom: 74px;
+  width: 280px;
+}
+section.fourth .container .aboutCompony {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+}
+section.fourth .container .aboutCompony .left {
+  width: 117%;
+}
+section.fourth .container .aboutCompony .left img {
+  max-width: 100%;
+}
+@media screen and (max-width: 970px) {
+  section.fourth .container .aboutCompony .left {
+    display: none;
+  }
+}
+section.fourth .container .aboutCompony .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  background-color: rgba(14, 14, 14, 0.6);
+  border: #c53720 4px solid;
+  padding: 32px;
+  padding-bottom: 43px;
+  margin-bottom: 9.1%;
+  gap: 28px;
+}
+section.fourth .container .aboutCompony .right .button {
+  width: 216px;
+}
+@media screen and (max-width: 1100px) {
+  section.fourth .container .aboutCompony .right {
+    margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 1100px) and (max-width: 970px) {
+  section.fourth .container .aboutCompony .right {
+    margin-bottom: 0%;
+  }
+  section.fourth .container .aboutCompony .right p {
+    text-align: justify;
+  }
+  section.fourth .container .aboutCompony .right .button {
+    align-self: center;
+  }
+}/*# sourceMappingURL=fourth.css.map */

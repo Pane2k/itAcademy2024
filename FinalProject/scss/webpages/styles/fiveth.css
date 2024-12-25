@@ -1,0 +1,41 @@
+@font-face {
+  font-family: GeometriaMedium;
+  src: url("../fonts/Geometria.ttf");
+}
+@font-face {
+  font-family: GeometriaBold;
+  src: url("../fonts/Geometria-Bold.ttf");
+}
+section.fiveth {
+  background: #ededed;
+  padding: 88px 15px 98px;
+}
+section.fiveth .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+section.fiveth .container h2 {
+  font-family: "GeometriaBold", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #1d1d1d;
+}
+section.fiveth .container hr {
+  border: 2px solid #c53720;
+  margin-top: 8px;
+  margin-bottom: 74px;
+  width: 216px;
+}
+section.fiveth .container .wrapCard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+section.fiveth .container .button {
+  margin-top: 72px;
+}
+section.fiveth .container .button button {
+  color: #c53720;
+}/*# sourceMappingURL=fiveth.css.map */

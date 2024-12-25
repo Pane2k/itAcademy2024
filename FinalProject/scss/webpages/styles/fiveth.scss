@@ -1,0 +1,43 @@
+@use '../../variables/variables' as v;
+$color-text: #1d1d1d;
+$color-red: #c53720;
+
+section.fiveth {
+    background: #ededed;
+    padding: 88px 15px 98px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+
+        h2 {
+            font-family: v.$boldFont;
+            font-weight: 700;
+            font-size: 36px;
+            color: $color-text;
+        }
+
+        hr {
+            border: 2px solid $color-red;
+            margin-top: 8px;
+            margin-bottom: 74px;
+            width: 216px;
+        }
+
+        .wrapCard {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .button {
+            margin-top: 72px;
+
+            button {
+                color: $color-red;
+            }
+        }
+    }
+}

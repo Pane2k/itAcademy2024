@@ -19,7 +19,7 @@ function headerRender(){
                 </div>
                 <div class="logo">
                     <a href="${repo}/FinalProject/">
-                        <img src="${repo}/FinalProject/img/svg/logo.svg" alt="">
+                        <img src="${repo}/FinalProject/img/svg/logo.svg" alt="logo">
                     </a>
                 </div>
                 <div class="menuWrap" id="menuWrap">
@@ -128,16 +128,16 @@ function headerRender(){
                     </ul>
                 </div>
                 <div class="button">
-                    <button class="buttonClass">
+                    <button class="buttonClass" onclick="openModalTelephone()">
                         ЗАКАЗАТЬ ЗВОНОК
                     </button>
                 </div>
                 <div class="searchAndCart">
                     <a id="search" href="#!">
-                        <img src="${repo}/FinalProject/img/svg/Lupa.svg" alt="">
+                        <img src="${repo}/FinalProject/img/svg/Lupa.svg" alt="Лупа">
                     </a>
                     <a id="card" href="#!" data-itemsInCard="0">
-                        <img src="${repo}/FinalProject/img/svg/card.svg" alt="">
+                        <img src="${repo}/FinalProject/img/svg/card.svg" alt="Корзина">
                     </a>
                 </div>
 
@@ -158,7 +158,7 @@ function headerRender(){
                         <button class="buttonClass">НАЙТИ</button>
                     </div>
                     <div class="closeSearch">
-                        <img src="${repo}/FinalProject/img/svg/close.svg" alt="">
+                        <img src="${repo}/FinalProject/img/svg/close.svg" alt="Закрыть">
                     </div>
                 </div>
             </div>

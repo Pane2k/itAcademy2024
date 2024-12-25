@@ -9,7 +9,7 @@ if (item.available === 'notInCount') {
     disableInput = '';
 }
 html = `<div class="imgwrap">
-            <img src="${item.img}" alt="">
+            <img src="${item.img}" alt="Фото акумулятора">
         </div>
         <div class="itemCard">
             <span>В НАЛИЧИИ</span>

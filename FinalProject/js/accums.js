@@ -46,7 +46,7 @@ function renderAccum(accum) {
         }
         html += `<div class="itemCard ${accum[i].available}">
                     <div class="img">
-                        <img src="${accum[i].img}" alt="">
+                        <img src="${accum[i].img}" alt="Фото аккумулятора">
                     </div>
                     
                     <h2>${accum[i].title}</h2>

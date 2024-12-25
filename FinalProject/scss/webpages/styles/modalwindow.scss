@@ -1,0 +1,118 @@
+
+@use '../../variables/variables' as v;
+$color-text: #1d1d1d;
+$color-red: #c53720;
+#modalwindow {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+
+    .modalwindow__wrap {
+        width: 50%;
+        height: 50%;
+        background-color: rgb(255, 0, 0);
+        clip-path: polygon(evenodd, 40px 0,
+                0 40px,
+                0 100%,
+                calc(100% - 40px) 100%,
+                100% calc(100% - 40px),
+                100% 0,
+                40px 0,
+                40px 4px,
+
+                41px 4px,
+                4px 41px,
+                4px calc(100% - 4px),
+                calc(100% - 41px) calc(100% - 4px),
+                calc(100% - 4px) calc(100% - 41px),
+                calc(100% - 4px) 4px,
+                40px 4px);
+    }
+
+    .anotherWrap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 50%;
+        height: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        
+        clip-path: polygon(41px 4px,
+                4px 41px,
+                4px calc(100% - 4px),
+                calc(100% - 41px) calc(100% - 4px),
+                calc(100% - 4px) calc(100% - 41px),
+                calc(100% - 4px) 4px);
+        >button{
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            transition: 0.2s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        form {
+            width: 100%;
+            height: 100%;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h3 {
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 24px;
+                font-family: v.$boldFont;
+            }
+
+            label {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+    
+            input {
+                color: #000;
+                border: 4px solid rgb(29, 29, 29);
+                padding: 10px;
+    
+                &:focus {
+                    outline: none;
+                }
+            }
+            button{
+                height: fit-content;
+                background-color: rgba(0,0,0,0.7);
+            }
+            @media screen and (max-width: 400px) {
+                padding: 50px 10px ;
+            }
+        }
+
+        
+    }
+
+    @media screen and (max-width: 690px) {
+        .modalwindow__wrap, .anotherWrap {
+            width: 90%;
+               
+        }
+       
+    }
+}

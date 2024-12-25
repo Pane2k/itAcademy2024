@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .modalwindow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+
+        }
+        .modalwindow__wrap{
+            width: 50%;
+            height: 50%;
+            background-color: rgb(255, 0, 0);
+            clip-path: polygon(evenodd, 40px 0,
+                            0 40px,
+                            0 100%,
+                            calc(100% - 40px) 100%,
+                            100% calc(100% - 40px),
+                            100% 0,
+                            40px 0,
+                            40px 4px,
+
+                            41px 4px,
+                            4px 41px,
+                            4px calc(100% - 4px),
+                            calc(100% - 41px) calc(100% - 4px),
+                            calc(100% - 4px) calc(100% - 41px),
+                            calc(100% - 4px) 4px,
+                            40px 4px);
+        }
+        .anotherWrap{
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 50%;
+            height: 50%;
+            transform: translate(50%, 50%);
+            background-color: rgba(0, 0, 0, 0.7);
+    
+                    clip-path: polygon(41px 4px,
+                            4px 41px,
+                            4px calc(100% - 4px),
+                            calc(100% - 41px) calc(100% - 4px),
+                            calc(100% - 4px) calc(100% - 41px),
+                            calc(100% - 4px) 4px);
+            
+        }
+        form{
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+        label{
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            
+            color: #000;
+            border: 4px solid rgb(29, 29, 29);
+            padding: 10px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+        input:focus{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="modalwindow">
+        <div class="modalwindow__wrap"></div>
+        <div class="anotherWrap">
+            <form action="">
+                <label>
+                    Введите ваше имя
+                    <input type="text">
+                </label>
+                <label>
+                    Номер телефона
+                    <input type="text">
+                </label>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

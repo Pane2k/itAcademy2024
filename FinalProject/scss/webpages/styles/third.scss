@@ -1,0 +1,310 @@
+@use '../../variables/variables' as v;
+$color-text: #1d1d1d;
+$color-red: #c53720;
+
+section.third {
+    background-image: radial-gradient(24.05% 24.05% at 50% 56.14%, rgba(14, 14, 14, 0.7) 0%, rgba(14, 14, 14, 0.97) 100%), url(../../../img/jpg/hexagon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 88px 15px 98px;
+
+
+
+        h2 {
+            font-family: v.$boldFont;
+            font-weight: 700;
+            font-size: 36px;
+        }
+
+        hr {
+            width: 170px;
+            border: 2px solid $color-red;
+            align-self: center;
+            margin: 12px 0 32px 0;
+        }
+
+        >p {
+            max-width: 892px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .wrap {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            // gap: 48px;
+
+
+            .left {
+                display: flex;
+                flex-direction: column;
+
+                >div {
+                    position: relative;
+
+                    width: 605px;
+
+                    padding: 40px;
+                    padding-right: 0;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 21px;
+
+                    .img {
+                        width: 124px;
+                        height: 120px;
+                        background-image: url(../../../img/svg/RectangleItem.svg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+
+                    }
+
+                    .text {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        h3 {
+                            font-family: v.$boldFont;
+                            font-weight: 700;
+                            font-size: 16px;
+
+                            max-width: 286px;
+                        }
+
+                        p {
+                            max-width: 352px;
+                        }
+                    }
+                }
+
+                .consult {
+                    background: none;
+                }
+
+                .exchange {
+                    background: none;
+
+                }
+
+                .diagnostic {
+                    background: none;
+                }
+
+                .selected {
+                    position: absolute;
+                    background-image: url(../../../img/svg/Rectangle\ 47.svg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 200px;
+                    transition: 0.2s;
+                    animation: select 9s ease-in-out infinite;
+
+                    @keyframes select {
+
+                        0%,
+                        20% {
+                            transform: translateY(0%);
+                        }
+
+                        28%,
+                        52% {
+                            transform: translateY(100%);
+                        }
+
+                        60%,
+                        90% {
+                            transform: translateY(200%);
+                        }
+
+                        100% {
+                            transform: translateY(0%);
+                        }
+                    }
+                }
+            }
+
+            .right {
+
+
+                .masterimg {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.5s;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    z-index: 3;
+                    animation: selectmaster 9s ease-in-out infinite;
+
+                    @keyframes selectmaster {
+
+                        0%,
+                        20% {
+                            background-image: url(../../../img/png/mainPage/sesz/2.png);
+                        }
+
+                        28%,
+                        52% {
+                            background-image: url(../../../img/png/mainPage/sesz/3.png);
+                        }
+
+                        60%,
+                        90% {
+                            background-image: url(../../../img/png/mainPage/sesz/1.png);
+                        }
+
+                        100% {
+                            background-image: url(../../../img/png/mainPage/sesz/2.png);
+                        }
+                    }
+                }
+
+
+
+                width: 489px;
+                height: 566px;
+                position: relative;
+
+                img {
+                    position: absolute;
+
+                }
+
+                @mixin triangleRotate($startDeg, $time) {
+                    animation: rotate $time linear infinite;
+
+                    @keyframes rotate {
+                        from {
+                            transform: rotate($startDeg);
+                        }
+
+                        to {
+                            transform: rotate($startDeg + 360deg);
+                        }
+                    }
+                }
+
+                #thirdFirstTriangle {
+
+                    width: 65px;
+                    height: 65px;
+                    right: 30px;
+                    filter: blur(5px);
+                    transform: rotate(180deg + 32deg);
+                    z-index: 1;
+                    @include triangleRotate(180deg + 32deg, 10s);
+                }
+
+                #thirdSecondTriangle {
+                    z-index: 2;
+                    width: 125px;
+                    height: 125px;
+                    right: 235px;
+                    top: 104px;
+                    filter: blur(12px);
+                    transform: rotate(180deg + 60deg);
+                    @include triangleRotate(180deg + 60deg, 15s);
+                }
+
+                #thirdThirdTriangle {
+                    z-index: 4;
+                    width: 146px;
+                    height: 146px;
+                    left: 22px;
+                    top: 368px;
+                    transform: rotate(180deg + 69deg);
+                    @include triangleRotate(180deg + 69deg, 35s);
+
+                }
+
+                #thirdFourTriangle {
+                    z-index: 5;
+                    width: 166px;
+                    height: 166px;
+                    right: 0px - calc(166px / 2);
+                    top: 304px;
+                    transform: rotate(180deg + 142deg);
+                    filter: blur(17px);
+                    @include triangleRotate(180deg + 142deg, 30s);
+
+                }
+
+                #thirdFiveTriangle {
+                    z-index: 6;
+                    width: 78px;
+                    height: 78px;
+                    right: 110px;
+                    bottom: 20px;
+                    transform: rotate(180deg + 142deg);
+                    @include triangleRotate(180deg + 142deg, 20s);
+
+                }
+
+
+            }
+
+            @media screen and (max-width: 970px) {
+                .right {
+                    display: none;
+                }
+
+                justify-content: center;
+
+                .left {
+                    @media screen and (max-width: 730px) {
+                        >div {
+                            width: 100%;
+
+                            &:first-child {
+                                width: 85%;
+                                overflow: hidden;
+
+
+                            }
+                        }
+
+
+                        @media screen and (max-width: 640px) {
+                            >div {
+                                &:first-child {
+
+                                    width: calc(100%);
+                                    left: 0;
+                                }
+
+                                height: 200px;
+
+                                .img {
+                                    display: none;
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        .button {
+            margin-top: 32px;
+        }
+    }
+}

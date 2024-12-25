@@ -1,0 +1,64 @@
+@font-face {
+  font-family: GeometriaMedium;
+  src: url("../fonts/Geometria.ttf");
+}
+@font-face {
+  font-family: GeometriaBold;
+  src: url("../fonts/Geometria-Bold.ttf");
+}
+section.companyHello {
+  background-image: linear-gradient(rgba(14, 14, 14, 0.6), rgba(14, 14, 14, 0.6)), url(../../../img/jpg/porsche.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+section.companyHello .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 88px 15px;
+}
+section.companyHello .container h2 {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "GeometriaBold", sans-serif;
+  color: #fff;
+  border-bottom: #c53720 4px solid;
+  margin-bottom: 34px;
+  padding-bottom: 8px;
+}
+section.companyHello .container .textcontainer {
+  position: relative;
+}
+section.companyHello .container .textcontainer .newWrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #c53720;
+  -webkit-clip-path: polygon(evenodd, 40px 0, 0 40px, 0 100%, calc(100% - 40px) 100%, 100% calc(100% - 40px), 100% 0, 40px 0, 40px 4px, 41px 4px, 4px 41px, 4px calc(100% - 4px), calc(100% - 41px) calc(100% - 4px), calc(100% - 4px) calc(100% - 41px), calc(100% - 4px) 4px, 40px 4px);
+          clip-path: polygon(evenodd, 40px 0, 0 40px, 0 100%, calc(100% - 40px) 100%, 100% calc(100% - 40px), 100% 0, 40px 0, 40px 4px, 41px 4px, 4px 41px, 4px calc(100% - 4px), calc(100% - 41px) calc(100% - 4px), calc(100% - 4px) calc(100% - 41px), calc(100% - 4px) 4px, 40px 4px);
+}
+section.companyHello .container .textcontainer .transpWrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: rgba(29, 29, 29, 0.6);
+  -webkit-clip-path: polygon(41px 4px, 4px 41px, 4px calc(100% - 4px), calc(100% - 41px) calc(100% - 4px), calc(100% - 4px) calc(100% - 41px), calc(100% - 4px) 4px);
+          clip-path: polygon(41px 4px, 4px 41px, 4px calc(100% - 4px), calc(100% - 41px) calc(100% - 4px), calc(100% - 4px) calc(100% - 41px), calc(100% - 4px) 4px);
+}
+section.companyHello .container .textcontainer .textWrap {
+  padding: 32px;
+  position: relative;
+  z-index: 2;
+}/*# sourceMappingURL=companyHello.css.map */

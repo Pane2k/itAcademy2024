@@ -1,0 +1,82 @@
+@font-face {
+  font-family: GeometriaMedium;
+  src: url("../fonts/Geometria.ttf");
+}
+@font-face {
+  font-family: GeometriaBold;
+  src: url("../fonts/Geometria-Bold.ttf");
+}
+section.partners {
+  background-image: url(../../../img/jpg/partners.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+section.partners .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 88px 15px;
+}
+section.partners .container h2 {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "GeometriaBold", sans-serif;
+  color: #ffffff;
+  border-bottom: #c53720 4px solid;
+  margin-bottom: 34px;
+  padding-bottom: 8px;
+}
+section.partners .container .wrapPartners {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(max-content, 240px));
+  gap: 24px;
+}
+section.partners .container .wrapPartners .partnerCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: rgb(29, 29, 29);
+  transition: 0.2s;
+}
+section.partners .container .wrapPartners .partnerCard .partnerImg {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  width: 100%;
+}
+section.partners .container .wrapPartners .partnerCard p {
+  font-family: "GeometriaBold", sans-serif;
+  padding: 4px 0;
+  margin: 20px 12px 16px;
+}
+section.partners .container .wrapPartners .partnerCard:hover {
+  box-shadow: #c53720 0px 0px 0px 4px;
+}
+@media screen and (max-width: 1060px) {
+  section.partners .container .wrapPartners {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 1060px) and (max-width: 668px) {
+  section.partners .container .wrapPartners {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 1060px) and (max-width: 668px) and (max-width: 450px) {
+  section.partners .container .wrapPartners {
+    grid-template-columns: 1fr;
+  }
+}
+section.partners .container .button {
+  margin-top: 68px;
+}
+section.partners .container .button button {
+  width: 196px;
+  padding: 12px 20px;
+}/*# sourceMappingURL=partners.css.map */

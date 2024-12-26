@@ -6,14 +6,14 @@
   font-family: GeometriaBold;
   src: url("../../fonts/Geometria-Bold.ttf");
 }
-section.first {
+.first {
   background-color: #0e0e0e;
 }
-section.first .container {
+.first .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-section.first .container > div {
+.first .container > div {
   height: 272px;
   display: grid;
   grid-template-rows: 136px 28px 1fr;
@@ -21,24 +21,24 @@ section.first .container > div {
   text-align: center;
   padding: 0 28px;
 }
-section.first .container > div img {
+.first .container > div img {
   align-self: end;
   justify-self: center;
 }
-section.first .container > div > div {
+.first .container > div > div {
   grid-row: 3/4;
 }
-section.first .container .payments {
+.first .container .payments {
   background-image: url(../../../img/svg/mainPage/Rectangle.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
-section.first .container .quality p,
-section.first .container .worktime p {
+.first .container .quality p,
+.first .container .worktime p {
   position: relative;
 }
-section.first .container .quality p::after,
-section.first .container .worktime p::after {
+.first .container .quality p::after,
+.first .container .worktime p::after {
   content: url(../../../img/svg/mainPage/arrow.svg);
   position: absolute;
   bottom: -44px;
@@ -46,12 +46,12 @@ section.first .container .worktime p::after {
   transform: translate(-50%, 0);
 }
 @media screen and (max-width: 1100px) {
-  section.first .container {
+  .first .container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 1100px) and (max-width: 680px) {
-  section.first .container {
+  .first .container {
     grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=first.css.map */
